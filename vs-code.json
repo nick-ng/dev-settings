@@ -1,8 +1,8 @@
 {
-  "editor.fontSize": 14,
+  "editor.fontSize": 16,
   "editor.tabSize": 2,
   "editor.renderIndentGuides": true,
-  "workbench.editor.showTabCloseButton": false,
+  "workbench.editor.tabCloseButton": "off",
   "workbench.editor.openPositioning": "last",
   "css.validate": false,
   "vsicons.hideFolders": true,
@@ -11,5 +11,6 @@
   "vsicons.hideIconsEditors": true,
   "vsicons.useFileAssociations": true,
   "explorer.enableDragAndDrop": false,
-  "vsicons.dontShowNewVersionMessage": true
+  "vsicons.dontShowNewVersionMessage": true,
+  "editor.wordWrap": false
 }
