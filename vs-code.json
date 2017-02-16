@@ -33,8 +33,16 @@
   { "key": "cmd+ctrl+shift+o", "command": "cursorEndSelect", "when": "editorTextFocus" },
   { "key": "cmd+ctrl+8", "command": "cursorPageUp", "when": "editorTextFocus" },
   { "key": "cmd+ctrl+,", "command": "cursorPageDown", "when": "editorTextFocus" },
+  { "key": "cmd+ctrl+m", "command" : "cursorWordStartLeft", "When": "editorTextFocus" },
+  { "key": "cmd+ctrl+shift+m", "command" : "cursorWordStartLeftSelect", "When": "editorTextFocus" },
+  { "key": "cmd+ctrl+.", "command" : "cursorWordEndRight", "When": "editorTextFocus" },
+  { "key": "cmd+ctrl+shift+.", "command" : "cursorWordEndRightSelect", "When": "editorTextFocus" },
   { "key": "up", "command" : "", "When": "editorTextFocus" },
   { "key": "down", "command" : "", "When": "editorTextFocus" },
   { "key": "left", "command" : "", "When": "editorTextFocus" },
-  { "key": "right", "command" : "", "When": "editorTextFocus" }
+  { "key": "right", "command" : "", "When": "editorTextFocus" },
+  { "key": "shift+up", "command" : "", "When": "editorTextFocus" },
+  { "key": "shift+down", "command" : "", "When": "editorTextFocus" },
+  { "key": "shift+left", "command" : "", "When": "editorTextFocus" },
+  { "key": "shift+right", "command" : "", "When": "editorTextFocus" }
 ]
