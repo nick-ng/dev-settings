@@ -1,0 +1,10 @@
+alias g=git
+alias gs="git status"
+alias gb="git branch --remote && git branch"
+alias gn="git checkout -b"
+alias gc="git checkout"
+alias gd="git branch -d"
+alias gcm="git checkout master && git remote prune origin && git pull"
+alias gm=gcm
+alias ga="git add"
+alias ga.="git add ."
