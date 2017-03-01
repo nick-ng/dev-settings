@@ -1,19 +1,19 @@
 // Settings
 {
-  "editor.fontSize": 16,
+  "editor.fontSize": 10,
   "editor.tabSize": 2,
   "editor.renderIndentGuides": true,
   "workbench.editor.tabCloseButton": "off",
   "workbench.editor.openPositioning": "last",
   "css.validate": false,
-  "vsicons.hideFolders": true,
-  "vsicons.hideCustomFolderIcons": true,
-  "vsicons.hideIconsInTabs": true,
-  "vsicons.hideIconsEditors": true,
-  "vsicons.useFileAssociations": true,
   "explorer.enableDragAndDrop": false,
   "vsicons.dontShowNewVersionMessage": true,
-  "editor.wordWrap": false
+  "editor.wordWrap": "off",
+  "workbench.iconTheme": "vscode-icons",
+  "editor.minimap.enabled": true,
+  "editor.minimap.maxColumn": 20,
+  "editor.minimap.renderCharacters": false,
+  "window.title": "${dirty}${dirty}${dirty}${dirty}${dirty}${dirty} ${activeEditorMedium}${separator}${rootName} ${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}"
 }
 
 // keybindings.json (Mac)
