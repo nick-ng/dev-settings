@@ -1,22 +1,23 @@
 // Settings
 {
-  "editor.fontSize": 10,
+  "editor.fontSize": 16,
   "editor.tabSize": 2,
   "editor.renderIndentGuides": true,
   "workbench.editor.tabCloseButton": "off",
   "workbench.editor.openPositioning": "last",
   "css.validate": false,
   "explorer.enableDragAndDrop": false,
-  "vsicons.dontShowNewVersionMessage": true,
   "editor.wordWrap": "off",
-  "workbench.iconTheme": "vscode-icons",
   "editor.minimap.enabled": true,
   "editor.minimap.maxColumn": 20,
   "editor.minimap.renderCharacters": false,
   "window.title": "${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty} ${activeEditorMedium}${separator}${rootName} ${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}",
   "explorer.openEditors.visible": 12,
   "explorer.openEditors.dynamicHeight": false,
-  "editor.renderWhitespace": "boundary"
+  "editor.renderWhitespace": "boundary",
+  // "editor.fontFamily": "Papyrus, 'Comic Sans MS', Menlo, Monaco, 'Courier New', monospace"
+  "editor.fontFamily": "'Comic Sans MS', Menlo, Monaco, 'Courier New', monospace",
+  "editor.cursorStyle": "block"
 }
 
 // keybindings.json (Mac)
