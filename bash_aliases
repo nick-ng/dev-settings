@@ -1,7 +1,7 @@
-alias reload='source ~/.bash_profile'
+alias reload="source ~/.bash_profile"
 alias gis='git status'
 alias gib='git branch --remote && git branch'
-alias gin='git checkout -b'
+alias gin='git pull && git checkout -b'
 alias gic='git checkout'
 alias gid='git branch -d'
 alias gim='git checkout master && git remote prune origin && git pull'
