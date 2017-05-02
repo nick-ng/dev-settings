@@ -1,6 +1,6 @@
 // Settings
 {
-  "editor.fontSize": 16,
+  "editor.fontSize": 18,
   "editor.tabSize": 2,
   "editor.renderIndentGuides": true,
   "workbench.editor.tabCloseButton": "off",
@@ -16,31 +16,32 @@
   "explorer.openEditors.dynamicHeight": false,
   "editor.renderWhitespace": "boundary",
   // "editor.fontFamily": "Papyrus, 'Comic Sans MS', Menlo, Monaco, 'Courier New', monospace"
-  "editor.fontFamily": "'Comic Sans MS', Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontFamily": "'Comic Sans MS', Arial, Helvetica",
   "editor.cursorStyle": "block"
 }
 
 // keybindings.json (Mac)
 [
   { "key": "cmd+ctrl+alt+5", "command": "workbench.action.debug.continue", "when": "inDebugMode" },
-  { "key": "alt+ctrl+i", "command": "cursorUp", "when": "editorTextFocus" },
-  { "key": "alt+ctrl+shift+i", "command": "cursorUpSelect", "when": "editorTextFocus" },
-  { "key": "alt+ctrl+k", "command": "cursorDown", "when": "editorTextFocus" },
-  { "key": "alt+ctrl+shift+k", "command": "cursorDownSelect", "when": "editorTextFocus" },
-  { "key": "alt+ctrl+j", "command": "cursorLeft", "when": "editorTextFocus" },
-  { "key": "alt+ctrl+shift+j", "command": "cursorLeftSelect", "when": "editorTextFocus" },
-  { "key": "alt+ctrl+l", "command": "cursorRight", "when": "editorTextFocus" },
-  { "key": "alt+ctrl+shift+l", "command": "cursorRightSelect", "when": "editorTextFocus" },
-  { "key": "alt+ctrl+u", "command": "cursorHome", "when": "editorTextFocus" },
-  { "key": "alt+ctrl+shift+u", "command": "cursorHomeSelect", "when": "editorTextFocus" },
-  { "key": "alt+ctrl+o", "command": "cursorEnd", "when": "editorTextFocus" },
-  { "key": "alt+ctrl+shift+o", "command": "cursorEndSelect", "when": "editorTextFocus" },
-  { "key": "alt+ctrl+8", "command": "cursorPageUp", "when": "editorTextFocus" },
-  { "key": "alt+ctrl+,", "command": "cursorPageDown", "when": "editorTextFocus" },
-  { "key": "alt+ctrl+m", "command" : "cursorWordStartLeft", "When": "editorTextFocus" },
-  { "key": "alt+ctrl+shift+m", "command" : "cursorWordStartLeftSelect", "When": "editorTextFocus" },
-  { "key": "alt+ctrl+.", "command" : "cursorWordEndRight", "When": "editorTextFocus" },
-  { "key": "alt+ctrl+shift+.", "command" : "cursorWordEndRightSelect", "When": "editorTextFocus" },
-  { "key": "ctrl+shift+u", "command": "editor.action.transformToUppercase", "when": "editorTextFocus" },
-  { "key": "ctrl+shift+l", "command": "editor.action.transformToLowercase", "when": "editorTextFocus" }
+  { "key": "alt+cmd+i", "command": "cursorUp", "when": "editorTextFocus" },
+  { "key": "alt+cmd+shift+i", "command": "cursorUpSelect", "when": "editorTextFocus" },
+  { "key": "alt+cmd+k", "command": "cursorDown", "when": "editorTextFocus" },
+  { "key": "alt+cmd+shift+k", "command": "cursorDownSelect", "when": "editorTextFocus" },
+  { "key": "alt+cmd+j", "command": "cursorLeft", "when": "editorTextFocus" },
+  { "key": "alt+cmd+shift+j", "command": "cursorLeftSelect", "when": "editorTextFocus" },
+  { "key": "alt+cmd+l", "command": "cursorRight", "when": "editorTextFocus" },
+  { "key": "alt+cmd+shift+l", "command": "cursorRightSelect", "when": "editorTextFocus" },
+  { "key": "alt+cmd+u", "command": "cursorHome", "when": "editorTextFocus" },
+  { "key": "alt+cmd+shift+u", "command": "cursorHomeSelect", "when": "editorTextFocus" },
+  { "key": "alt+cmd+o", "command": "cursorEnd", "when": "editorTextFocus" },
+  { "key": "alt+cmd+shift+o", "command": "cursorEndSelect", "when": "editorTextFocus" },
+  { "key": "alt+cmd+8", "command": "cursorPageUp", "when": "editorTextFocus" },
+  { "key": "alt+cmd+,", "command": "cursorPageDown", "when": "editorTextFocus" },
+  { "key": "alt+cmd+m", "command" : "cursorWordStartLeft", "When": "editorTextFocus" },
+  { "key": "alt+cmd+shift+m", "command" : "cursorWordStartLeftSelect", "When": "editorTextFocus" },
+  { "key": "alt+cmd+.", "command" : "cursorWordEndRight", "When": "editorTextFocus" },
+  { "key": "alt+cmd+shift+.", "command" : "cursorWordEndRightSelect", "When": "editorTextFocus" },
+  { "key": "cmd+shift+u", "command": "editor.action.transformToUppercase", "when": "editorTextFocus" },
+  { "key": "cmd+shift+l", "command": "editor.action.transformToLowercase", "when": "editorTextFocus" },
+  { "key": "cmd+ctrl+alt+f", "command": "eslint.executeAutofix", "when": "editorTextFocus"}
 ]
