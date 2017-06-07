@@ -1,6 +1,6 @@
 // Settings
 {
-  "editor.fontSize": 18,
+  "editor.fontSize": 12,
   "editor.tabSize": 2,
   "editor.renderIndentGuides": true,
   "workbench.editor.tabCloseButton": "off",
@@ -17,7 +17,10 @@
   "editor.renderWhitespace": "boundary",
   // "editor.fontFamily": "Papyrus, 'Comic Sans MS', Menlo, Monaco, 'Courier New', monospace"
   "editor.fontFamily": "'Comic Sans MS', Arial, Helvetica",
-  "editor.cursorStyle": "block"
+  "editor.cursorStyle": "block",
+  "workbench.iconTheme": "vs-nick",
+  "workbench.editor.showIcons": true,
+  "window.zoomLevel": 2.5
 }
 
 // keybindings.json
