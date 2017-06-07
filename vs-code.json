@@ -12,7 +12,7 @@
   "editor.minimap.maxColumn": 20,
   "editor.minimap.renderCharacters": false,
   "window.title": "${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty} ${activeEditorMedium}${separator}${rootName} ${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}",
-  "explorer.openEditors.visible": 12,
+  "explorer.openEditors.visible": 6,
   "explorer.openEditors.dynamicHeight": false,
   "editor.renderWhitespace": "boundary",
   // "editor.fontFamily": "Papyrus, 'Comic Sans MS', Menlo, Monaco, 'Courier New', monospace"
