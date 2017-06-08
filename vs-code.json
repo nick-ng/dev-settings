@@ -15,12 +15,12 @@
   "explorer.openEditors.visible": 6,
   "explorer.openEditors.dynamicHeight": false,
   "editor.renderWhitespace": "boundary",
-  // "editor.fontFamily": "Papyrus, 'Comic Sans MS', Menlo, Monaco, 'Courier New', monospace"
   "editor.fontFamily": "'Comic Sans MS', Arial, Helvetica",
   "editor.cursorStyle": "block",
   "workbench.iconTheme": "vs-nick",
   "workbench.editor.showIcons": true,
-  "window.zoomLevel": 2
+  "window.zoomLevel": 1,
+  "git.enabled": false
 }
 
 // keybindings.json
