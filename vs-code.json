@@ -1,6 +1,6 @@
 // Settings
 {
-  "editor.fontSize": 14,
+  "editor.fontSize": 12,
   "editor.tabSize": 2,
   "editor.renderIndentGuides": true,
   "workbench.editor.tabCloseButton": "off",
