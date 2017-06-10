@@ -22,7 +22,9 @@
   "window.zoomLevel": 1,
   "git.enabled": false,
   "editor.acceptSuggestionOnCommitCharacter": false,
-  "editor.acceptSuggestionOnEnter": "off"
+  "editor.acceptSuggestionOnEnter": "off",
+  "emmet.showExpandedAbbreviation": false,
+  "emmet.showAbbreviationSuggestions": false
 }
 
 // keybindings.json
