@@ -20,7 +20,9 @@
   "workbench.iconTheme": "vs-nick",
   "workbench.editor.showIcons": true,
   "window.zoomLevel": 1,
-  "git.enabled": false
+  "git.enabled": false,
+  "editor.acceptSuggestionOnCommitCharacter": false,
+  "editor.acceptSuggestionOnEnter": "off"
 }
 
 // keybindings.json
