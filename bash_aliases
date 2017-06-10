@@ -1,4 +1,4 @@
-alias reload="source ~/.bash_profile"
+alias reload="source ~/.bash_aliases"
 alias gis='git status'
 alias gib='git branch --remote && git branch'
 alias gin='git pull && git checkout -b'
@@ -12,3 +12,5 @@ alias cd..='cd ..'
 alias dir='ls -a'
 alias vi='nano'
 alias emacs='nano'
+alias npmi='rm -f package-lock.json && npm install'
+alias gipush='git branch | grep "* " | awk "{print \$2}" | xargs git push --set-upstream origin '
