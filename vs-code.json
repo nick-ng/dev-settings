@@ -8,7 +8,7 @@
   "css.validate": false,
   "explorer.enableDragAndDrop": false,
   "editor.wordWrap": "off",
-  "editor.minimap.enabled": true,
+  "editor.minimap.enabled": false,
   "editor.minimap.maxColumn": 20,
   "editor.minimap.renderCharacters": false,
   "window.title": "${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty} ${activeEditorMedium}${separator}${rootName} ${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}",
