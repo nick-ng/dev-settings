@@ -7,7 +7,7 @@
   "workbench.editor.openPositioning": "last",
   "css.validate": false,
   "explorer.enableDragAndDrop": false,
-  "editor.wordWrap": "off",
+  "editor.wordWrap": "wordWrapColumn",
   "editor.minimap.enabled": false,
   "editor.minimap.maxColumn": 20,
   "editor.minimap.renderCharacters": false,
@@ -24,8 +24,10 @@
   "editor.acceptSuggestionOnCommitCharacter": false,
   "editor.acceptSuggestionOnEnter": "off",
   "emmet.showExpandedAbbreviation": false,
-  "emmet.showAbbreviationSuggestions": false
+  "emmet.showAbbreviationSuggestions": false,
+  "editor.wordWrapColumn": 120
 }
+
 
 // keybindings.json
 [
