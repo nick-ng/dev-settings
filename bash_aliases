@@ -1,5 +1,5 @@
 alias reload="source ~/.bash_aliases"
-alias gis='git status'
+alias gis='ls -a && git status'
 alias gib='git branch --remote && git branch'
 alias gin='git pull && git checkout -b'
 alias gic='git checkout'
