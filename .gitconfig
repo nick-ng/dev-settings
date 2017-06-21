@@ -1,0 +1,10 @@
+[user]
+	email = <email here>
+[credential]
+	helper = cache --timeout=999999
+[push]
+	default = simple
+[core]
+	editor = 'code' -w -n
+[merge]
+	conflictstyle = diff3
