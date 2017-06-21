@@ -1,7 +1,5 @@
 [user]
 	email = <email here>
-[credential]
-	helper = cache --timeout=999999
 [push]
 	default = simple
 [core]
