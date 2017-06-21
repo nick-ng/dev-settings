@@ -72,6 +72,8 @@
   { "key": "alt+ctrl+shift+.", "command" : "cursorWordEndRightSelect" },
   { "key": "ctrl+u", "command": "editor.action.transformToUppercase" },
   { "key": "ctrl+l", "command": "editor.action.transformToLowercase" },
+  { "key": "cmd+u", "command": "editor.action.transformToUppercase" },
+  { "key": "cmd+l", "command": "editor.action.transformToLowercase" }
   { "key": "ctrl+alt+f", "command": "eslint.executeAutofix" },
   { "key": "cmd+alt+f", "command": "eslint.executeAutofix" }
 ]
