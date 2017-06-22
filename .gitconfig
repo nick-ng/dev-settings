@@ -3,6 +3,6 @@
 [push]
 	default = simple
 [core]
-	editor = 'code' -w -n
+	editor = nano
 [merge]
 	conflictstyle = diff3
