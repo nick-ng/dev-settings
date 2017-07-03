@@ -25,15 +25,16 @@
   "emmet.showExpandedAbbreviation": false,
   "emmet.showAbbreviationSuggestions": false,
   "editor.wordWrap": "wordWrapColumn",
-  "editor.wordWrapColumn": 120,
+  "editor.wordWrapColumn": 90,
   "editor.rulers": [
     80,
-    120,
-    121
+    90,
+    91
   ],
   "window.openFilesInNewWindow": "on",
   "window.newWindowDimensions": "inherit"
 }
+
 
 // keybindings.json
 [
