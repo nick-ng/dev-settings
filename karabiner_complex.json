@@ -225,6 +225,52 @@
           ]
         }
       ]
+    },
+    {
+      "type":"basic",
+      "from":{
+        "key_code":"m",
+        "modifiers":{
+          "mandatory":[
+            "command",
+            "option"
+          ],
+          "optional":[
+            "any"
+          ]
+        }
+      },
+      "to":[
+        {
+          "key_code":"left_arrow",
+          "modifiers":[
+            "option"
+          ]
+        }
+      ]
+    },
+    {
+      "type":"basic",
+      "from":{
+        "key_code":"period",
+        "modifiers":{
+          "mandatory":[
+            "command",
+            "option"
+          ],
+          "optional":[
+            "any"
+          ]
+        }
+      },
+      "to":[
+        {
+          "key_code":"right_arrow",
+          "modifiers":[
+            "option"
+          ]
+        }
+      ]
     }
   ]
 }
