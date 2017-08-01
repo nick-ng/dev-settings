@@ -1,4 +1,5 @@
 // Settings
+// Place your settings in this file to overwrite the default settings
 {
   "editor.fontSize": 12,
   "editor.tabSize": 2,
@@ -18,7 +19,7 @@
   "editor.cursorStyle": "block",
   "workbench.iconTheme": "vs-nick",
   "workbench.editor.showIcons": true,
-  "window.zoomLevel": 1,
+  "window.zoomLevel": 0,
   "git.enabled": false,
   "editor.acceptSuggestionOnCommitCharacter": false,
   "editor.acceptSuggestionOnEnter": "off",
@@ -32,9 +33,9 @@
     91
   ],
   "window.openFilesInNewWindow": "on",
-  "window.newWindowDimensions": "inherit"
+  "window.newWindowDimensions": "inherit",
+  "workbench.startupEditor": "newUntitledFile"
 }
-
 
 // keybindings.json
 [
