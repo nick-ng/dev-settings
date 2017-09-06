@@ -1,7 +1,7 @@
 // Settings
 // Place your settings in this file to overwrite the default settings
 {
-  "editor.fontSize": 12,
+  "editor.fontSize": 11,
   "editor.tabSize": 2,
   "editor.renderIndentGuides": true,
   "workbench.editor.tabCloseButton": "off",
@@ -15,7 +15,9 @@
   "explorer.openEditors.visible": 6,
   "explorer.openEditors.dynamicHeight": false,
   "editor.renderWhitespace": "boundary",
-  "editor.fontFamily": "'Comic Sans MS', Arial, Helvetica",
+  // "editor.fontFamily": "'Comic Sans MS', Arial, Helvetica",
+  "editor.fontFamily": "Fira Code",
+  "editor.fontLigatures": true,
   "editor.cursorStyle": "block",
   "workbench.iconTheme": "vs-nick",
   "workbench.editor.showIcons": true,
@@ -34,8 +36,10 @@
   ],
   "window.openFilesInNewWindow": "on",
   "window.newWindowDimensions": "inherit",
-  "workbench.startupEditor": "newUntitledFile"
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.editor.enablePreview": false
 }
+
 
 // keybindings.json
 [
