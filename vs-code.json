@@ -37,7 +37,15 @@
   "window.openFilesInNewWindow": "on",
   "window.newWindowDimensions": "inherit",
   "workbench.startupEditor": "newUntitledFile",
-  "workbench.editor.enablePreview": false
+  "workbench.editor.enablePreview": false,
+  "emeraldwalk.runonsave": {
+    "commands": [
+      {
+        "match": ".*",
+        "cmd": "echo `Hello world!'"
+      }
+    ]
+  }
 }
 
 
