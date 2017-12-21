@@ -38,18 +38,30 @@
   "window.newWindowDimensions": "inherit",
   "workbench.startupEditor": "newUntitledFile",
   "workbench.editor.enablePreview": false,
-  "emeraldwalk.runonsave": {
-    "commands": [
-      {
-        "match": ".*",
-        "cmd": "echo `Hello world!'"
-      }
-    ]
+  "gitlens.advanced.messages": {
+    "suppressCommitHasNoPreviousCommitWarning": false,
+    "suppressCommitNotFoundWarning": false,
+    "suppressFileNotUnderSourceControlWarning": false,
+    "suppressGitVersionWarning": false,
+    "suppressLineUncommittedWarning": false,
+    "suppressNoRepositoryWarning": false,
+    "suppressUpdateNotice": false,
+    "suppressWelcomeNotice": true
   }
+  // "emeraldwalk.runonsave": {
+  //   "commands": [
+  //     {
+  //       "match": ".*",
+  //       "cmd": "gitcommitifnotmasterm \"Saved ${file}\""
+  //     }
+  //   ]
+  // }
 }
 
 
+
 // keybindings.json
+// Place your key bindings in this file to overwrite the defaults
 [
   { "key": "cmd+ctrl+alt+5", "command": "workbench.action.debug.continue", "when": "inDebugMode" },
   { "key": "alt+cmd+i", "command": "cursorUp" },
