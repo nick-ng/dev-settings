@@ -21,3 +21,5 @@ alias gipush='git branch | grep "* " | awk "{print \$2}" | xargs git push --set-
 alias gitcommitifnotmasterm='git branch -v | grep "* " | awk "{print \"hello\"\$2\"world\"}" | grep "hellomasterworld" || git add . && git commit -m'
 alias todo='clear && grep "^[^*+/-]" ~/Dropbox/plans/a.plan.txt'
 alias todow='clear && grep "^[^*+/-]" ~/Dropbox/plans/work.plan.txt'
+alias pm2deploy='git push --tags && pm2 deploy ecosystem.config.js production --force'
+alias giwip='gia. && git commit -m WIP && gipush
