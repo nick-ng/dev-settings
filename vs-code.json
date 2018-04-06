@@ -1,7 +1,7 @@
 // Settings
 // Place your settings in this file to overwrite the default settings
 {
-  "editor.fontSize": 11,
+  "editor.fontSize": 12,
   "editor.tabSize": 2,
   "editor.renderIndentGuides": true,
   "workbench.editor.tabCloseButton": "off",
@@ -13,15 +13,14 @@
   "editor.minimap.renderCharacters": false,
   "window.title": "${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty} ${activeEditorMedium}${separator}${rootName} ${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}",
   "explorer.openEditors.visible": 6,
-  "explorer.openEditors.dynamicHeight": false,
   "editor.renderWhitespace": "boundary",
   // "editor.fontFamily": "'Comic Sans MS', Arial, Helvetica",
-  "editor.fontFamily": "Fira Code",
+  "editor.fontFamily": "'Fira Code'",
   "editor.fontLigatures": true,
   "editor.cursorStyle": "block",
   "workbench.iconTheme": "vs-nick",
   "workbench.editor.showIcons": true,
-  "window.zoomLevel": 0,
+  "window.zoomLevel": -1.8,
   "git.enabled": true,
   "editor.acceptSuggestionOnCommitCharacter": false,
   "editor.acceptSuggestionOnEnter": "off",
@@ -45,9 +44,12 @@
     "suppressGitVersionWarning": false,
     "suppressLineUncommittedWarning": false,
     "suppressNoRepositoryWarning": false,
+    "suppressResultsExplorerNotice": false,
+    "suppressShowKeyBindingsNotice": true,
     "suppressUpdateNotice": false,
     "suppressWelcomeNotice": true
-  }
+  },
+  "gitlens.keymap": "alternate"
   // "emeraldwalk.runonsave": {
   //   "commands": [
   //     {
@@ -57,7 +59,6 @@
   //   ]
   // }
 }
-
 
 
 // keybindings.json
