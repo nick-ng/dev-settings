@@ -2,11 +2,11 @@
 alias reload="source ~/.bash_aliases"
 alias gis='git status'
 alias gib='git branch --remote && git branch'
-alias gin='git pull && git checkout -b'
 alias gic='git checkout'
 alias gid='git branch -d'
 alias gim='git checkout master && git remote prune origin && git pull'
 alias gimm='gim && git checkout - && git merge master'
+alias gin='gim && git checkout -b'
 alias gia='git add'
 alias gia.='git add . && git status'
 alias gipurge='gim && git fetch -p && git branch -vv | grep ": gone]" | awk "{print \$1}" | xargs git branch -D && echo Nick is cool!'
