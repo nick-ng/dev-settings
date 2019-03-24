@@ -6,6 +6,7 @@ alias gic='git checkout'
 alias gid='git branch -d'
 alias gim='git checkout master && git remote prune origin && git pull'
 alias gimm='gim && git checkout - && git merge master'
+alias gims='git checkout staging && git remote prune origin && git pull && git checkout - && git merge staging'
 alias gin='gim && git checkout -b'
 alias gia='git add'
 alias gia.='git add . && git status'
@@ -25,3 +26,11 @@ alias todoe='nano ~/Dropbox/plans/a.plan.txt'
 alias todowe='nano ~/Dropbox/plans/work.plan.txt'
 alias pm2deploy='git push --tags && pm2 deploy ecosystem.config.js production --force'
 alias giwip='gia. && git commit -m WIP && gipush --no-verify'
+alias notes='cd ~/Google\ Drive\ File\ Stream/My\ Drive/notes'
+
+ezlatex() {
+    pdflatex "$1.tex" "$1.pdf"
+    pdflatex "$1"
+    pdflatex "$1.tex" "$1.pdf"
+    pdflatex "$1.tex" "$1.pdf"
+}
