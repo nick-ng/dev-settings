@@ -1,7 +1,7 @@
 // Settings
 // Place your settings in this file to overwrite the default settings
 {
-  "editor.fontSize": 12,
+  "editor.fontSize": 16,
   "editor.tabSize": 2,
   "editor.renderIndentGuides": true,
   "workbench.editor.tabCloseButton": "off",
@@ -20,7 +20,7 @@
   "editor.cursorStyle": "block",
   "workbench.iconTheme": "vs-nick",
   "workbench.editor.showIcons": true,
-  "window.zoomLevel": -1.8,
+  "window.zoomLevel": -2,
   "git.enabled": true,
   "editor.acceptSuggestionOnCommitCharacter": false,
   "editor.acceptSuggestionOnEnter": "off",
@@ -49,7 +49,12 @@
     "suppressUpdateNotice": false,
     "suppressWelcomeNotice": true
   },
-  "gitlens.keymap": "alternate"
+  "gitlens.keymap": "alternate",
+  "gitlens.historyExplorer.enabled": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "gitlens.views.fileHistory.enabled": true,
+  "gitlens.views.lineHistory.enabled": true,
+  "files.autoSave": "off"
   // "emeraldwalk.runonsave": {
   //   "commands": [
   //     {
@@ -59,6 +64,7 @@
   //   ]
   // }
 }
+
 
 
 // keybindings.json
