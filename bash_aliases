@@ -26,7 +26,7 @@ alias todoe='nano ~/Dropbox/plans/a.plan.txt'
 alias todowe='nano ~/Dropbox/plans/work.plan.txt'
 alias pm2deploy='git push --tags && pm2 deploy ecosystem.config.js production --force'
 alias giwip='gia. && git commit -m WIP && gipush --no-verify'
-alias notes='cd ~/Google\ Drive\ File\ Stream/My\ Drive/notes'
+alias notes='cd ~/Google\ Drive\ File\ Stream/My\ Drive/notes && code . && cd -'
 alias weather='curl wttr.in'
 
 ezlatex() {
