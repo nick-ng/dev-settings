@@ -7,6 +7,30 @@
         {
           "type":"basic",
           "from":{
+            "key_code":"h",
+            "modifiers":{
+              "mandatory":[
+                "command",
+                "option"
+              ],
+              "optional":[
+                "any"
+              ]
+            }
+          },
+          "to":[
+            {
+              "key_code":"j",
+              "modifiers":[
+                "command",
+                "option"
+              ]
+            }
+          ]
+        },
+        {
+          "type":"basic",
+          "from":{
             "key_code":"i",
             "modifiers":{
               "mandatory":[
