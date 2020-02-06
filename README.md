@@ -10,8 +10,8 @@ git clone https://github.com/nick-ng/dev-settings.git ~/gits/dev-settings && cd 
 ```
 source kde-one-time.sh
 ```
-# Add SSH key to Github
-* Click on your face -> settings -> SSH and GPG keys
+* Add SSH key to Github
+    * Click on your face -> settings -> SSH and GPG keys
 ```
 cat ~/.ssh/id_rsa.pub | xclip -selection clipboard
 ```

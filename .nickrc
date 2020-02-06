@@ -1,17 +1,18 @@
-
-alias reload="source ~/.bash_aliases"
+alias reload="source ~/.nickrc"
 alias gis='git status'
 alias gib='git branch --remote && git branch'
 alias gic='git checkout'
 alias gid='git branch -d'
 alias gim='git checkout dev && git remote prune origin && git pull'
 alias gimm='gim && git checkout - && git merge dev'
+alias gims='git checkout staging && git remote prune origin && git pull && git checkout - && git merge staging'
 alias gin='gim && git checkout -b'
 alias gia='git add'
 alias gia.='git add . && git status'
 alias giap='git add -p'
 alias nick2simulator='git add -p'
 alias gipurge='gim && git fetch -p && git branch -vv | grep ": gone]" | awk "{print \$1}" | xargs git branch -D && echo Nick is cool!'
+alias gipurgem='git checkout master && git remote prune origin && git pull && git fetch -p && git branch -vv | grep ": gone]" | awk "{print \$1}" | xargs git branch -D && echo Nick is cool!'
 alias giclear='gim && git branch | grep "^[^*]" | xargs git branch -d && echo ===================='
 alias cd..='cd ..'
 alias dir='ls -a'
@@ -19,8 +20,10 @@ alias vi='nano'
 alias vim='nano'
 alias emacs='nano'
 alias npmi='rm -f package-lock.json && npm install'
-alias gipush='npm test && git branch | grep "* " | awk "{print \$2}" | xargs git push --set-upstream origin '
-alias gitpush='git branch | grep "* " | awk "{print \$2}" | xargs git push --set-upstream origin '
+alias npmscripts='cat package.json | jq .scripts'
+alias gipush='git branch | grep "* " | awk "{print \$2}" | xargs git push --set-upstream origin '
+alias gitpush='npm test && git branch | grep "* " | awk "{print \$2}" | xargs git push --set-upstream origin '
+
 alias weather='curl wttr.in'
 
 alias yarnpls='echo Deleting node_modules directory and package-lock.json && rm -rf node_modules && rm -f package-lock.json && echo BALEETED! && yarn install'
