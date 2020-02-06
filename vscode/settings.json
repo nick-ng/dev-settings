@@ -11,7 +11,7 @@
 	"window.title": "${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty} ${activeEditorMedium}${separator}${rootName} ${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}",
 	"explorer.openEditors.visible": 6,
 	"editor.renderWhitespace": "boundary",
-	"editor.fontFamily": "'Fira Code', Monaco, 'Comic Sans MS', Arial, Helvetica",
+	"editor.fontFamily": "'Fira Code', Monaco, 'DejaVu Sans Mono', 'Comic Sans MS', Arial, Helvetica",
 	"editor.fontLigatures": true,
 	"editor.cursorStyle": "block",
 	"workbench.iconTheme": "vs-nick",

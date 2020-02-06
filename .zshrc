@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/nickng/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -98,29 +98,5 @@ fi
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-alias reload="source ~/.zshrc"
-alias gis='git status'
-alias gib='git branch --remote && git branch'
-alias gic='git checkout'
-alias gid='git branch -d'
-alias gim='git checkout dev && git remote prune origin && git pull'
-alias gimm='gim && git checkout - && git merge dev'
-alias gin='gim && git checkout -b'
-alias gia='git add'
-alias gia.='git add . && git status'
-alias giap='git add -p'
-alias nick2simulator='git add -p'
-alias gipurge='gim && git fetch -p && git branch -vv | grep ": gone]" | awk "{print \$1}" | xargs git branch -D && echo Nick is cool!'
-alias giclear='gim && git branch | grep "^[^*]" | xargs git branch -d && echo ===================='
-alias cd..='cd ..'
-alias dir='ls -a'
-alias vi='nano'
-alias vim='nano'
-alias emacs='nano'
-alias npmi='rm -f package-lock.json && npm install'
-alias gipush='npm test && git branch | grep "* " | awk "{print \$2}" | xargs git push --set-upstream origin '
-alias gitpush='git branch | grep "* " | awk "{print \$2}" | xargs git push --set-upstream origin '
-alias weather='curl wttr.in'
-
-alias yarnpls='echo Deleting node_modules directory and package-lock.json && rm -rf node_modules && rm -f package-lock.json && echo BALEETED! && yarn install'
-alias vagrantgo='vagrant up && vagrant ssh'
+source ~/.nickrc
+source ~/.workrc

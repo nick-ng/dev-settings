@@ -17,6 +17,6 @@ source ./linux/zsh.sh
 source ./linux/google-drive-install.sh
 
 echo "Install more things"
-sudo apt install -y keepassxc
+sudo apt install -y keepassxc jq
 
 source ./kde.sh
