@@ -1,0 +1,53 @@
+{
+  "iconDefinitions": {
+      "_nick_one": {
+        "iconPath": "./nick_one.png"
+    },
+    "_nick_two": {
+        "iconPath": "./nick_two.png"
+    },
+    "_nick_three": {
+        "iconPath": "./nick_three.png"
+    },
+    "_nick_four": {
+        "iconPath": "./nick_four.png"
+    },
+    "_nick_five": {
+        "iconPath": "./nick_five.png"
+    },
+    "_nick_six": {
+        "iconPath": "./nick_six.png"
+    },
+    "_nick_seven": {
+        "iconPath": "./nick_seven.png"
+    },
+    "_nick_eight": {
+        "iconPath": "./nick_eight.png"
+    },
+    "_nick_nine": {
+        "iconPath": "./nick_nine.png"
+    },
+    "_nick_ten": {
+        "iconPath": "./nick_ten.png"
+    }
+  },
+  "file": "_nick_five",
+  "folder": "_nick_one",
+  "folderExpanded": "_nick_two",
+  "folderNames": {
+    ".vscode": "_nick_one"
+  },
+  "fileExtensions": {
+      "css": "_nick_four",
+      "js": "_nick_three",
+      "json": "_nick_six",
+      "jsx": "_nick_seven",
+      "md": "_nick_eight",
+      "php": "_nick_nine",
+      "ts": "_nick_ten",
+      "tsx": "_nick_ten"
+  },
+  "fileNames": {
+      "win.ini": "_nick_one"
+  }
+}

@@ -1,8 +1,0 @@
-[user]
-	email = <email here>
-[push]
-	default = simple
-[core]
-	editor = nano
-[merge]
-	conflictstyle = diff3
