@@ -2,13 +2,11 @@
 # Steps
 * Install git and checkout repo
 ```
-sudo apt install git
-
-git clone https://github.com/nick-ng/dev-settings.git ~/gits/dev-settings && cd ~/gits/dev-settings
+sudo apt install -y git && git clone https://github.com/nick-ng/dev-settings.git ~/gits/dev-settings && cd ~/gits/dev-settings
 ```
 * Run script
 ```
-source kde-one-time.sh
+source kde.sh
 ```
 * Add SSH key to Github
     * Click on your face -> settings -> SSH and GPG keys
