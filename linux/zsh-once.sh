@@ -1,3 +1,3 @@
-\cp ${HOME}/gits/dev-settings/.zshrc ~/.zshrc
-\cp ${HOME}/gits/dev-settings/.nickrc ~/.nickrc
-cp -n ${HOME}/gits/dev-settings/.workrc ~/.workrc
+\cp ${HOME}/gits/dev-settings/.zshrc ${HOME}/.zshrc
+\cp ${HOME}/gits/dev-settings/.nickrc ${HOME}/.nickrc
+cp -n ${HOME}/gits/dev-settings/.workrc ${HOME}/.workrc
