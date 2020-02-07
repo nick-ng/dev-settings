@@ -11,3 +11,6 @@ mkdir ~/google-drive
 google-drive-ocamlfuse ~/google-drive
 
 cat ./linux/.zprofile >> ~/.zprofile
+
+mkdir ~/.runonce
+mkdir ~/.ranonce

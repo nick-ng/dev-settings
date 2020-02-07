@@ -1,11 +1,6 @@
 sudo apt install -y zsh
 
-# Unnecessary. Oh my zsh does this.
-# chsh -s $(which zsh)
+cp ./linux/zsh-once.sh ~/.runonce
 
 echo "It'll ask your password to change the default shell"
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-
-\cp ./.zshrc ~/.zshrc
-\cp ./.nickrc ~/.nickrc
-cp -n ./.workrc ~/.workrc
