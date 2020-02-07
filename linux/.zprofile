@@ -5,7 +5,7 @@ do
         continue
     fi
     source "$file"
-    mv "$file" "${HOME}/.ranonce/$file.$(date +%Y%m%dT%H%M%S)"
+    mv "$file" "${HOME}/.ranonce$file.$(date +%Y%m%dT%H%M%S)"
     logger -t runonce -p local3.info "$file"
 done
 
