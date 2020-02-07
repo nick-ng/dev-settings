@@ -20,3 +20,6 @@ echo "Install more things"
 sudo apt install -y keepassxc
 
 source ./kde.sh
+
+echo "Change repo origin url"
+git remote set-url origin git@github.com:nick-ng/dev-settings.git

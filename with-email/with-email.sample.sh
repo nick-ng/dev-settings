@@ -8,11 +8,10 @@ git config --global core.editor "nano"
 git config --global user.email $my_email
 
 echo "Generate SSH key"
+echo "KeepassXC can save your SSH key passphrase"
 ssh-keygen -t rsa -b 4096 -C $my_email
 
-echo "ssh-agent can save your passphrase"
-echo "Add your SSH key"
-
+echo "Add your SSH key to SSH agent"
 eval "$(ssh-agent -s)"
 ssh-add ~/.ssh/id_rsa
 
