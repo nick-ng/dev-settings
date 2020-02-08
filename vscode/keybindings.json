@@ -3,8 +3,8 @@
 	{ "key": "ctrl+l", "command": "editor.action.transformToLowercase" },
 	{ "key": "cmd+u", "command": "editor.action.transformToUppercase" },
 	{ "key": "cmd+l", "command": "editor.action.transformToLowercase" },
-	{ "key": "ctrl+alt+f", "command": "eslint.executeAutofix" },
-	{ "key": "cmd+alt+f", "command": "eslint.executeAutofix" },
+	{ "key": "ctrl+alt+f", "command": "editor.action.formatSelection" },
+	{ "key": "cmd+alt+f", "command": "editor.action.formatSelection" },
 	{
         "key": "ctrl+shift+alt+f",
         "command": "filesExplorer.findInFolder",
@@ -12,6 +12,6 @@
     },
 	{
 		"key": "shift+alt+f",
-		"command": "editor.action.autoFix"
+		"command": "editor.action.formatDocument"
 	}
 ]
