@@ -60,30 +60,23 @@
 	"editor.insertSpaces": false,
 	"editor.tabSize": 4,
 	"editor.formatOnSave": false,
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
 	"[php]": {
 		"editor.insertSpaces": false,
 		"editor.tabSize": 4,
 		"editor.formatOnSave": false
 	},
 	"[javascript]": {
-		"editor.insertSpaces": true,
-		"editor.tabSize": 4,
-		"editor.formatOnSave": false
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
 	},
 	"[javascriptreact]": {
-		"editor.insertSpaces": true,
-		"editor.tabSize": 4,
-		"editor.formatOnSave": false
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
 	},
 	"[typescript]": {
-		"editor.insertSpaces": true,
-		"editor.tabSize": 4,
-		"editor.formatOnSave": false
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
 	},
 	"[typescriptreact]": {
-		"editor.insertSpaces": true,
-		"editor.tabSize": 4,
-		"editor.formatOnSave": false
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
 	},
 	"editor.accessibilitySupport": "off"
 }
