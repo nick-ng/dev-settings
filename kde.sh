@@ -9,8 +9,10 @@ echo "Setup input devices"
 \cp ./kde/touchpadrc ~/.config/touchpadrc
 \cp ./kde/kglobalshortcutsrc ~/.config/kglobalshortcutsrc
 \cp ./kde/khotkeysrc ~/.config/khotkeysrc
+\cp ./kde/konsolerc ~/.config/konsolerc
+\cp ./kde/kxkbrc ~/.config/kxkbrc
+\cp ./kde/kwinrc ~/.config/kwinrc
 
-cp ./kde/konsolerc ~/.config/konsolerc
 cp ./kde/profile0.profile ~/.local/share/konsole/profile0.profile
 
 source ./with-email/with-email.sh

@@ -1,0 +1,10 @@
+[Compositing]
+OpenGLIsUnsafe=false
+
+[Desktops]
+Number=4
+
+[Effect-PresentWindows]
+BorderActivate=9
+BorderActivateAll=1
+BorderActivateClass=9
