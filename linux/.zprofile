@@ -1,3 +1,5 @@
+mount | grep "${HOME}/google-drive" >/dev/null || /usr/bin/google-drive-ocamlfuse "${HOME}/google-drive"&
+
 for file in ${HOME}/.runonce/*
 do
     if [ ! -f "$file" ]
@@ -5,8 +7,7 @@ do
         continue
     fi
     source "$file"
-    mv "$file" "${HOME}/.ranonce$file.$(date +%Y%m%dT%H%M%S)"
-    logger -t runonce -p local3.info "$file"
-done
 
-mount | grep "${HOME}/google-drive" >/dev/null || /usr/bin/google-drive-ocamlfuse "${HOME}/google-drive"&
+	mv "$file" "${file/runonce/ranonce}.$(date +%Y%m%dT%H%M%S)"
+    logger -t runonce -p local3.info "$file"
+done >/dev/null 2>&1
