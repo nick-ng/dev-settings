@@ -1,6 +1,4 @@
 # ToDo
-* Don't install programs if they're already installed (e.g. running again to update settings).
-    * `which code | grep "not found" >/dev/null && echo "hi"`
 * Change keyboard shortcuts so they don't use Alt as much.
 # Steps
 * Install git and checkout repo
