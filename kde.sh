@@ -4,6 +4,10 @@ sudo apt update
 echo "Install things"
 sudo apt install -y curl xclip
 
+echo "Applying some settings"
+# Increase inotify watch limit. For nodemon, vscode etc. to detect file changes.
+echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
+
 echo "Setup input devices"
 \cp ./kde/kcminputrc ~/.config/kcminputrc
 \cp ./kde/touchpadrc ~/.config/touchpadrc
