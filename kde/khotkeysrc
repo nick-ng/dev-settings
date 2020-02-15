@@ -1026,7 +1026,7 @@ Comment=Simple_action
 TriggersCount=1
 
 [Data_5_10Triggers0]
-Key=Ctrl+Alt+Shift+M
+Key=Meta+Ctrl+Shift+M
 Type=SHORTCUT
 Uuid={e54d18fb-d54c-4c91-9fda-073c3f149b99}
 
@@ -1053,7 +1053,7 @@ Comment=Simple_action
 TriggersCount=1
 
 [Data_5_11Triggers0]
-Key=Ctrl+Alt+.
+Key=Meta+Ctrl+.
 Type=SHORTCUT
 Uuid={50c7c7c0-9a9a-4773-97e5-fa665bb59181}
 
@@ -1080,7 +1080,7 @@ Comment=Simple_action
 TriggersCount=1
 
 [Data_5_12Triggers0]
-Key=Ctrl+Alt+>
+Key=Meta+Ctrl+>
 Type=SHORTCUT
 Uuid={8adc173b-583e-435d-adba-8df3a8f9a196}
 
@@ -1107,7 +1107,7 @@ Comment=Simple_action
 TriggersCount=1
 
 [Data_5_13Triggers0]
-Key=Ctrl+Alt+U
+Key=Meta+Ctrl+U
 Type=SHORTCUT
 Uuid={3043e69b-a72e-4001-b525-9731829193cc}
 
@@ -1134,7 +1134,7 @@ Comment=Simple_action
 TriggersCount=1
 
 [Data_5_14Triggers0]
-Key=Ctrl+Alt+Shift+U
+Key=Meta+Ctrl+Shift+U
 Type=SHORTCUT
 Uuid={b16f1a9b-1934-4273-8bdc-38a681d1a8ea}
 
@@ -1161,7 +1161,7 @@ Comment=Simple_action
 TriggersCount=1
 
 [Data_5_15Triggers0]
-Key=Ctrl+Alt+O
+Key=Meta+Ctrl+O
 Type=SHORTCUT
 Uuid={e605fe46-b7f0-474e-ade6-d2f3e3c4bd82}
 
@@ -1188,7 +1188,7 @@ Comment=Simple_action
 TriggersCount=1
 
 [Data_5_16Triggers0]
-Key=Ctrl+Alt+Shift+O
+Key=Meta+Ctrl+Shift+O
 Type=SHORTCUT
 Uuid={51ef7fdf-fecc-473b-847e-40aa4af0984a}
 
@@ -1215,7 +1215,7 @@ Comment=Simple_action
 TriggersCount=1
 
 [Data_5_17Triggers0]
-Key=Ctrl+Alt+8
+Key=Meta+Ctrl+8
 Type=SHORTCUT
 Uuid={01637923-917c-48ad-99d9-3379c30ea3ab}
 
@@ -1242,7 +1242,7 @@ Comment=Simple_action
 TriggersCount=1
 
 [Data_5_18Triggers0]
-Key=Ctrl+Alt+*
+Key=Meta+Ctrl+*
 Type=SHORTCUT
 Uuid={55883b05-9535-4848-8623-c180f1fd1d2b}
 
@@ -1269,7 +1269,7 @@ Comment=Simple_action
 TriggersCount=1
 
 [Data_5_19Triggers0]
-Key=Ctrl+Alt+,
+Key=Meta+Ctrl+,
 Type=SHORTCUT
 Uuid={631cbf40-8513-48c8-9ec9-e333256bc1ab}
 
@@ -1290,7 +1290,7 @@ Comment=Simple_action
 TriggersCount=1
 
 [Data_5_1Triggers0]
-Key=Ctrl+Alt+I
+Key=Meta+Ctrl+I
 Type=SHORTCUT
 Uuid={33998bf7-a437-4074-b031-3a3e81e742e1}
 
@@ -1323,7 +1323,7 @@ Comment=Simple_action
 TriggersCount=1
 
 [Data_5_20Triggers0]
-Key=Ctrl+Alt+<
+Key=Meta+Ctrl+<
 Type=SHORTCUT
 Uuid={9fef1aa4-a96b-4245-8935-5bbd888a5cd2}
 
@@ -1344,7 +1344,7 @@ Comment=Simple_action
 TriggersCount=1
 
 [Data_5_2Triggers0]
-Key=Ctrl+Alt+Shift+I
+Key=Meta+Ctrl+Shift+I
 Type=SHORTCUT
 Uuid={77adf1d4-8338-4a3d-9cbb-3fc40f9602db}
 
@@ -1371,7 +1371,7 @@ Comment=Simple_action
 TriggersCount=1
 
 [Data_5_3Triggers0]
-Key=Ctrl+Alt+K
+Key=Meta+Ctrl+K
 Type=SHORTCUT
 Uuid={d10199b3-1931-4920-90d4-a99b7a06f9f0}
 
@@ -1398,7 +1398,7 @@ Comment=Simple_action
 TriggersCount=1
 
 [Data_5_4Triggers0]
-Key=Ctrl+Alt+Shift+K
+Key=Meta+Ctrl+Shift+K
 Type=SHORTCUT
 Uuid={ccedc4f6-a4a3-4dca-a7b7-80b630ae6010}
 
@@ -1425,7 +1425,7 @@ Comment=Simple_action
 TriggersCount=1
 
 [Data_5_5Triggers0]
-Key=Ctrl+Alt+J
+Key=Meta+Ctrl+J
 Type=SHORTCUT
 Uuid={572c73c2-39be-4c7d-9924-e739d40568c5}
 
@@ -1452,7 +1452,7 @@ Comment=Simple_action
 TriggersCount=1
 
 [Data_5_6Triggers0]
-Key=Ctrl+Alt+Shift+J
+Key=Meta+Ctrl+Shift+J
 Type=SHORTCUT
 Uuid={bd3ae527-3ebf-4102-a583-96900a43bc94}
 
@@ -1479,7 +1479,7 @@ Comment=Simple_action
 TriggersCount=1
 
 [Data_5_7Triggers0]
-Key=Ctrl+Alt+L
+Key=Meta+Ctrl+L
 Type=SHORTCUT
 Uuid={e39cdbf0-ac91-4f9c-945e-f38967b4b0c0}
 
@@ -1506,7 +1506,7 @@ Comment=Simple_action
 TriggersCount=1
 
 [Data_5_8Triggers0]
-Key=Ctrl+Alt+Shift+L
+Key=Meta+Ctrl+Shift+L
 Type=SHORTCUT
 Uuid={bb15add9-95b3-4170-8752-ee244cc3fbbc}
 
@@ -1533,7 +1533,7 @@ Comment=Simple_action
 TriggersCount=1
 
 [Data_5_9Triggers0]
-Key=Ctrl+Alt+M
+Key=Meta+Ctrl+M
 Type=SHORTCUT
 Uuid={4f55343a-1cc4-493c-b4e0-1f1cbabbd2ef}
 

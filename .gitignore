@@ -2,3 +2,5 @@
 *.hot.sh
 *.swp
 packages.microsoft.gpg
+new/*
+new/

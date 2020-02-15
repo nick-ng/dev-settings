@@ -1,5 +1,5 @@
 [KDE Keyboard Layout Switcher]
-Switch to Next Keyboard Layout=,none,Switch to Next Keyboard Layout
+Switch to Next Keyboard Layout=none,none,Switch to Next Keyboard Layout
 _k_friendly_name=KDE Daemon
 
 [kaccess]
@@ -19,32 +19,31 @@ display=Display\tMeta+P,Display\tMeta+P,Switch Display
 
 [khotkeys]
 _k_friendly_name=KDE Daemon
-{01637923-917c-48ad-99d9-3379c30ea3ab}=Ctrl+Alt+8,none,PgUp
+{01637923-917c-48ad-99d9-3379c30ea3ab}=Meta+Ctrl+8,none,PgUp
 {04ef09f4-d8a3-4121-afc0-d3ed9e763db5}=Print,none,Start Screenshot Tool
-{3043e69b-a72e-4001-b525-9731829193cc}=Ctrl+Alt+U,none,Home
-{33998bf7-a437-4074-b031-3a3e81e742e1}=Ctrl+Alt+I,none,Up
+{3043e69b-a72e-4001-b525-9731829193cc}=Meta+Ctrl+U,none,Home
+{33998bf7-a437-4074-b031-3a3e81e742e1}=Meta+Ctrl+I,none,Up
 {344afac0-716c-44b3-add2-5f556fc9e3bb}=Shift+Print,none,Take Full Screen Screenshot
-{4f55343a-1cc4-493c-b4e0-1f1cbabbd2ef}=Ctrl+Alt+M,none,Prev Word
-{50c7c7c0-9a9a-4773-97e5-fa665bb59181}=Ctrl+Alt+.,none,Next Word
-{51ef7fdf-fecc-473b-847e-40aa4af0984a}=Ctrl+Alt+Shift+O,none,End+
-{55883b05-9535-4848-8623-c180f1fd1d2b}=Ctrl+Alt+*,none,PgUp+
-{572c73c2-39be-4c7d-9924-e739d40568c5}=Ctrl+Alt+J,none,Left
-{631cbf40-8513-48c8-9ec9-e333256bc1ab}=Ctrl+Alt+\\,,none,PgDn
-{77adf1d4-8338-4a3d-9cbb-3fc40f9602db}=Ctrl+Alt+Shift+I,none,Up+
-{8adc173b-583e-435d-adba-8df3a8f9a196}=Ctrl+Alt+>,none,Next Word+
-{9fef1aa4-a96b-4245-8935-5bbd888a5cd2}=Ctrl+Alt+<,none,PgDn+
-{b16f1a9b-1934-4273-8bdc-38a681d1a8ea}=Ctrl+Alt+Shift+U,none,Home+
-{bb15add9-95b3-4170-8752-ee244cc3fbbc}=Ctrl+Alt+Shift+L,none,Right+
+{4f55343a-1cc4-493c-b4e0-1f1cbabbd2ef}=Meta+Ctrl+M,none,Prev Word
+{50c7c7c0-9a9a-4773-97e5-fa665bb59181}=Meta+Ctrl+.,none,Next Word
+{51ef7fdf-fecc-473b-847e-40aa4af0984a}=Meta+Ctrl+Shift+O,none,End+
+{55883b05-9535-4848-8623-c180f1fd1d2b}=Meta+Ctrl+*,none,PgUp+
+{572c73c2-39be-4c7d-9924-e739d40568c5}=Meta+Ctrl+J,none,Left
+{631cbf40-8513-48c8-9ec9-e333256bc1ab}=Meta+Ctrl+\\,,none,PgDn
+{77adf1d4-8338-4a3d-9cbb-3fc40f9602db}=Meta+Ctrl+Shift+I,none,Up+
+{8adc173b-583e-435d-adba-8df3a8f9a196}=Meta+Ctrl+>,none,Next Word+
+{9fef1aa4-a96b-4245-8935-5bbd888a5cd2}=Meta+Ctrl+<,none,PgDn+
+{b16f1a9b-1934-4273-8bdc-38a681d1a8ea}=Meta+Ctrl+Shift+U,none,Home+
+{bb15add9-95b3-4170-8752-ee244cc3fbbc}=Meta+Ctrl+Shift+L,none,Right+
 {bb4c0c43-edd8-4db8-b1ff-6c831df0a90b}=Meta+Print,none,Take Active Window Screenshot
-{bd3ae527-3ebf-4102-a583-96900a43bc94}=Ctrl+Alt+Shift+J,none,Left+
-{ccedc4f6-a4a3-4dca-a7b7-80b630ae6010}=Ctrl+Alt+Shift+K,none,Down+
+{bd3ae527-3ebf-4102-a583-96900a43bc94}=Meta+Ctrl+Shift+J,none,Left+
+{ccedc4f6-a4a3-4dca-a7b7-80b630ae6010}=Meta+Ctrl+Shift+K,none,Down+
 {d03619b6-9b3c-48cc-9d9c-a2aadb485550}=,none,Search
-{d10199b3-1931-4920-90d4-a99b7a06f9f0}=Ctrl+Alt+K,none,Down
+{d10199b3-1931-4920-90d4-a99b7a06f9f0}=Meta+Ctrl+K,none,Down
 {e3572833-bf34-4362-8c8e-647acf92d3df}=Meta+Shift+Print,none,Take Rectangular Region Screenshot
-{e39cdbf0-ac91-4f9c-945e-f38967b4b0c0}=Ctrl+Alt+L,none,Right
-{e54d18fb-d54c-4c91-9fda-073c3f149b99}=Ctrl+Alt+Shift+M,none,Prev Word+
-{e605fe46-b7f0-474e-ade6-d2f3e3c4bd82}=Ctrl+Alt+O,none,End
-{e787b2e4-4621-48d6-a4c4-f62981cdcccd}=none,none,New Action
+{e39cdbf0-ac91-4f9c-945e-f38967b4b0c0}=Meta+Ctrl+L,none,Right
+{e54d18fb-d54c-4c91-9fda-073c3f149b99}=Meta+Ctrl+Shift+M,none,Prev Word+
+{e605fe46-b7f0-474e-ade6-d2f3e3c4bd82}=Meta+Ctrl+O,none,End
 
 [kmix]
 _k_friendly_name=Audio Volume
@@ -216,6 +215,13 @@ view_actual_size=,Meta+0,Actual Size
 view_zoom_in=Meta+=,Meta+=,Zoom In
 view_zoom_out=Meta+-,Meta+-,Zoom Out
 
+[mediacontrol]
+_k_friendly_name=Media Controller
+nextmedia=Media Next,Media Next,Media playback next
+playpausemedia=Media Play,Media Play,Play/Pause media playback
+previousmedia=Media Previous,Media Previous,Media playback previous
+stopmedia=Media Stop,Media Stop,Stop media playback
+
 [org_kde_powerdevil]
 Decrease Keyboard Brightness=Keyboard Brightness Down,Keyboard Brightness Down,Decrease Keyboard Brightness
 Decrease Screen Brightness=Monitor Brightness Down,Monitor Brightness Down,Decrease Screen Brightness
@@ -240,6 +246,7 @@ activate task manager entry 7=Meta+7,Meta+7,Activate Task Manager Entry 7
 activate task manager entry 8=Meta+8,Meta+8,Activate Task Manager Entry 8
 activate task manager entry 9=Meta+9,Meta+9,Activate Task Manager Entry 9
 activate widget 3=Alt+F1,none,Activate Application Launcher Widget
+activate widget 4=Meta+Space,none,Activate Application Launcher Widget
 clear-history=none,none,Clear Clipboard History
 clipboard_action=Ctrl+Alt+X,Ctrl+Alt+X,Enable Clipboard Actions
 cycleNextAction=none,none,Next History Item
