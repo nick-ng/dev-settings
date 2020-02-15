@@ -1,82 +1,77 @@
 {
-	"editor.fontSize": 12,
-	"editor.renderIndentGuides": true,
-	"workbench.editor.tabCloseButton": "off",
-	"workbench.editor.openPositioning": "last",
-	"css.validate": false,
-	"explorer.enableDragAndDrop": false,
-	"editor.minimap.enabled": false,
-	"editor.minimap.maxColumn": 80,
-	"editor.minimap.renderCharacters": false,
-	"window.title": "${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty} ${activeEditorMedium}${separator}${rootName} ${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}",
-	"explorer.openEditors.visible": 6,
-	"editor.renderWhitespace": "boundary",
-	"editor.fontFamily": "'DejaVu Sans Mono', Monaco, 'Comic Sans MS', Arial, Helvetica",
-	"editor.fontLigatures": true,
-	"editor.cursorStyle": "block",
-	"workbench.iconTheme": "vs-nick",
-	"workbench.editor.showIcons": true,
-	"window.zoomLevel": 0,
-	"git.enabled": true,
-	"editor.acceptSuggestionOnCommitCharacter": false,
-	"editor.acceptSuggestionOnEnter": "off",
-	"emmet.showExpandedAbbreviation": "never",
-	"emmet.showAbbreviationSuggestions": false,
-	"editor.wordWrap": "wordWrapColumn",
-	"editor.wordWrapColumn": 80,
-	"editor.rulers": [
-		80
-	],
-	"window.openFilesInNewWindow": "on",
-	"window.newWindowDimensions": "inherit",
-	"workbench.startupEditor": "newUntitledFile",
-	"workbench.editor.enablePreview": false,
-	"gitlens.advanced.messages": {
-		"suppressCommitHasNoPreviousCommitWarning": false,
-		"suppressCommitNotFoundWarning": false,
-		"suppressFileNotUnderSourceControlWarning": false,
-		"suppressGitVersionWarning": false,
-		"suppressLineUncommittedWarning": false,
-		"suppressNoRepositoryWarning": false,
-		"suppressResultsExplorerNotice": false,
-		"suppressShowKeyBindingsNotice": true,
-		"suppressUpdateNotice": false,
-		"suppressWelcomeNotice": true
-	},
-	"gitlens.keymap": "alternate",
-	"gitlens.historyExplorer.enabled": true,
-	"javascript.updateImportsOnFileMove.enabled": "always",
-	"gitlens.views.fileHistory.enabled": true,
-	"gitlens.views.lineHistory.enabled": true,
-	"files.autoSave": "off",
-	"indentRainbow.colors": [
-		"rgba(0,50,30,0.3)",
-		"rgba(0,0,0,0.1)"
-	],
-	"editor.dragAndDrop": false,
-	"formate.verticalAlignProperties": false,
-	"debug.internalConsoleOptions": "neverOpen",
-	"editor.detectIndentation": false,
-	"editor.insertSpaces": false,
-	"editor.tabSize": 4,
-	"editor.formatOnSave": false,
-	"editor.defaultFormatter": "esbenp.prettier-vscode",
-	"[php]": {
-		"editor.insertSpaces": false,
-		"editor.tabSize": 4,
-		"editor.formatOnSave": false
-	},
-	"[javascript]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	},
-	"[javascriptreact]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	},
-	"[typescript]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	},
-	"[typescriptreact]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	},
-	"editor.accessibilitySupport": "off"
+  "editor.fontSize": 12,
+  "editor.renderIndentGuides": true,
+  "workbench.editor.tabCloseButton": "off",
+  "workbench.editor.openPositioning": "last",
+  "css.validate": false,
+  "explorer.enableDragAndDrop": false,
+  "editor.minimap.enabled": false,
+  "editor.minimap.maxColumn": 80,
+  "editor.minimap.renderCharacters": false,
+  "window.title": "${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty} ${activeEditorMedium}${separator}${rootName} ${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}",
+  "explorer.openEditors.visible": 6,
+  "editor.renderWhitespace": "boundary",
+  "editor.fontFamily": "'DejaVu Sans Mono', Monaco, 'Comic Sans MS', Arial, Helvetica",
+  "editor.fontLigatures": true,
+  "editor.cursorStyle": "block",
+  "workbench.iconTheme": "vs-nick",
+  "workbench.editor.showIcons": true,
+  "window.zoomLevel": 0,
+  "git.enabled": true,
+  "editor.acceptSuggestionOnCommitCharacter": false,
+  "editor.acceptSuggestionOnEnter": "off",
+  "emmet.showExpandedAbbreviation": "never",
+  "emmet.showAbbreviationSuggestions": false,
+  "editor.wordWrap": "wordWrapColumn",
+  "editor.wordWrapColumn": 80,
+  "editor.rulers": [80],
+  "window.openFilesInNewWindow": "on",
+  "window.newWindowDimensions": "inherit",
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.editor.enablePreview": false,
+  "gitlens.advanced.messages": {
+    "suppressCommitHasNoPreviousCommitWarning": false,
+    "suppressCommitNotFoundWarning": false,
+    "suppressFileNotUnderSourceControlWarning": false,
+    "suppressGitVersionWarning": false,
+    "suppressLineUncommittedWarning": false,
+    "suppressNoRepositoryWarning": false,
+    "suppressResultsExplorerNotice": false,
+    "suppressShowKeyBindingsNotice": true,
+    "suppressUpdateNotice": false,
+    "suppressWelcomeNotice": true
+  },
+  "gitlens.keymap": "alternate",
+  "gitlens.historyExplorer.enabled": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "gitlens.views.fileHistory.enabled": true,
+  "gitlens.views.lineHistory.enabled": true,
+  "files.autoSave": "off",
+  "indentRainbow.colors": ["rgba(0,50,30,0.3)", "rgba(0,0,0,0.1)"],
+  "editor.dragAndDrop": false,
+  "formate.verticalAlignProperties": false,
+  "debug.internalConsoleOptions": "neverOpen",
+  "editor.detectIndentation": false,
+  "editor.insertSpaces": true,
+  "editor.tabSize": 4,
+  "editor.formatOnSave": false,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[php]": {
+    "editor.insertSpaces": false,
+    "editor.tabSize": 4,
+    "editor.formatOnSave": false
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.accessibilitySupport": "off"
 }
