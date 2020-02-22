@@ -15,7 +15,7 @@ code --install-extension eamodio.gitlens
 code --install-extension esbenp.prettier-vscode
 code --install-extension felixfbecker.php-debug
 code --install-extension felixfbecker.php-intellisense
-code --install-extension gerane.Theme-Github
+# code --install-extension gerane.Theme-Github
 code --install-extension getpsalm.psalm-vscode-plugin
 code --install-extension hbenl.vscode-test-explorer
 code --install-extension ikappas.phpcs
