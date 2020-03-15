@@ -1,3 +1,6 @@
+echo "Add PPAs"
+sudo add-apt-repository ppa:phoerious/keepassxc -y
+
 echo "Update apt"
 sudo apt update
 
