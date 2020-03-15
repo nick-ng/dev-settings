@@ -1,21 +1,34 @@
 [
-  { "key": "ctrl+u", "command": "editor.action.transformToUppercase" },
-  { "key": "ctrl+l", "command": "editor.action.transformToLowercase" },
-  { "key": "cmd+u", "command": "editor.action.transformToUppercase" },
-  { "key": "cmd+l", "command": "editor.action.transformToLowercase" },
-  { "key": "ctrl+alt+f", "command": "editor.action.formatSelection" },
-  { "key": "cmd+alt+f", "command": "editor.action.formatSelection" },
-  {
-    "key": "ctrl+shift+alt+f",
-    "command": "filesExplorer.findInFolder",
-    "when": "explorerResourceIsFolder && explorerViewletVisible && filesExplorerFocus && !inputFocus"
-  },
-  {
-    "key": "ctrl+meta+f",
-    "command": "editor.action.formatDocument"
-  },
-  {
-    "key": "ctrl+cmd+f",
-    "command": "editor.action.formatDocument"
-  }
-]
+	{ "key": "ctrl+u", "command": "editor.action.transformToUppercase" },
+	{ "key": "ctrl+l", "command": "editor.action.transformToLowercase" },
+	{ "key": "cmd+u", "command": "editor.action.transformToUppercase" },
+	{ "key": "cmd+l", "command": "editor.action.transformToLowercase" },
+	{ "key": "ctrl+alt+f", "command": "editor.action.formatSelection" },
+	{ "key": "cmd+alt+f", "command": "editor.action.formatSelection" },
+	{
+	  "key": "ctrl+shift+alt+f",
+	  "command": "filesExplorer.findInFolder",
+	  "when": "explorerResourceIsFolder && explorerViewletVisible && filesExplorerFocus && !inputFocus"
+	},
+	{
+	  "key": "ctrl+meta+f",
+	  "command": "editor.action.formatDocument"
+	},
+	{
+	  "key": "ctrl+cmd+f",
+	  "command": "editor.action.formatDocument"
+	},
+	{
+		"key": "shift+cmd+f",
+		"command": "-workbench.action.findInFiles"
+	},
+	{
+		"key": "shift+cmd+f",
+		"command": "-workbench.view.search",
+		"when": "!searchViewletVisible"
+	},
+	{
+		"key": "shift+cmd+f",
+		"command": "search.action.openNewEditor"
+	}
+  ]
