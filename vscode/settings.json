@@ -98,5 +98,10 @@
   "workbench.editor.showIcons": true,
   "workbench.editor.tabCloseButton": "off",
   "workbench.iconTheme": "vs-nick",
-  "workbench.startupEditor": "newUntitledFile"
+  "workbench.startupEditor": "newUntitledFile",
+  "editor.folding": false,
+  "editor.lineNumbers": "off",
+  "[less]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
