@@ -30,5 +30,7 @@ code --install-extension neilbrayfield.php-docblocker
 code --install-extension pomber.git-file-history
 code --install-extension recca0120.vscode-phpunit
 # code --install-extension shd101wyy.markdown-preview-enhanced
+code --install-extension mgmcdermott.vscode-language-babel
+
 
 echo "Finished setting up VS Code"
