@@ -29,7 +29,7 @@ source ./linux/tmux.sh
 mount | grep "${HOME}/google-drive" >/dev/null || source ./linux/google-drive-install.sh
 
 echo "Install more things"
-sudo apt install -y keepassxc jq audacity
+sudo apt install -y keepassxc jq audacity yakuake
 
 echo "Install youtube-dl"
 sudo curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl
