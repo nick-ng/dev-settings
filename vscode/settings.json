@@ -100,7 +100,7 @@
   "workbench.iconTheme": "vs-nick",
   "workbench.startupEditor": "newUntitledFile",
   "editor.folding": false,
-  "editor.lineNumbers": "off",
+  "editor.lineNumbers": "on",
   "[less]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   }
