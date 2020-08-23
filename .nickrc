@@ -18,6 +18,8 @@ alias giclear='echo "\ngit branch | grep \"^[^*]\" | xargs git branch -d\n"'
 alias gipush='git branch | grep "* " | awk "{print \$2}" | xargs git push --set-upstream origin '
 alias gitpush='npm test && git branch | grep "* " | awk "{print \$2}" | xargs git push --set-upstream origin '
 alias nick2simulator='git add -p'
+alias girebasem='git checkout master && git remote prune origin && git pull && git checkout - && git rebase master'
+alias girebased='git checkout dev && git remote prune origin && git pull && git checkout - && git rebase dev'
 
 # tmux aliases
 alias tclip='tmux save-buffer - | xclip -selection clipboard'
@@ -28,7 +30,6 @@ alias npmscripts='cat package.json | jq .scripts'
 alias yarnpls='echo Deleting node_modules directory and package-lock.json && rm -rf node_modules && rm -f package-lock.json && echo BALEETED! && yarn install'
 
 # dev aliases
-alias vagrantgo='vagrant up && vagrant ssh'
 
 # other aliases
 alias cd..='cd ..'
