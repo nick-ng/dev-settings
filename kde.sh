@@ -37,6 +37,9 @@ sudo chmod a+rx /usr/local/bin/youtube-dl
 mkdir -p ~/.config/youtube-dl/
 \cp ./linux/youtube-dl-config ~/.config/youtube-dl/config
 
+echo "Change clock to dual-boot with Windows"
+timedatectl set-local-rtc 1 --adjust-system-clock
+
 echo "Change repo origin url"
 git remote set-url origin git@github.com:nick-ng/dev-settings.git
 
