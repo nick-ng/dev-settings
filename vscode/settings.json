@@ -1,162 +1,168 @@
 {
-    "[css]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[html]": {
-      "editor.insertSpaces": true,
-      "editor.tabSize": 2,
-      "editor.defaultFormatter": "vscode.html-language-features"
-    },
-    "[javascript]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[javascriptreact]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[json]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[jsonc]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[php]": {
-      "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
-    },
-    "[python]": {
-      "editor.detectIndentation": true
-    },
-    "[typescript]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[typescriptreact]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[xml]": {
-      "editor.insertSpaces": true,
-      "editor.tabSize": 2
-    },
-    "css.validate": false,
-    "debug.internalConsoleOptions": "neverOpen",
-    "editor.acceptSuggestionOnCommitCharacter": false,
-    "editor.acceptSuggestionOnEnter": "off",
-    "editor.accessibilitySupport": "off",
-    "editor.cursorStyle": "block",
-    "editor.cursorSurroundingLines": 3,
-    "editor.detectIndentation": true,
-    "editor.dragAndDrop": false,
-    "editor.fontFamily": "'DejaVu Sans Mono', 'Fira Code', Monaco, 'Comic Sans MS', Arial, Helvetica",
-    "editor.fontLigatures": true,
-    "editor.fontSize": 12,
-    "editor.formatOnSave": false,
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
     "editor.insertSpaces": true,
-    "editor.minimap.enabled": false,
-    "editor.minimap.maxColumn": 80,
-    "editor.minimap.renderCharacters": false,
-    "editor.renderIndentGuides": true,
-    "editor.renderWhitespace": "boundary",
-    "editor.roundedSelection": false,
-    "editor.rulers": [
-      80
-    ],
-    "editor.tabSize": 4,
-    "editor.wordWrap": "wordWrapColumn",
-    "editor.wordWrapColumn": 80,
-    "emmet.showAbbreviationSuggestions": false,
-    "emmet.showExpandedAbbreviation": "never",
-    "explorer.enableDragAndDrop": false,
-    "explorer.openEditors.visible": 6,
-    "files.autoSave": "off",
-    "files.insertFinalNewline": true,
-    "files.trimFinalNewlines": true,
-    "files.trimTrailingWhitespace": true,
-    "git.enabled": true,
-    "gitlens.advanced.messages": {
-      "suppressCommitHasNoPreviousCommitWarning": false,
-      "suppressCommitNotFoundWarning": false,
-      "suppressFileNotUnderSourceControlWarning": false,
-      "suppressGitVersionWarning": false,
-      "suppressLineUncommittedWarning": false,
-      "suppressNoRepositoryWarning": false,
-      "suppressResultsExplorerNotice": false,
-      "suppressShowKeyBindingsNotice": true,
-      "suppressUpdateNotice": false,
-      "suppressWelcomeNotice": true
+    "editor.tabSize": 2,
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[markdown]": {
+    "files.trimTrailingWhitespace": false,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[php]": {
+    "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+  },
+  "[python]": {
+    "editor.detectIndentation": true
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[xml]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2
+  },
+  "css.validate": false,
+  "debug.internalConsoleOptions": "neverOpen",
+  "editor.acceptSuggestionOnCommitCharacter": false,
+  "editor.acceptSuggestionOnEnter": "off",
+  "editor.accessibilitySupport": "off",
+  "editor.cursorStyle": "block",
+  "editor.cursorSurroundingLines": 3,
+  "editor.detectIndentation": true,
+  "editor.dragAndDrop": false,
+  "editor.fontFamily": "'DejaVu Sans Mono', 'Fira Code', Consolas, Monaco, 'Comic Sans MS', Arial, Helvetica",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 12,
+  "editor.formatOnSave": true,
+  "editor.insertSpaces": true,
+  "editor.minimap.enabled": false,
+  "editor.minimap.maxColumn": 80,
+  "editor.minimap.renderCharacters": false,
+  "editor.renderIndentGuides": true,
+  "editor.renderWhitespace": "boundary",
+  "editor.roundedSelection": false,
+  "editor.rulers": [80],
+  "editor.tabSize": 4,
+  "editor.wordWrap": "off",
+  "editor.wordWrapColumn": 80,
+  "emmet.showAbbreviationSuggestions": false,
+  "emmet.showExpandedAbbreviation": "never",
+  "explorer.enableDragAndDrop": false,
+  "explorer.openEditors.visible": 6,
+  "files.autoSave": "off",
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": true,
+  "git.enabled": true,
+  "gitlens.advanced.messages": {
+    "suppressCommitHasNoPreviousCommitWarning": false,
+    "suppressCommitNotFoundWarning": false,
+    "suppressFileNotUnderSourceControlWarning": false,
+    "suppressGitVersionWarning": false,
+    "suppressLineUncommittedWarning": false,
+    "suppressNoRepositoryWarning": false,
+    "suppressResultsExplorerNotice": false,
+    "suppressShowKeyBindingsNotice": true,
+    "suppressUpdateNotice": false,
+    "suppressWelcomeNotice": true
+  },
+  "gitlens.keymap": "alternate",
+  "gitlens.views.fileHistory.enabled": true,
+  "gitlens.views.lineHistory.enabled": true,
+  "html.mirrorCursorOnMatchingTag": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "psalm.psalmScriptPath": "/Users/nickng/.composer/vendor/bin/psalm-language-server",
+  "window.newWindowDimensions": "inherit",
+  "window.openFilesInNewWindow": "on",
+  "window.title": "${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty} ${activeEditorMedium}${separator}${rootName} ${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}",
+  "window.zoomLevel": 0,
+  "workbench.editor.enablePreview": false,
+  "workbench.editor.openPositioning": "last",
+  "workbench.editor.showIcons": true,
+  "workbench.editor.tabCloseButton": "off",
+  "workbench.iconTheme": "vs-nick",
+  "workbench.startupEditor": "newUntitledFile",
+  "editor.folding": false,
+  "editor.lineNumbers": "on",
+  "[less]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "yaml.schemas": {
+    "file:///Users/nickng/.vscode/extensions/atlassian.atlascode-2.7.0/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+  },
+  "atlascode.bitbucket.enabled": false,
+  "atlascode.jira.jqlList": [
+    {
+      "enabled": true,
+      "id": "88fff507-aff9-4f40-bc0b-cda1c1f47fc0",
+      "monitor": true,
+      "name": "My fergusappnz Issues",
+      "query": "assignee = currentUser() AND resolution = Unresolved ORDER BY lastViewed DESC",
+      "siteId": "e8c17da6-9f78-408e-942c-6f95b0413f0d"
     },
-    "gitlens.keymap": "alternate",
-    "gitlens.views.fileHistory.enabled": true,
-    "gitlens.views.lineHistory.enabled": true,
-    "html.mirrorCursorOnMatchingTag": true,
-    "javascript.updateImportsOnFileMove.enabled": "always",
-    "psalm.psalmScriptPath": "/Users/nickng/.composer/vendor/bin/psalm-language-server",
-    "window.newWindowDimensions": "inherit",
-    "window.openFilesInNewWindow": "on",
-    "window.title": "${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty} ${activeEditorMedium}${separator}${rootName} ${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}",
-    "window.zoomLevel": -1,
-    "workbench.editor.enablePreview": false,
-    "workbench.editor.openPositioning": "last",
-    "workbench.editor.showIcons": true,
-    "workbench.editor.tabCloseButton": "off",
-    "workbench.iconTheme": "vs-nick",
-    "workbench.startupEditor": "newUntitledFile",
-    "editor.folding": false,
-    "editor.lineNumbers": "on",
-    "[less]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    {
+      "enabled": true,
+      "id": "5da4dd71-d3eb-44f4-a1e4-56a8e6fa0961",
+      "monitor": true,
+      "name": "Plumbing World",
+      "query": "text ~ \"plumbing world\"",
+      "siteId": "e8c17da6-9f78-408e-942c-6f95b0413f0d"
     },
-    "yaml.schemas": {
-      "file:///Users/nickng/.vscode/extensions/atlassian.atlascode-2.7.0/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+    {
+      "enabled": false,
+      "id": "2d6f21b7-9ca2-440e-8135-3fa7f73593cd",
+      "monitor": false,
+      "name": "< 90 Days",
+      "query": "updated >= -90d order by lastViewed DESC",
+      "siteId": "e8c17da6-9f78-408e-942c-6f95b0413f0d"
     },
-    "atlascode.bitbucket.enabled": false,
-    "atlascode.jira.jqlList": [
-      {
-        "enabled": true,
-        "id": "88fff507-aff9-4f40-bc0b-cda1c1f47fc0",
-        "monitor": true,
-        "name": "My fergusappnz Issues",
-        "query": "assignee = currentUser() AND resolution = Unresolved ORDER BY lastViewed DESC",
-        "siteId": "e8c17da6-9f78-408e-942c-6f95b0413f0d"
-      },
-      {
-        "enabled": true,
-        "id": "5da4dd71-d3eb-44f4-a1e4-56a8e6fa0961",
-        "monitor": true,
-        "name": "Plumbing World",
-        "query": "text ~ \"plumbing world\"",
-        "siteId": "e8c17da6-9f78-408e-942c-6f95b0413f0d"
-      },
-      {
-        "enabled": false,
-        "id": "2d6f21b7-9ca2-440e-8135-3fa7f73593cd",
-        "monitor": false,
-        "name": "< 90 Days",
-        "query": "updated >= -90d order by lastViewed DESC",
-        "siteId": "e8c17da6-9f78-408e-942c-6f95b0413f0d"
-      },
-      {
-        "enabled": false,
-        "id": "7ce1c94e-c96b-49cb-ae97-048b3a336705",
-        "monitor": false,
-        "name": "> 90 Days",
-        "query": "updated < -90d order by lastViewed DESC",
-        "siteId": "e8c17da6-9f78-408e-942c-6f95b0413f0d"
-      }
-    ],
-    "atlascode.jira.explorer.fetchAllQueryResults": true,
-    "atlascode.jira.lastCreateSiteAndProject": {
-      "siteId": "e8c17da6-9f78-408e-942c-6f95b0413f0d",
-      "projectKey": "FG"
-    },
-    "atlascode.jira.explorer.refreshInterval": 30,
-    "[sql]": {
-      "editor.defaultFormatter": "adpyke.vscode-sql-formatter"
-    },
-    "sql-formatter.linesBetweenQueries": 3,
-    "sql-formatter.uppercase": true,
-    "phpunit.relativeFilePath": true,
-    "phpunit.phpunit": "./vendor/bin/phpunit",
-    "search.exclude": {
-      "*min.js": true
-    },
-    "search.searchOnType": false,
-    "workbench.colorTheme": "Default Light+"
-  }
+    {
+      "enabled": false,
+      "id": "7ce1c94e-c96b-49cb-ae97-048b3a336705",
+      "monitor": false,
+      "name": "> 90 Days",
+      "query": "updated < -90d order by lastViewed DESC",
+      "siteId": "e8c17da6-9f78-408e-942c-6f95b0413f0d"
+    }
+  ],
+  "atlascode.jira.explorer.fetchAllQueryResults": true,
+  "atlascode.jira.lastCreateSiteAndProject": {
+    "siteId": "e8c17da6-9f78-408e-942c-6f95b0413f0d",
+    "projectKey": "FG"
+  },
+  "atlascode.jira.explorer.refreshInterval": 30,
+  "[sql]": {
+    "editor.defaultFormatter": "adpyke.vscode-sql-formatter"
+  },
+  "sql-formatter.linesBetweenQueries": 3,
+  "sql-formatter.uppercase": true,
+  "phpunit.relativeFilePath": true,
+  "phpunit.phpunit": "./vendor/bin/phpunit",
+  "search.exclude": {
+    "*min.js": true
+  },
+  "search.searchOnType": false,
+  "workbench.colorTheme": "Default Light+",
+  "[yaml]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "files.eol": "\n"
+}
