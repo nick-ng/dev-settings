@@ -9,6 +9,7 @@ alias gim='git checkout master && git remote prune origin && git pull'
 alias gimm='git checkout master && git remote prune origin && git pull && git checkout - && git merge master'
 alias gimd='git checkout dev && git remote prune origin && git pull && git checkout - && git merge dev'
 alias gims='git checkout staging && git remote prune origin && git pull && git checkout - && git merge staging'
+alias gin='git checkout master && git remote prune origin && git pull && git checkout -b'
 alias gia='git add'
 alias gia.='git add . && git status'
 alias giap='git add -N . && git add -p'
@@ -34,8 +35,6 @@ alias yarnpls='echo Deleting node_modules directory and package-lock.json && rm 
 # other aliases
 alias cd..='cd ..'
 alias dir='ls -a'
-alias vi='nano'
-alias vim='nano'
 alias emacs='nano'
 alias weather='curl wttr.in'
 
