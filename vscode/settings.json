@@ -22,6 +22,7 @@
     "[php]": {
       "editor.defaultFormatter": "bmewburn.vscode-intelephense-client",
       "editor.detectIndentation": true,
+      "editor.tabSize": 2,
     },
     "[python]": {
       "editor.detectIndentation": true
@@ -58,7 +59,6 @@
     "editor.minimap.enabled": false,
     "editor.minimap.maxColumn": 80,
     "editor.minimap.renderCharacters": false,
-    "editor.renderIndentGuides": true,
     "editor.renderWhitespace": "boundary",
     "editor.roundedSelection": false,
     "editor.rulers": [
@@ -83,15 +83,8 @@
       "suppressGitVersionWarning": false,
       "suppressLineUncommittedWarning": false,
       "suppressNoRepositoryWarning": false,
-      "suppressResultsExplorerNotice": false,
-      "suppressShowKeyBindingsNotice": true,
-      "suppressUpdateNotice": false,
-      "suppressWelcomeNotice": true
     },
     "gitlens.keymap": "alternate",
-    "gitlens.views.fileHistory.enabled": true,
-    "gitlens.views.lineHistory.enabled": true,
-    "html.mirrorCursorOnMatchingTag": true,
     "javascript.updateImportsOnFileMove.enabled": "always",
     "psalm.psalmScriptPath": "vendor/bin/psalm-language-server",
     "window.newWindowDimensions": "inherit",
@@ -111,63 +104,12 @@
     "yaml.schemas": {
       "file:///Users/nickng/.vscode/extensions/atlassian.atlascode-2.9.1/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
     },
-    "atlascode.bitbucket.enabled": false,
-    "atlascode.jira.jqlList": [
-      {
-        "id": "cb4b5415-46ae-49a0-a1f0-8ec8238d5b41",
-        "siteId": "e8c17da6-9f78-408e-942c-6f95b0413f0d",
-        "name": "Current Sprint (SPR)",
-        "query": "Sprint in openSprints() and project = SPR",
-        "enabled": true,
-        "monitor": true
-      },
-      {
-        "enabled": true,
-        "id": "88fff507-aff9-4f40-bc0b-cda1c1f47fc0",
-        "monitor": true,
-        "name": "My fergusappnz Issues",
-        "query": "assignee = currentUser() AND resolution = Unresolved ORDER BY lastViewed DESC",
-        "siteId": "e8c17da6-9f78-408e-942c-6f95b0413f0d"
-      },
-      {
-        "enabled": false,
-        "id": "5da4dd71-d3eb-44f4-a1e4-56a8e6fa0961",
-        "monitor": true,
-        "name": "Plumbing World",
-        "query": "text ~ \"plumbing world\"",
-        "siteId": "e8c17da6-9f78-408e-942c-6f95b0413f0d"
-      },
-      {
-        "enabled": false,
-        "id": "2d6f21b7-9ca2-440e-8135-3fa7f73593cd",
-        "monitor": false,
-        "name": "< 90 Days",
-        "query": "updated >= -90d order by lastViewed DESC",
-        "siteId": "e8c17da6-9f78-408e-942c-6f95b0413f0d"
-      },
-      {
-        "enabled": false,
-        "id": "7ce1c94e-c96b-49cb-ae97-048b3a336705",
-        "monitor": false,
-        "name": "> 90 Days",
-        "query": "updated < -90d order by lastViewed DESC",
-        "siteId": "e8c17da6-9f78-408e-942c-6f95b0413f0d"
-      }
-    ],
-    "atlascode.jira.explorer.fetchAllQueryResults": true,
-    "atlascode.jira.lastCreateSiteAndProject": {
-        "siteId": "e8c17da6-9f78-408e-942c-6f95b0413f0d",
-        "projectKey": "FG"
-    },
-    "atlascode.jira.explorer.refreshInterval": 30,
     "[sql]": {
       "editor.defaultFormatter": "adpyke.vscode-sql-formatter",
       "editor.formatOnSave": true
     },
     "sql-formatter.linesBetweenQueries": 3,
     "sql-formatter.uppercase": true,
-    "phpunit.relativeFilePath": true,
-    "phpunit.phpunit": "./vendor/bin/phpunit",
     "search.exclude": {
       "*min.js": true
     },
@@ -180,9 +122,11 @@
     "psalm.connectToServerWithTcp": true,
     "indentRainbow.colorOnWhiteSpaceOnly": true,
     "indentRainbow.colors": [
-        "rgba(232,255,243,0.3)",
+        "rgba(222,255,233,0.3)",
         "rgba(255,255,255,0.3)"
     ],
-    "psalm.phpExecutablePath": "/usr/local/opt/php@7.4/bin/php",
-    "redhat.telemetry.enabled": false
+    "psalm.phpExecutablePath": "/usr/bin/php",
+    "redhat.telemetry.enabled": false,
+    "php.debug.executablePath": "/bin/php",
+    "intelephense.environment.phpVersion": "7.4.0"
   }
