@@ -1,17 +1,17 @@
 // ==UserScript==
-// @name        YouTube Comments Hider
+// @name        Xanthics Gwennen Search String Generator
 // @namespace   https://github.com/nick-ng/dev-settings/violentmonkey
-// @match       https://www.youtube.com/*
+// @match       https://xanthics.github.io/*
 // @grant       none
-// @version     1.0.1
+// @version     1.0.0
 // @author      https://github.com/nick-ng
-// @description Hides YouTube comments.
-// @downloadURL https://raw.githubusercontent.com/nick-ng/dev-settings/master/violentmonkey/youtube-comments-hider.js
+// @description Makes it a bit easier to see what items you've selected
+// @downloadURL https://raw.githubusercontent.com/nick-ng/dev-settings/master/violentmonkey/xanthics-gwennen-search.js
 // @run-at      document-idle
 // ==/UserScript==
 
 (() => {
-  const ID = "edaa0b2d-7a33-4765-b7fb-f94c4654db95";
+  const ID = "a7608067-c608-40f8-a559-fb334fdde7cd";
 
   for (let i = 0; i < 1; i++) {
     const tempOldElement = document.getElementById(`${ID}-${i}`);
@@ -50,26 +50,16 @@
     "style",
     headEl,
     `
-    #comments #contents {
-      transition-property: opacity;
-      transition-duration: 1s;
-      transition-timing-function: ease;
-      transition-delay: 0.1s;
+    input[type=checkbox]:after {
+      width: 100%;
+      text-align: center;
+      background-color: magenta;
     }
 
-    #comments:not(:hover) #contents {
-      opacity: 0;
-      position: relative;
-    }
-
-    #comments #header::after {
-      content: 'Hover to see comments';
-      color: white;
-      font-size: 20px;
-    }
-
-    #comments:hover #header::after {
-      display: none;
+    input[type=checkbox] {
+      width: 80%;
+      text-align: center;
+      background-color: black;
     }
   `,
     { id: getNextElementId() }

@@ -1,9 +1,9 @@
 // ==UserScript==
 // @name        YouTube Related Hider
-// @namespace   https://github.com/nick-ng/dev-settings/violent-monkey
+// @namespace   https://github.com/nick-ng/dev-settings/violentmonkey
 // @match       https://www.youtube.com/*
 // @grant       none
-// @version     1.0.0
+// @version     1.0.1
 // @author      https://github.com/nick-ng
 // @description Hides related videos on YouTube so the result of esports matches aren't spoiled.
 // @downloadURL https://raw.githubusercontent.com/nick-ng/dev-settings/master/violentmonkey/youtube-related-hider.js

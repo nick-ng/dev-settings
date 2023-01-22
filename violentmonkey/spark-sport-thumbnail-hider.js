@@ -1,17 +1,17 @@
 // ==UserScript==
-// @name        YouTube Comments Hider
+// @name        Spark Sport Thumbnail Hider
 // @namespace   https://github.com/nick-ng/dev-settings/violentmonkey
-// @match       https://www.youtube.com/*
+// @match       https://watch.sparksport.co.nz/*
 // @grant       none
-// @version     1.0.1
+// @version     1.0.0
 // @author      https://github.com/nick-ng
-// @description Hides YouTube comments.
-// @downloadURL https://raw.githubusercontent.com/nick-ng/dev-settings/master/violentmonkey/youtube-comments-hider.js
+// @description Hide thumbnails on Spark Sport so match results aren't spoiled.
+// @downloadURL https://raw.githubusercontent.com/nick-ng/dev-settings/master/violentmonkey/spark-sport-thumbnail-hider.js
 // @run-at      document-idle
 // ==/UserScript==
 
 (() => {
-  const ID = "edaa0b2d-7a33-4765-b7fb-f94c4654db95";
+  const ID = "7945a42f-e643-4741-aa19-1178ff720f2e";
 
   for (let i = 0; i < 1; i++) {
     const tempOldElement = document.getElementById(`${ID}-${i}`);
@@ -50,26 +50,8 @@
     "style",
     headEl,
     `
-    #comments #contents {
-      transition-property: opacity;
-      transition-duration: 1s;
-      transition-timing-function: ease;
-      transition-delay: 0.1s;
-    }
-
-    #comments:not(:hover) #contents {
+    img {
       opacity: 0;
-      position: relative;
-    }
-
-    #comments #header::after {
-      content: 'Hover to see comments';
-      color: white;
-      font-size: 20px;
-    }
-
-    #comments:hover #header::after {
-      display: none;
     }
   `,
     { id: getNextElementId() }
