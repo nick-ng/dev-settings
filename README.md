@@ -47,3 +47,4 @@ If that doesn't work:
 - [YouTube Related Videos Hider](https://raw.githubusercontent.com/nick-ng/dev-settings/master/violentmonkey/youtube-related-hider.js)
 - [Xanthics Gwennen Search](https://raw.githubusercontent.com/nick-ng/dev-settings/master/violentmonkey/xanthics-gwennen-search.js)
 - [Spark Sports Thumbnail Hider](https://raw.githubusercontent.com/nick-ng/dev-settings/master/violentmonkey/spark-sport-thumbnail-hider.js)
+- [Screen Time Restrictor](https://raw.githubusercontent.com/nick-ng/dev-settings/master/violentmonkey/screen-time-restrictor.js)
