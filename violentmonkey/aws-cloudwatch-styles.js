@@ -3,7 +3,7 @@
 // @namespace   https://github.com/nick-ng/dev-settings/violentmonkey
 // @match       https://*.console.aws.amazon.com/cloudwatch/*
 // @grant       none
-// @version     1.0.0
+// @version     1.1
 // @author      https://github.com/nick-ng
 // @description Changes the styles a bit so it's easier to see
 // @downloadURL https://raw.githubusercontent.com/nick-ng/dev-settings/master/violentmonkey/aws-cloudwatch-styles.js
@@ -17,7 +17,7 @@
   const STYLE = `
   .axis.dimmable .tick text.awsui-text-small,
   .legend text.legend-metric-name {
-    fill: ${colours[randomColourIndex]}bb;
+    fill: ${colours[randomColourIndex]}bb !important;
   }
   `;
 
