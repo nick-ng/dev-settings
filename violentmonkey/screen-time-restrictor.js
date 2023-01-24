@@ -4,8 +4,9 @@
 // @match       https://www.youtube.com/*
 // @match       https://www.reddit.com/*
 // @match       https://old.reddit.com/*
+// @match       https://www.twitch.tv/*
 // @grant       none
-// @version     1.0
+// @version     1.1
 // @author      https://github.com/nick-ng
 // @description Navigates you away from a page after some time and only lets you back after another amount of time.
 // @downloadURL https://raw.githubusercontent.com/nick-ng/dev-settings/master/violentmonkey/screen-time-restrictor.js

@@ -48,3 +48,4 @@ If that doesn't work:
 - [Xanthics Gwennen Search](https://raw.githubusercontent.com/nick-ng/dev-settings/master/violentmonkey/xanthics-gwennen-search.js)
 - [Spark Sports Thumbnail Hider](https://raw.githubusercontent.com/nick-ng/dev-settings/master/violentmonkey/spark-sport-thumbnail-hider.js)
 - [Screen Time Restrictor](https://raw.githubusercontent.com/nick-ng/dev-settings/master/violentmonkey/screen-time-restrictor.js)
+- [AWS CloudWatch Styles](https://raw.githubusercontent.com/nick-ng/dev-settings/master/violentmonkey/aws-cloudwatch-styles.js)
