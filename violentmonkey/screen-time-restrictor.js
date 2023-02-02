@@ -6,7 +6,7 @@
 // @match       https://old.reddit.com/*
 // @match       https://www.twitch.tv/*
 // @grant       none
-// @version     1.1
+// @version     1.2
 // @author      https://github.com/nick-ng
 // @description Navigates you away from a page after some time and only lets you back after another amount of time.
 // @downloadURL https://raw.githubusercontent.com/nick-ng/dev-settings/master/violentmonkey/screen-time-restrictor.js
@@ -29,23 +29,29 @@
     end: Date.now() + TIME_ON_PAGE_MS + COOLDOWN_MS,
   });
 
-  const startTimestampRaw = localStorage.getItem(RESTRICT_START_TIMESTAMP_STORE)
-  const restrictStartTimestamp = typeof startTimestampRaw === 'string' ? parseInt(
-    startTimestampRaw,
-    10
-  ) : getNewTimestamps().start
+  const startTimestampRaw = localStorage.getItem(
+    RESTRICT_START_TIMESTAMP_STORE
+  );
+  const restrictStartTimestamp =
+    typeof startTimestampRaw === "string"
+      ? parseInt(startTimestampRaw, 10)
+      : getNewTimestamps().start;
 
-  const endTimestampRaw = localStorage.getItem(RESTRICT_END_TIMESTAMP_STORE)
-  const restrictEndTimestamp = typeof endTimestampRaw === 'string' ? parseInt(
-    endTimestampRaw,
-    10
-  ) : getNewTimestamps().end;
+  const endTimestampRaw = localStorage.getItem(RESTRICT_END_TIMESTAMP_STORE);
+  const restrictEndTimestamp =
+    typeof endTimestampRaw === "string"
+      ? parseInt(endTimestampRaw, 10)
+      : getNewTimestamps().end;
 
-  if (typeof startTimestampRaw !== 'string' || typeof endTimestampRaw !== 'string') {
+  if (
+    typeof startTimestampRaw !== "string" ||
+    typeof endTimestampRaw !== "string"
+  ) {
     localStorage.setItem(
       RESTRICT_START_TIMESTAMP_STORE,
       getNewTimestamps().start
     );
+
     localStorage.setItem(RESTRICT_END_TIMESTAMP_STORE, getNewTimestamps().end);
   }
 
@@ -55,11 +61,12 @@
       RESTRICT_START_TIMESTAMP_STORE,
       getNewTimestamps().start
     );
+
     localStorage.setItem(RESTRICT_END_TIMESTAMP_STORE, getNewTimestamps().end);
 
     setTimeout(() => {
       location.assign("https://developer.mozilla.org");
-    }, TIME_ON_PAGE_MINUTES);
+    }, TIME_ON_PAGE_MS);
 
     return;
   }
@@ -67,11 +74,12 @@
   // Before the start time
   if (Date.now() < restrictStartTimestamp) {
     const remainingMS = restrictStartTimestamp - Date.now();
+
     setTimeout(() => {
       location.assign("https://developer.mozilla.org");
     }, remainingMS);
 
-    return
+    return;
   }
 
   location.assign("https://developer.mozilla.org");
