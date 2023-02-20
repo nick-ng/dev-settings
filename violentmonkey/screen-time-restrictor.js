@@ -5,8 +5,11 @@
 // @match       https://www.reddit.com/*
 // @match       https://old.reddit.com/*
 // @match       https://www.twitch.tv/*
+// @match       https://www.wowhead.com/*
+// @match       https://www.icy-veins.com/*
+// @match       https://www.mmo-champion.com/*
 // @grant       none
-// @version     1.2
+// @version     1.3
 // @author      https://github.com/nick-ng
 // @description Navigates you away from a page after some time and only lets you back after another amount of time.
 // @downloadURL https://raw.githubusercontent.com/nick-ng/dev-settings/master/violentmonkey/screen-time-restrictor.js
@@ -18,11 +21,15 @@
   const RESTRICT_START_TIMESTAMP_STORE = `${ID}-start-timestamp`;
   const RESTRICT_END_TIMESTAMP_STORE = `${ID}-end-timestamp`;
 
-  const TIME_ON_PAGE_MINUTES = 10;
-  const COOLDOWN_MINUTES = 30;
+  const extraMinutes =
+    (Date.now() - 1676925246579) / (1000 * 60 * 60 * 24 * 60);
+  const TIME_ON_PAGE_MINUTES = 5 + Math.max(0, 5 - extraMinutes);
+  const COOLDOWN_MINUTES = 30 + extraMinutes;
+  console.log("TIME_ON_PAGE_MINUTES", TIME_ON_PAGE_MINUTES);
+  console.log("COOLDOWN_MINUTES", COOLDOWN_MINUTES);
 
-  const TIME_ON_PAGE_MS = TIME_ON_PAGE_MINUTES * 60 * 1000;
-  const COOLDOWN_MS = COOLDOWN_MINUTES * 60 * 1000;
+  const TIME_ON_PAGE_MS = Math.floor(TIME_ON_PAGE_MINUTES * 60 * 1000);
+  const COOLDOWN_MS = Math.ceil(COOLDOWN_MINUTES * 60 * 1000);
 
   const getNewTimestamps = () => ({
     start: Date.now() + TIME_ON_PAGE_MS,
