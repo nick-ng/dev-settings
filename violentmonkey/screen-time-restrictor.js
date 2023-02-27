@@ -8,8 +8,9 @@
 // @match       https://www.wowhead.com/*
 // @match       https://www.icy-veins.com/*
 // @match       https://www.mmo-champion.com/*
+// @match       https://*.fandom.com/*
 // @grant       none
-// @version     1.3
+// @version     1.4
 // @author      https://github.com/nick-ng
 // @description Navigates you away from a page after some time and only lets you back after another amount of time.
 // @downloadURL https://raw.githubusercontent.com/nick-ng/dev-settings/master/violentmonkey/screen-time-restrictor.js
