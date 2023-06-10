@@ -1,0 +1,47 @@
+// Place your key bindings in this file to override the defaults
+[
+	{ "key": "ctrl+alt+f", "command": "editor.action.formatSelection" },
+	{
+		"key": "ctrl+u",
+		"command": "-cursorUndo",
+		"when": "textInputFocus"
+	},
+	{
+		"key": "ctrl+u ctrl+u",
+		"command": "editor.action.transformToUppercase"
+	},
+	{
+		"key": "ctrl+u ctrl+l",
+		"command": "editor.action.transformToLowercase"
+	},
+	{
+		"key": "shift+ctrl+f",
+		"command": "search.action.openNewEditor"
+	},
+	{
+		"key": "ctrl+alt+s",
+		"command": "workbench.action.navigateLeft"
+	},
+	{
+		"key": "ctrl+alt+f",
+		"command": "workbench.action.navigateRight"
+	},
+	{
+		"key": "ctrl+alt+e",
+		"command": "workbench.action.navigateUp"
+	},
+	{
+		"key": "ctrl+alt+d",
+		"command": "workbench.action.navigateDown"
+	},
+	{
+		"key": "ctrl+i",
+		"command": "-editor.action.triggerSuggest",
+		"when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly && !suggestWidgetVisible"
+	},
+	{
+		"key": "ctrl+i",
+		"command": "editor.action.showHover",
+		"when": "editorTextFocus"
+	}
+]
