@@ -12,6 +12,14 @@ sudo apt install -y git && git clone https://github.com/nick-ng/dev-settings.git
 source kde.sh
 ```
 
+## VS Code
+
+- [Extension](https://github.com/nick-ng/vscode-extension)
+  - Download `nick-vscode-extension-x.y.z.vsix`
+  - Go to "Extensions" in VS Code (`Ctrl + Shift + x`)
+  - Click on dots
+  - Install from VSIX...
+
 ## Github
 
 - Add SSH key to Github
