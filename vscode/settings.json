@@ -1,132 +1,144 @@
 {
-    "[css]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[html]": {
-      "editor.insertSpaces": true,
-      "editor.tabSize": 2,
-      "editor.defaultFormatter": "vscode.html-language-features"
-    },
-    "[javascript]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[javascriptreact]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[json]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[jsonc]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[php]": {
-      "editor.defaultFormatter": "bmewburn.vscode-intelephense-client",
-      "editor.detectIndentation": true,
-      "editor.tabSize": 2,
-    },
-    "[python]": {
-      "editor.detectIndentation": true
-    },
-    "[typescript]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[typescriptreact]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[xml]": {
-      "editor.insertSpaces": true,
-      "editor.tabSize": 2
-    },
-    "[markdown]": {
-        "editor.wordWrap": "on",
-        "editor.quickSuggestions": false,
-        "editor.formatOnSave": true
-    },
-    "css.validate": false,
-    "debug.internalConsoleOptions": "neverOpen",
-    "editor.acceptSuggestionOnCommitCharacter": false,
-    "editor.acceptSuggestionOnEnter": "off",
-    "editor.accessibilitySupport": "off",
-    "editor.cursorStyle": "block",
-    "editor.cursorSurroundingLines": 3,
-    "editor.detectIndentation": false,
-    "editor.dragAndDrop": false,
-    "editor.fontFamily": "'Fira Code', 'DejaVu Sans Mono', Monaco, 'Comic Sans MS', Arial, Helvetica",
-    "editor.fontLigatures": true,
-    "editor.fontSize": 11.5,
-    "editor.formatOnSave": false,
-    "editor.insertSpaces": true,
-    "editor.minimap.enabled": false,
-    "editor.minimap.maxColumn": 80,
-    "editor.minimap.renderCharacters": false,
-    "editor.renderWhitespace": "boundary",
-    "editor.roundedSelection": false,
-    "editor.rulers": [
-      80
-    ],
-    "editor.tabSize": 2,
-    "editor.wordWrap": "wordWrapColumn",
-    "editor.wordWrapColumn": 80,
-    "emmet.showAbbreviationSuggestions": false,
-    "emmet.showExpandedAbbreviation": "never",
-    "explorer.enableDragAndDrop": false,
-    "explorer.openEditors.visible": 6,
-    "files.autoSave": "off",
-    "files.insertFinalNewline": true,
-    "files.trimFinalNewlines": true,
-    "files.trimTrailingWhitespace": true,
-    "git.enabled": true,
-    "gitlens.advanced.messages": {
-      "suppressCommitHasNoPreviousCommitWarning": false,
-      "suppressCommitNotFoundWarning": false,
-      "suppressFileNotUnderSourceControlWarning": false,
-      "suppressGitVersionWarning": false,
-      "suppressLineUncommittedWarning": false,
-      "suppressNoRepositoryWarning": false,
-    },
-    "gitlens.keymap": "alternate",
-    "javascript.updateImportsOnFileMove.enabled": "always",
-    "psalm.psalmScriptPath": "vendor/bin/psalm-language-server",
-    "window.newWindowDimensions": "inherit",
-    "window.openFilesInNewWindow": "on",
-    "window.title": "${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty} ${activeEditorMedium}${dirty}${dirty}${dirty}${dirty}${separator}${dirty}${dirty}${dirty}${dirty}${rootName} ${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}",
-    "workbench.editor.enablePreview": false,
-    "workbench.editor.openPositioning": "last",
-    "workbench.editor.showIcons": true,
-    "workbench.editor.tabCloseButton": "off",
-    "workbench.iconTheme": "vs-nick",
-    "workbench.startupEditor": "newUntitledFile",
-    "editor.folding": false,
-    "editor.lineNumbers": "on",
-    "[less]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "yaml.schemas": {
-      "file:///Users/nickng/.vscode/extensions/atlassian.atlascode-2.9.1/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
-    },
-    "[sql]": {
-      "editor.defaultFormatter": "adpyke.vscode-sql-formatter",
-      "editor.formatOnSave": true
-    },
-    "sql-formatter.linesBetweenQueries": 3,
-    "sql-formatter.uppercase": true,
-    "search.exclude": {
-      "*min.js": true
-    },
-    "search.searchOnType": false,
-    "[yaml]": {
-        "editor.defaultFormatter": "redhat.vscode-yaml"
-    },
-    "workbench.colorTheme": "Default Light+",
-    "psalm.logLevel": "DEBUG",
-    "psalm.connectToServerWithTcp": true,
-    "indentRainbow.colorOnWhiteSpaceOnly": true,
-    "indentRainbow.colors": [
-        "rgba(222,255,233,0.3)",
-        "rgba(255,255,255,0.3)"
-    ],
-    "psalm.phpExecutablePath": "/usr/bin/php",
-    "redhat.telemetry.enabled": false,
-    "php.debug.executablePath": "/bin/php",
-    "intelephense.environment.phpVersion": "7.4.0"
-  }
+	"[css]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[html]": {
+		"editor.defaultFormatter": "vscode.html-language-features"
+	},
+	"[javascript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[javascriptreact]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[json]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[jsonc]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[markdown]": {
+		"files.trimTrailingWhitespace": false,
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[php]": {
+		"editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+	},
+	"[python]": {
+		"editor.detectIndentation": true
+	},
+	"[typescript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[typescriptreact]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[filter]": {
+		"editor.wordWrap": "on"
+	},
+	"css.validate": false,
+	"debug.internalConsoleOptions": "neverOpen",
+	"editor.acceptSuggestionOnCommitCharacter": false,
+	"editor.acceptSuggestionOnEnter": "off",
+	"editor.accessibilitySupport": "off",
+	"editor.cursorStyle": "block",
+	"editor.cursorSurroundingLines": 3,
+	"editor.detectIndentation": true,
+	"editor.dragAndDrop": false,
+	"editor.fontFamily": "'Fixedsys Excelsior' ,'Fira Code Medium', 'DejaVu Sans Mono', Consolas, Monaco, 'Comic Sans MS', Arial, Helvetica",
+	"editor.fontLigatures": false,
+	"editor.fontSize": 16,
+	"editor.lineHeight": 1,
+	"window.zoomLevel": -0.6,
+	"editor.formatOnSave": true,
+	"editor.insertSpaces": false,
+	"editor.minimap.enabled": false,
+	"editor.minimap.maxColumn": 80,
+	"editor.minimap.renderCharacters": false,
+	"editor.renderWhitespace": "boundary",
+	"editor.roundedSelection": false,
+	"editor.rulers": [80],
+	"editor.tabSize": 3,
+	"editor.wordWrap": "wordWrapColumn",
+	"editor.wordWrapColumn": 80,
+	"emmet.showAbbreviationSuggestions": false,
+	"emmet.showExpandedAbbreviation": "never",
+	"explorer.enableDragAndDrop": false,
+	"explorer.openEditors.visible": 6,
+	"files.autoSave": "off",
+	"files.insertFinalNewline": true,
+	"files.trimFinalNewlines": true,
+	"files.trimTrailingWhitespace": true,
+	"git.enabled": true,
+	"gitlens.advanced.messages": {
+		"suppressCommitHasNoPreviousCommitWarning": false,
+		"suppressCommitNotFoundWarning": false,
+		"suppressFileNotUnderSourceControlWarning": false,
+		"suppressGitVersionWarning": false,
+		"suppressLineUncommittedWarning": false,
+		"suppressNoRepositoryWarning": false,
+		"suppressResultsExplorerNotice": false,
+		"suppressShowKeyBindingsNotice": true,
+		"suppressUpdateNotice": false,
+		"suppressWelcomeNotice": true
+	},
+	"gitlens.keymap": "alternate",
+	"gitlens.views.fileHistory.enabled": true,
+	"gitlens.views.lineHistory.enabled": true,
+	"html.mirrorCursorOnMatchingTag": true,
+	"javascript.updateImportsOnFileMove.enabled": "always",
+	"psalm.psalmScriptPath": "/Users/nickng/.composer/vendor/bin/psalm-language-server",
+	"window.newWindowDimensions": "inherit",
+	"window.openFilesInNewWindow": "on",
+	"window.title": "${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty} ${activeEditorMedium}${separator}${rootName} ${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}",
+	"workbench.editor.enablePreview": false,
+	"workbench.editor.openPositioning": "last",
+	"workbench.editor.showIcons": true,
+	"workbench.editor.tabCloseButton": "off",
+	"workbench.startupEditor": "newUntitledFile",
+	"editor.folding": true,
+	"editor.lineNumbers": "on",
+	"[less]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"yaml.schemas": {
+		"file:///Users/nickng/.vscode/extensions/atlassian.atlascode-2.7.0/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+	},
+	"[sql]": {
+		"editor.defaultFormatter": "adpyke.vscode-sql-formatter"
+	},
+	"sql-formatter.linesBetweenQueries": 3,
+	"sql-formatter.uppercase": true,
+	"phpunit.relativeFilePath": true,
+	"phpunit.phpunit": "./vendor/bin/phpunit",
+	"search.exclude": {
+		"*min.js": true
+	},
+	"search.searchOnType": false,
+	"[yaml]": {
+		"editor.defaultFormatter": "redhat.vscode-yaml"
+	},
+	"files.eol": "\n",
+	"redhat.telemetry.enabled": false,
+	"prettier.prettierPath": "./node_modules/prettier",
+	"prettier.useTabs": true,
+	"editor.guides.indentation": true,
+	"remote.SSH.remotePlatform": {
+		"derby.local": "linux",
+		"herby.local": "linux"
+	},
+	"terminal.integrated.defaultProfile.windows": "Git Bash",
+	"typescript.updateImportsOnFileMove.enabled": "always",
+	"workbench.colorTheme": "Default Light+",
+
+	"indentRainbow.colorOnWhiteSpaceOnly": true,
+	"indentRainbow.colors": ["rgba(0,255,255,0.1)", "rgba(255,0,255,0.05)"],
+	"files.hotExit": "off",
+	"gitlens.views.repositories.showCommits": false,
+	"gitlens.codeLens.authors.enabled": false,
+	"gitlens.codeLens.recentChange.enabled": false,
+	"editor.stickyScroll.enabled": true,
+	"terminal.integrated.fontSize": 16,
+	"extensions.autoCheckUpdates": false,
+	"workbench.iconTheme": "vs-nick"
+}

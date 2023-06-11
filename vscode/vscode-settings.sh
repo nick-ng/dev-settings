@@ -5,7 +5,6 @@ mkdir -p ~/.vscode/extensions/
 
 \cp ./vscode/settings.json ~/.config/Code/User/settings.json
 \cp ./vscode/keybindings.json ~/.config/Code/User/keybindings.json
-\cp -r ./vscode/theme-nick/ ~/.vscode/extensions/theme-nick/
 
 echo "Installing VS Code extensions"
 # code --install-extension amazonwebservices.aws-toolkit-vscode
