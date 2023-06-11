@@ -2,10 +2,16 @@
 	"name": "theme-nick",
 	"displayName": "Nick's Theme",
 	"description": "A theme for Nick",
-	"categories": [ "Themes" ],
-	"version": "0.1.0",
-	"publisher": "Nick",
-	"engines": { "vscode": "*" },
+	"categories": [
+		"Themes"
+	],
+	"version": "0.1.2",
+	"publisher": "nick-ng",
+	"icon": "narwhal-256.png",
+	"license": "MIT",
+	"engines": {
+		"vscode": "^1.0.0"
+	},
 	"contributes": {
 		"iconThemes": [
 			{
