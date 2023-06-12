@@ -140,5 +140,7 @@
 	"editor.stickyScroll.enabled": true,
 	"terminal.integrated.fontSize": 16,
 	"extensions.autoCheckUpdates": false,
-	"workbench.iconTheme": "vs-nick"
+	"workbench.iconTheme": "vs-nick",
+	"search.quickOpen.includeHistory": false,
+	"search.useIgnoreFiles": true
 }
