@@ -47,5 +47,13 @@
 		"key": "escape",
 		"command": "-cancelSelection",
 		"when": "editorHasSelection && textInputFocus"
+	},
+	{
+		"key": "ctrl+alt+p",
+		"command": "extension.nickToggleUseIgnoreFiles"
+	},
+	{
+		"key": "ctrl+`",
+		"command": ""
 	}
 ]

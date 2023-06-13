@@ -133,10 +133,10 @@
 
 	"indentRainbow.colorOnWhiteSpaceOnly": true,
 	"indentRainbow.colors": [
-    "rgba(0,255,255,0.1)",
-    "rgba(255,0,255,0.05)",
-    "rgba(255,255,0,0.1)"
-  ],
+		"rgba(0,255,255,0.1)",
+		"rgba(255,0,255,0.05)",
+		"rgba(255,255,0,0.1)"
+	],
 	"files.hotExit": "off",
 	"gitlens.views.repositories.showCommits": false,
 	"gitlens.codeLens.authors.enabled": false,
