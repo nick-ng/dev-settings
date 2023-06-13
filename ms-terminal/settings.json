@@ -4,6 +4,13 @@
 	"actions": [
 		{
 			"command": {
+				"action": "copy",
+				"singleLine": false
+			},
+			"keys": "ctrl+c"
+		},
+		{
+			"command": {
 				"action": "splitPane",
 				"split": "right"
 			},
@@ -17,19 +24,20 @@
 			"keys": "ctrl+`"
 		},
 		{
-			"command": {
-				"action": "copy",
-				"singleLine": false
-			},
-			"keys": "ctrl+c"
-		},
-		{
 			"command": "paste",
 			"keys": "ctrl+v"
 		},
 		{
 			"command": "find",
 			"keys": "ctrl+shift+f"
+		},
+		{
+			"command": {
+				"action": "splitPane",
+				"split": "auto",
+				"splitMode": "duplicate"
+			},
+			"keys": "alt+shift+d"
 		},
 		{
 			"command": "unbound",
@@ -57,14 +65,6 @@
 		},
 		{
 			"command": "unbound",
-			"keys": "ctrl+shift+6"
-		},
-		{
-			"command": "unbound",
-			"keys": "ctrl+shift+7"
-		},
-		{
-			"command": "unbound",
 			"keys": "ctrl+shift+8"
 		},
 		{
@@ -76,12 +76,12 @@
 			"keys": "alt+shift+plus"
 		},
 		{
-			"command": {
-				"action": "splitPane",
-				"split": "auto",
-				"splitMode": "duplicate"
-			},
-			"keys": "alt+shift+d"
+			"command": "unbound",
+			"keys": "alt+shift+minus"
+		},
+		{
+			"command": "unbound",
+			"keys": ""
 		},
 		{
 			"command": {
@@ -94,6 +94,23 @@
 				"action": "nextTab"
 			},
 			"keys": "shift+right"
+		},
+		{
+			"command": {
+				"action": "splitPane",
+				"split": "down"
+			},
+			"keys": "ctrl+shift+6"
+		},
+		{
+			"command": {
+				"action": "closeTab"
+			},
+			"keys": "ctrl+shift+w"
+		},
+		{
+			"command": "closePane",
+			"keys": "ctrl+shift+7"
 		}
 	],
 	"autoHideWindow": false,
@@ -104,7 +121,7 @@
 	"defaultProfile": "{194819ee-3361-408a-975d-a246e5667355}",
 	"experimental.detectURLs": false,
 	"initialCols": 200,
-	"initialPosition": ",",
+	"initialPosition": "1,1",
 	"initialRows": 40,
 	"minimizeToNotificationArea": true,
 	"newTabMenu": [
@@ -369,7 +386,7 @@
 			"yellow": "#808000"
 		}
 	],
-	"startOnUserLogin": true,
+	"startOnUserLogin": false,
 	"themes": [
 		{
 			"name": "legacyDark",
