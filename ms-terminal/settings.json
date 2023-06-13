@@ -4,13 +4,6 @@
 	"actions": [
 		{
 			"command": {
-				"action": "copy",
-				"singleLine": false
-			},
-			"keys": "ctrl+c"
-		},
-		{
-			"command": {
 				"action": "splitPane",
 				"split": "right"
 			},
@@ -24,20 +17,19 @@
 			"keys": "ctrl+`"
 		},
 		{
+			"command": {
+				"action": "copy",
+				"singleLine": false
+			},
+			"keys": "ctrl+c"
+		},
+		{
 			"command": "paste",
 			"keys": "ctrl+v"
 		},
 		{
 			"command": "find",
 			"keys": "ctrl+shift+f"
-		},
-		{
-			"command": {
-				"action": "splitPane",
-				"split": "auto",
-				"splitMode": "duplicate"
-			},
-			"keys": "alt+shift+d"
 		},
 		{
 			"command": "unbound",
@@ -84,6 +76,18 @@
 			"keys": ""
 		},
 		{
+			"command": "unbound",
+			"keys": "ctrl+shift+7"
+		},
+		{
+			"command": {
+				"action": "splitPane",
+				"split": "auto",
+				"splitMode": "duplicate"
+			},
+			"keys": "alt+shift+d"
+		},
+		{
 			"command": {
 				"action": "prevTab"
 			},
@@ -105,12 +109,11 @@
 		{
 			"command": {
 				"action": "closeTab"
-			},
-			"keys": "ctrl+shift+w"
+			}
 		},
 		{
 			"command": "closePane",
-			"keys": "ctrl+shift+7"
+			"keys": "ctrl+shift+w"
 		}
 	],
 	"autoHideWindow": false,
