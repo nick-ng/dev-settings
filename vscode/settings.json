@@ -123,10 +123,6 @@
 	"prettier.prettierPath": "./node_modules/prettier",
 	"prettier.useTabs": true,
 	"editor.guides.indentation": true,
-	"remote.SSH.remotePlatform": {
-		"derby.local": "linux",
-		"herby.local": "linux"
-	},
 	"terminal.integrated.defaultProfile.windows": "Git Bash",
 	"typescript.updateImportsOnFileMove.enabled": "always",
 	"workbench.colorTheme": "Default Light+",
@@ -146,5 +142,6 @@
 	"extensions.autoCheckUpdates": false,
 	"workbench.iconTheme": "vs-nick",
 	"search.quickOpen.includeHistory": false,
-	"search.useIgnoreFiles": true
+	"search.useIgnoreFiles": true,
+	"debug.toolBarLocation": "docked"
 }
