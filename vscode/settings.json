@@ -41,6 +41,7 @@
 	},
 	"css.validate": false,
 	"debug.internalConsoleOptions": "neverOpen",
+	"debug.toolBarLocation": "docked",
 	"editor.acceptSuggestionOnCommitCharacter": false,
 	"editor.acceptSuggestionOnEnter": "off",
 	"editor.accessibilitySupport": "off",
