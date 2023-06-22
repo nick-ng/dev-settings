@@ -39,6 +39,10 @@
 	"[filter]": {
 		"editor.wordWrap": "on"
 	},
+	"[rust]": {
+		"editor.insertSpaces": true,
+		"editor.tabSize": 4
+	},
 	"css.validate": false,
 	"debug.internalConsoleOptions": "neverOpen",
 	"debug.toolBarLocation": "docked",
@@ -139,5 +143,11 @@
 	"extensions.autoCheckUpdates": false,
 	"workbench.iconTheme": "vs-nick",
 	"search.quickOpen.includeHistory": false,
-	"search.useIgnoreFiles": true
+	"search.useIgnoreFiles": true,
+	"rust-analyzer.cachePriming.enable": false,
+	"rust-analyzer.inlayHints.parameterHints.enable": false,
+	"rust-analyzer.inlayHints.typeHints.enable": false,
+	"rust-analyzer.lens.run.enable": false,
+	"rust-analyzer.lens.debug.enable": false,
+	"rust-analyzer.lens.enable": false
 }
