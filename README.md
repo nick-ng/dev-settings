@@ -35,6 +35,14 @@ cat ~/.ssh/id_rsa.pub | xclip -selection clipboard
 source node.sh
 ```
 
+## Windows (Git Bash)
+
+### SSH Key
+
+Same as Linux
+
+1. `ssh-keygen -t rsa -b 4096 -C "your_email@gmail.com"`
+
 ## Mac
 
 - bash_aliases

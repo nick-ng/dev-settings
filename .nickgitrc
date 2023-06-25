@@ -4,7 +4,7 @@ alias gin='gidefault && git remote prune origin && git pull && git checkout -b'
 alias giclear='echo "\ngit branch | grep \"^[^*]\" | xargs git branch -d\n"'
 alias gipush='git branch | grep "* " | awk "{print \$2}" | xargs git push --set-upstream origin '
 alias gitpush='npm test && git branch | grep "* " | awk "{print \$2}" | xargs git push --set-upstream origin '
-alias todo="sed -i -e '/### Specific ToDos/q' README.md && echo '' >> README.md && git grep -n "@todo" -- ':!todo.sh' ':!package.json' ':!README.md' | sed 's/^/- /m' >> README.md && git add ./README.md"
+alias todo="git grep -n \"@todo\" -- ':!todo.sh' ':!package.json' ':!README.md' | sed 's/^/- /m ; s/\/\/ @/ @/m ; s/\s\+/ /gm'"
 
 function giap() {
   if [ -f ./todo.sh ]; then

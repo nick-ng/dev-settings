@@ -18,7 +18,7 @@ alias gicommitsm='git commit -S -m'
 alias gipush='git branch | grep "* " | awk "{print \$2}" | xargs git push --set-upstream origin '
 alias gitpush='npm test && git branch | grep "* " | awk "{print \$2}" | xargs git push --set-upstream origin '
 alias nick2simulator='git add -p'
-alias todo="sed -i -e '/### Specific ToDos/q' README.md && echo '' >> README.md && git grep -n "@todo" -- ':!todo.sh' ':!package.json' ':!README.md' | sed 's/^/- /m' >> README.md && git add ./README.md"
+alias todo="git grep -n \"@todo\" -- ':!todo.sh' ':!package.json' ':!README.md' | sed 's/^/- /m ; s/\/\/ @/ @/m ; s/\s\+/ /gm'"
 
 function gipurge() {
   echo "Getting default branch name"
