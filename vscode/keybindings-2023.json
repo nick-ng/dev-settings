@@ -57,36 +57,44 @@
 		"command": ""
 	},
 	{
-		"key": "ctrl+7",
+		"key": "ctrl+6",
 		"command": "extension.nickGoToBookmark0"
 	},
 	{
-		"key": "ctrl+8",
+		"key": "ctrl+7",
 		"command": "extension.nickGoToBookmark1"
 	},
 	{
-		"key": "ctrl+9",
+		"key": "ctrl+8",
 		"command": "extension.nickGoToBookmark2"
 	},
 	{
-		"key": "ctrl+0",
+		"key": "ctrl+9",
 		"command": "extension.nickGoToBookmark3"
 	},
 	{
-		"key": "ctrl+u ctrl+7",
-		"command": "extension.nickSetBookmark0"
+		"key": "ctrl+0",
+		"command": "extension.nickGoToBookmark4"
 	},
 	{
-		"key": "ctrl+u ctrl+8",
+		"key": "ctrl+u ctrl+7",
 		"command": "extension.nickSetBookmark1"
 	},
 	{
-		"key": "ctrl+u ctrl+9",
+		"key": "ctrl+u ctrl+8",
 		"command": "extension.nickSetBookmark2"
 	},
 	{
-		"key": "ctrl+u ctrl+0",
+		"key": "ctrl+u ctrl+9",
 		"command": "extension.nickSetBookmark3"
+	},
+	{
+		"key": "ctrl+u ctrl+0",
+		"command": "extension.nickSetBookmark4"
+	},
+	{
+		"key": "ctrl+6",
+		"command": "-workbench.action.focusSixthEditorGroup"
 	},
 	{
 		"key": "ctrl+7",
@@ -111,5 +119,12 @@
 	{
 		"key": "ctrl+3",
 		"command": "-workbench.action.focusThirdEditorGroup"
+	},
+	{
+		"key": "ctrl+p",
+		"command": "-workbench.action.quickOpen"
+	},{
+		"key": "ctrl+p",
+		"command": "extension.nickQuickOpen"
 	}
 ]
