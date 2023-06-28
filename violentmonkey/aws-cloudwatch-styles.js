@@ -13,7 +13,7 @@
 (() => {
   // some different dark colours for variety
   const colours = ["#2638ff", "#0dad18", "#a50101", "#8b0ec9"];
-  const randomColourIndex = Math.floor(Math.random() * colours.length)
+  const randomColourIndex = Math.floor(Math.random() * colours.length);
   const STYLE = `
   .axis.dimmable .tick text.awsui-text-small,
   .legend text.legend-metric-name {

@@ -1,0 +1,16 @@
+{
+  "name": "dev-settings",
+  "version": "1.0.0",
+  "description": "- Install git and checkout repo",
+  "main": "index.js",
+  "scripts": {
+    "start": "prettier --write .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "2.8.8"
+  }
+}

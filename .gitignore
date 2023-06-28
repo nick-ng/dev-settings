@@ -4,3 +4,5 @@
 packages.microsoft.gpg
 new/*
 new/
+
+/node_modules
