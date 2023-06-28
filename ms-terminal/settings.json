@@ -4,13 +4,6 @@
   "actions": [
     {
       "command": {
-        "action": "copy",
-        "singleLine": false
-      },
-      "keys": "ctrl+c"
-    },
-    {
-      "command": {
         "action": "splitPane",
         "split": "right"
       },
@@ -24,20 +17,19 @@
       "keys": "ctrl+`"
     },
     {
+      "command": {
+        "action": "copy",
+        "singleLine": false
+      },
+      "keys": "ctrl+c"
+    },
+    {
       "command": "paste",
       "keys": "ctrl+v"
     },
     {
       "command": "find",
       "keys": "ctrl+shift+f"
-    },
-    {
-      "command": {
-        "action": "splitPane",
-        "split": "auto",
-        "splitMode": "duplicate"
-      },
-      "keys": "alt+shift+d"
     },
     {
       "command": "unbound",
@@ -89,6 +81,14 @@
     },
     {
       "command": {
+        "action": "splitPane",
+        "split": "auto",
+        "splitMode": "duplicate"
+      },
+      "keys": "alt+shift+d"
+    },
+    {
+      "command": {
         "action": "prevTab"
       },
       "keys": "shift+left"
@@ -122,7 +122,7 @@
   "copyFormatting": "none",
   "copyOnSelect": false,
   "defaultProfile": "{194819ee-3361-408a-975d-a246e5667355}",
-  "experimental.detectURLs": false,
+  "experimental.detectURLs": true,
   "initialCols": 200,
   "initialPosition": "1,1",
   "initialRows": 40,
