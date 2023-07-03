@@ -151,5 +151,6 @@
 	"editor.lightbulb.enabled": false,
 	"svelte.enable-ts-plugin": true,
 	"editor.fontSize": 16,
+	"window.zoomLevel": 0,
 	"indentRainbow.ignoreErrorLanguages": ["*", "markdown"]
 }
