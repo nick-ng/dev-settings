@@ -89,7 +89,7 @@
 		"suppressWelcomeNotice": true
 	},
 	"gitlens.keymap": "alternate",
-	"editor.linkedEditing": true,
+	"editor.linkedEditing": false,
 	"javascript.updateImportsOnFileMove.enabled": "always",
 	"window.newWindowDimensions": "inherit",
 	"window.openFilesInNewWindow": "on",
@@ -154,9 +154,5 @@
 	"window.zoomLevel": 0,
 	"indentRainbow.ignoreErrorLanguages": ["*", "markdown"],
 	"javascript.preferences.renameMatchingJsxTags": false,
-	"typescript.preferences.renameMatchingJsxTags": false,
-	"javascript.autoClosingTags": false,
-	"typescript.autoClosingTags": false,
-	"svelte.plugin.html.tagComplete.enable": false,
-	"html.autoClosingTags": false
+	"typescript.preferences.renameMatchingJsxTags": false
 }
