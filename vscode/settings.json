@@ -154,5 +154,6 @@
 	"window.zoomLevel": 0,
 	"indentRainbow.ignoreErrorLanguages": ["*", "markdown"],
 	"javascript.preferences.renameMatchingJsxTags": false,
-	"typescript.preferences.renameMatchingJsxTags": false
+	"typescript.preferences.renameMatchingJsxTags": false,
+	"workbench.editor.showTabs": false
 }
