@@ -1,0 +1,6 @@
+- Install Git Bash
+  - `~` should be mapped to `%USERPROFILE%` automatically
+- Copy `.windowsrc` into `~/.bashrc`
+- Put `.nickrc` next to `~/.bashrc`
+- Create `~/.misc/bin` directory
+- Put jq in `~/.misc/bin`
