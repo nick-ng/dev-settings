@@ -1,24 +1,27 @@
-alias reload="source ~/.nickrc"
-
 # git aliases
-alias gis='git status'
-alias gib='git branch --remote && git branch'
-alias gic='git checkout'
-alias gid='git branch -d'
-alias gim='git checkout master && git remote prune origin && git pull'
-alias gimm='git checkout master && git remote prune origin && git pull && git checkout - && git merge master'
-alias gimd='git checkout dev && git remote prune origin && git pull && git checkout - && git merge dev'
-alias gims='git checkout staging && git remote prune origin && git pull && git checkout - && git merge staging'
-alias gin='git checkout master && git remote prune origin && git pull && git checkout -b'
-alias gia='git add'
-alias gia.='git add . && git status'
-alias giap='git add -N . && git add -p'
+alias gin='gidefault && git remote prune origin && git pull && git checkout -b'
+
 alias giclear='echo "\ngit branch | grep \"^[^*]\" | xargs git branch -d\n"'
-alias gicommitsm='git commit -S -m'
 alias gipush='git branch | grep "* " | awk "{print \$2}" | xargs git push --set-upstream origin '
 alias gitpush='npm test && git branch | grep "* " | awk "{print \$2}" | xargs git push --set-upstream origin '
-alias nick2simulator='git add -p'
 alias todo="git grep -n \"@todo\" -- ':!todo.sh' ':!package.json' ':!README.md' | sed 's/^/- /m ; s/\/\/ @/ @/m ; s/\s\+/ /gm'"
+
+function giap() {
+  if [ -f ./todo.sh ]; then
+    ./todo.sh
+  fi
+
+  git add -N .
+  git add -p
+
+  todo
+}
+
+function gidefault() {
+  origin_name=$(git remote show)
+  default_branch_name=$(git remote show $origin_name | sed -n '/HEAD branch/s/.*: //p')
+  git checkout $default_branch_name
+}
 
 function gipurge() {
   echo "Getting default branch name"
@@ -44,24 +47,3 @@ function girebase() {
   git checkout -
   git rebase $default_branch_name
 }
-
-# tmux aliases
-alias tclip='tmux save-buffer - | xclip -selection clipboard'
-
-# javascript aliases
-alias npmi='rm -f package-lock.json && npm install'
-alias npmscripts='cat package.json | jq .scripts'
-alias yarnpls='echo Deleting node_modules directory and package-lock.json && rm -rf node_modules && rm -f package-lock.json && echo BALEETED! && yarn install'
-
-# dev aliases
-
-# other aliases
-alias cd..='cd ..'
-alias dir='ls -a'
-alias emacs='nano'
-alias weather='curl wttr.in'
-
-# NVM
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
