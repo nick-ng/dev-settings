@@ -1,4 +1,4 @@
-# git aliases
+## git ##
 alias gin='gidefault && git remote prune origin && git pull && git checkout -b'
 
 alias giclear='echo "\ngit branch | grep \"^[^*]\" | xargs git branch -d\n"'
@@ -47,3 +47,6 @@ function girebase() {
   git checkout -
   git rebase $default_branch_name
 }
+
+## node js ##
+alias npmscripts='cat package.json | jq .scripts'
