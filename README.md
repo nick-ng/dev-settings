@@ -66,3 +66,4 @@ If that doesn't work:
 - [Screen Time Restrictor](https://raw.githubusercontent.com/nick-ng/dev-settings/master/violentmonkey/screen-time-restrictor.js)
 - [Salesforce Code Block Style](https://raw.githubusercontent.com/nick-ng/dev-settings/master/violentmonkey/salesforce-codeblock-styles.js)
 - [Jira Unicorn](https://raw.githubusercontent.com/nick-ng/dev-settings/master/violentmonkey/jira-unicorn.js)
+- [JPerm.net Upside Down Algorithm Trainer](https://raw.githubusercontent.com/nick-ng/dev-settings/master/violentmonkey/jperm-net.js)
