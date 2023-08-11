@@ -1,9 +1,9 @@
 // ==UserScript==
 // @name        jperm.net Algorithm Trainer Customisation
 // @namespace   https://github.com/nick-ng/dev-settings/violentmonkey
-// @match       https://jperm.net/
+// @match       https://jperm.net/algs/*
 // @grant       none
-// @version     1.0
+// @version     1.1
 // @author      https://github.com/nick-ng
 // @description Flips the algorithm trainer so it makes the case on the bottom.
 // @downloadURL https://raw.githubusercontent.com/nick-ng/dev-settings/master/violentmonkey/jperm-net.js
