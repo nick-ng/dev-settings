@@ -109,3 +109,12 @@ return
 
 ; Snip & Sketch (new snipping tool)
 ; Windows + Shift + s
+
+; Discord Stuff
+F13::
+Send {F16}
+Sleep, 50
+Send {F17 down}
+Sleep, 50
+Send {F17 up}
+return

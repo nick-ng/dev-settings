@@ -51,3 +51,4 @@ function girebase() {
 
 ## node js ##
 alias npmscripts='cat package.json | jq .scripts'
+alias nr="npm run"
