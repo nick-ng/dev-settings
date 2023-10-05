@@ -3,7 +3,7 @@
 // @namespace   https://github.com/nick-ng/dev-settings/violentmonkey
 // @match       https://www.gog.com/*
 // @grant       none
-// @version     1.0
+// @version     1.1
 // @author      https://github.com/nick-ng
 // @description Change some styles
 // @downloadURL https://raw.githubusercontent.com/nick-ng/dev-settings/master/violentmonkey/gog-styles.js
@@ -12,7 +12,7 @@
 
 (() => {
 	const STYLE = `
-	span.game-link__name.row_column:first-child {
+	span.game-link__name.row__column:first-child {
 	  width: max-content;
 	  display: block;
 	}
