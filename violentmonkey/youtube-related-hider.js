@@ -3,7 +3,7 @@
 // @namespace   https://github.com/nick-ng/dev-settings/violentmonkey
 // @match       https://www.youtube.com/*
 // @grant       none
-// @version     1.0.3
+// @version     1.0.4
 // @author      https://github.com/nick-ng
 // @description Hides related videos on YouTube so the result of esports matches aren't spoiled.
 // @downloadURL https://raw.githubusercontent.com/nick-ng/dev-settings/master/violentmonkey/youtube-related-hider.js
@@ -57,25 +57,19 @@
       transition-property: opacity;
       transition-duration: 1s;
       transition-timing-function: ease;
-      transition-delay: 0.1s;
+      transition-delay: ${isMonday ? "10" : "1"}s;
     }
 
     #related:not(:hover) div {
       opacity: 0 !important;
     }
 
-    ${
-			isMonday
-				? `
-    #related div {
-      opacity: 0 !important;
-    }
-    `
-				: ""
-		}
-
     #related::before {
-      content: 'Hover to see related videos';
+      content: '${
+				isMonday
+					? "Hover 10 seconds to see related videos"
+					: "Hover 2 seconds to see related videos"
+			}';
       color: white;
       text-shadow:
         -1px -1px 0 #000,
