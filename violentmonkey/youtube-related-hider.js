@@ -62,6 +62,8 @@
 
     #related:not(:hover) div {
       opacity: 0 !important;
+			transition-duration: 0;
+			transition-delay: 0;
     }
 
     #related::before {
