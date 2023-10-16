@@ -3,7 +3,7 @@
 // @namespace   https://github.com/nick-ng/dev-settings/violentmonkey
 // @match       https://www.youtube.com/*
 // @grant       none
-// @version     1.1
+// @version     1.1.0
 // @author      https://github.com/nick-ng
 // @description Hides YouTube comments.
 // @downloadURL https://raw.githubusercontent.com/nick-ng/dev-settings/master/violentmonkey/youtube-comments-hider.js
