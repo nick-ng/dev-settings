@@ -3,7 +3,7 @@
 // @namespace   https://github.com/nick-ng/dev-settings/violentmonkey
 // @match       https://*.console.aws.amazon.com/cloudwatch/*
 // @grant       none
-// @version     1.1
+// @version     1.2
 // @author      https://github.com/nick-ng
 // @description Changes the styles a bit so it's easier to see
 // @downloadURL https://raw.githubusercontent.com/nick-ng/dev-settings/master/violentmonkey/aws-cloudwatch-styles.js
@@ -12,7 +12,7 @@
 
 (() => {
   // some different dark colours for variety
-  const colours = ["#2638ff", "#0dad18", "#a50101", "#8b0ec9"];
+  const colours = ["#000000"];
   const randomColourIndex = Math.floor(Math.random() * colours.length);
   const STYLE = `
   .axis.dimmable .tick text.awsui-text-small,
