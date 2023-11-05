@@ -3,7 +3,7 @@
 // @namespace   Violentmonkey Scripts
 // @match       https://cstimer.net/
 // @grant       none
-// @version     1.4
+// @version     1.5
 // @author      https://github.com/nick-ng
 // @description 9/01/2022, 8:44:06 am
 // @downloadURL https://raw.githubusercontent.com/nick-ng/dev-settings/master/violentmonkey/cstimer-net.js
@@ -30,7 +30,7 @@ const checkPlusFifteen = () => {
 		md = getCurrentNumber() - newValue;
 	});
 
-	window.setCount = (newValue) => {
+	window.setCount = (newValue = -12) => {
 		md = getCurrentNumber() - newValue;
 	};
 
