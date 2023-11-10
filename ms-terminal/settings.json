@@ -4,13 +4,6 @@
 	"actions": [
 		{
 			"command": {
-				"action": "copy",
-				"singleLine": false
-			},
-			"keys": "ctrl+c"
-		},
-		{
-			"command": {
 				"action": "splitPane",
 				"split": "right"
 			},
@@ -22,6 +15,13 @@
 				"monitor": "any"
 			},
 			"keys": "ctrl+`"
+		},
+		{
+			"command": {
+				"action": "copy",
+				"singleLine": false
+			},
+			"keys": "ctrl+c"
 		},
 		{
 			"command": "paste",
@@ -81,10 +81,6 @@
 		},
 		{
 			"command": "unbound",
-			"keys": ""
-		},
-		{
-			"command": "unbound",
 			"keys": "ctrl+shift+7"
 		},
 		{
@@ -97,6 +93,13 @@
 		},
 		{
 			"command": {
+				"action": "splitPane",
+				"split": "down"
+			},
+			"keys": "ctrl+shift+6"
+		},
+		{
+			"command": {
 				"action": "prevTab"
 			},
 			"keys": "alt+home"
@@ -106,13 +109,6 @@
 				"action": "nextTab"
 			},
 			"keys": "alt+end"
-		},
-		{
-			"command": {
-				"action": "splitPane",
-				"split": "down"
-			},
-			"keys": "ctrl+shift+6"
 		},
 		{
 			"command": {
@@ -141,7 +137,9 @@
 		}
 	],
 	"profiles": {
-		"defaults": {},
+		"defaults": {
+			"bellStyle": "window"
+		},
 		"list": [
 			{
 				"commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
@@ -402,43 +400,6 @@
 		}
 	],
 	"startOnUserLogin": false,
-	"themes": [
-		{
-			"name": "legacyDark",
-			"tab": {
-				"background": null,
-				"showCloseButton": "always",
-				"unfocusedBackground": null
-			},
-			"window": {
-				"applicationTheme": "dark",
-				"useMica": false
-			}
-		},
-		{
-			"name": "legacyLight",
-			"tab": {
-				"background": null,
-				"showCloseButton": "always",
-				"unfocusedBackground": null
-			},
-			"window": {
-				"applicationTheme": "light",
-				"useMica": false
-			}
-		},
-		{
-			"name": "legacySystem",
-			"tab": {
-				"background": null,
-				"showCloseButton": "always",
-				"unfocusedBackground": null
-			},
-			"window": {
-				"applicationTheme": "system",
-				"useMica": false
-			}
-		}
-	],
+	"themes": [],
 	"windowingBehavior": "useAnyExisting"
 }
