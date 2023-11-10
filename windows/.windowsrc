@@ -4,20 +4,22 @@ source ~/.nickrc
 
 ## PATHs ##
 if [[ ":$PATH:" == *":~/.misc/bin:"* ]]; then
-  echo "Misc PATH set correctly"
+  echo "Misc PATH already set correctly"
 else
   export PATH=$PATH:"~/.misc/bin"
 fi
-alias jq="jq-win64" # put in ~/.miscrc - https://github.com/jqlang/jq
+
+alias jq="jq-win64"
 
 if [[ ":$PATH:" == *":~/.cargo/bin:"* ]]; then
-  echo "Rust PATH set correctly"
+  echo "Rust PATH already set correctly"
 else
   export PATH=$PATH:"~/.cargo/bin"
 fi
 
 ## Windows Tools ##
 alias tree="cmd //c tree"
+alias winchmod="git update-index --chmod=+x"
 
 ## Git Bash Stuff ##
 source /mingw64/share/git/completion/git-completion.bash
