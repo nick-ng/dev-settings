@@ -35,6 +35,10 @@ cat ~/.ssh/id_rsa.pub | xclip -selection clipboard
 source node.sh
 ```
 
+## Install Manually
+
+- [ripgrep](https://github.com/BurntSushi/ripgrep#installation)
+
 ## Windows (Git Bash)
 
 ### SSH Key
