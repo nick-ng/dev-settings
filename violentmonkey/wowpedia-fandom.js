@@ -13,7 +13,7 @@
 // @run-at      document-idle
 // ==/UserScript==
 setTimeout(() => {
-  var [_, ...route] = location.href.split("/wiki/")
+  const [_, ...route] = location.href.split("/wiki/")
 
   const newRoute = route.join("/wiki/")
 
@@ -22,4 +22,4 @@ setTimeout(() => {
   console.info(`Redirecting to ${newHref}`)
 
   window.location = newHref
-}, 10);
+}, 1);
