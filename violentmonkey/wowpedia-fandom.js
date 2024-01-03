@@ -1,9 +1,12 @@
 // ==UserScript==
 // @name        Redirect to warcraft.wiki.gg instead
 // @namespace   Violentmonkey Scripts
-// @match       https://wowpedia.fandom.com/wiki/*
+// @include     https://wowpedia.fandom.com/wiki/*
+// @include     http://wowpedia.fandom.com/wiki/*
+// @include     https://wowwiki-archive.fandom.com/wiki/*
+// @include     http://wowwiki-archive.fandom.com/wiki/*
 // @grant       none
-// @version     1.0
+// @version     1.1
 // @author      https://github.com/nick-ng
 // @description 9/01/2022, 8:44:06 am
 // @downloadURL https://raw.githubusercontent.com/nick-ng/dev-settings/master/violentmonkey/wowpedia-fandom.js
