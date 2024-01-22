@@ -10,6 +10,7 @@
 // @run-at      document-idle
 // ==/UserScript==
 
+// Can also do document.querySelector('.tp-modal button.tp-close').click()
 (async () => {
   const selectorQueries = [
     ".tp-modal",
