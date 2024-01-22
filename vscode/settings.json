@@ -19,7 +19,9 @@
 	},
 	"[markdown]": {
 		"files.trimTrailingWhitespace": false,
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
+		"editor.wordWrap": "wordWrapColumn",
+  	"editor.wordWrapColumn": 80
 	},
 	"[php]": {
 		"editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
