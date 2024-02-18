@@ -3,7 +3,7 @@
 // @namespace   https://github.com/nick-ng/dev-settings/violentmonkey
 // @match       https://www.youtube.com/*
 // @grant       none
-// @version     1.1.0
+// @version     1.2.0
 // @author      https://github.com/nick-ng
 // @description Hides YouTube comments.
 // @downloadURL https://raw.githubusercontent.com/nick-ng/dev-settings/master/violentmonkey/youtube-comments-hider.js
@@ -64,7 +64,7 @@
 			transition-delay: 0;
     }
 
-    #comments #header::after {
+    #comments > #sections > #header::after {
       content: 'Hover to see comments';
       color: white;
       text-shadow:
@@ -73,10 +73,6 @@
         -1px 1px 0 #000,
         1px 1px 0 #000;
       font-size: 20px;
-    }
-
-    #comments:hover #header::after {
-      display: none;
     }
   `,
     { id: getNextElementId() }
