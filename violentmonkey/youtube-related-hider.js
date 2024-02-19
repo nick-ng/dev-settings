@@ -3,7 +3,7 @@
 // @namespace   https://github.com/nick-ng/dev-settings/violentmonkey
 // @match       https://www.youtube.com/*
 // @grant       none
-// @version     1.2.0
+// @version     1.3.0
 // @author      https://github.com/nick-ng
 // @description Hides related videos on YouTube so the result of esports matches aren't spoiled.
 // @downloadURL https://raw.githubusercontent.com/nick-ng/dev-settings/master/violentmonkey/youtube-related-hider.js
@@ -92,7 +92,7 @@
 			height: 3px;
 			width: 0;
 			top: 25px;
-			right: 0;
+			left: 0;
 			transition-property: width;
       transition-duration: 0;
       transition-timing-function: linear;
