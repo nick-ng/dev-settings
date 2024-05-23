@@ -3,7 +3,7 @@
 // @namespace   https://github.com/nick-ng/dev-settings/violentmonkey
 // @match       https://bato.to/chapter/*
 // @grant       none
-// @version     1.0
+// @version     1.1
 // @author      https://github.com/nick-ng
 // @description Add a space between pages
 // @downloadURL https://raw.githubusercontent.com/nick-ng/dev-settings/master/violentmonkey/bato-to.js
@@ -12,6 +12,7 @@
 
 (() => {
 	const ID = "974ff67b-ec7e-4d51-a876-55999370463b"
+	const className = `a${ID}`
 
 	const elements = ["style"]
 
@@ -20,6 +21,14 @@
 	  if (tempOldElement) {
 		 tempOldElement.remove();
 	  }
+	}
+
+	const elementsWithClass = [...document.querySelectorAll(`.${className}`)]
+
+	for (let i = 0; i < elementsWithClass.length; i++) {
+		if (elementsWithClass[i]) {
+			elementsWithClass[i].remove()
+		}
 	}
 
 	const makeElement = (tag, parent, text, attributes) => {
@@ -43,17 +52,33 @@
 
 	makeElement("style", headEl, `
 	div#viewer div.item {
-		margin: 1rem 0;
+		margin: 0 0 1.7rem;
 	}
 
 	div#viewer div.item span.page-num {
-		right: 100%;
-		bottom: 0;
+		left: 0;
+		top: 100%;
 		white-space: nowrap;
-		margin: 0 1rem;
+		font-size: 1rem;
+		color: white;
+		background-color: #888888;
+		height: 1.7rem;
+		border-right: 1px solid white;
 	}
 
 	`, {
 	  id: styleId
 	})
+
+	setTimeout(() => {
+		const pageNumberEls = [...document.querySelectorAll('span.page-num')]
+
+		for (let i = 0; i < pageNumberEls.length; i++) {
+			const [currentPageString, totalPagesString] = pageNumberEls[i].textContent.split("/")
+
+			const percentage = parseInt(currentPageString, 10) / parseInt(totalPagesString, 10) * 100;
+
+			pageNumberEls[i].setAttribute('style', `width: ${percentage}%`)
+		}
+	}, 100)
  })();

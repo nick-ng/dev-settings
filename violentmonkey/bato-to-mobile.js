@@ -3,7 +3,7 @@
 // @namespace   https://github.com/nick-ng/dev-settings/violentmonkey
 // @match       https://bato.to/chapter/*
 // @grant       none
-// @version     1.0
+// @version     1.1
 // @author      https://github.com/nick-ng
 // @description Add a space between pages (mobile)
 // @downloadURL https://raw.githubusercontent.com/nick-ng/dev-settings/master/violentmonkey/bato-to-mobile.js
@@ -43,9 +43,31 @@
 
 	makeElement("style", headEl, `
 	div#viewer div.item {
-		margin: 1px 0;
+		margin: 0 0 2px;
 	}
+
+	div#viewer div.item span.page-num {
+		left: 0;
+		top: 100%;
+		color: #00000000;
+		background-color: #888888;
+		height: 2px;
+		border-right: 1px solid white;
+	}
+
 	`, {
 	  id: styleId
 	})
+
+	setTimeout(() => {
+		const pageNumberEls = [...document.querySelectorAll('span.page-num')]
+
+		for (let i = 0; i < pageNumberEls.length; i++) {
+			const [currentPageString, totalPagesString] = pageNumberEls[i].textContent.split("/")
+
+			const percentage = parseInt(currentPageString, 10) / parseInt(totalPagesString, 10) * 100;
+
+			pageNumberEls[i].setAttribute('style', `width: ${percentage}%`)
+		}
+	}, 100)
  })();
