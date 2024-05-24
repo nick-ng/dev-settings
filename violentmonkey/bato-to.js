@@ -3,7 +3,7 @@
 // @namespace   https://github.com/nick-ng/dev-settings/violentmonkey
 // @match       https://bato.to/chapter/*
 // @grant       none
-// @version     1.1
+// @version     1.2
 // @author      https://github.com/nick-ng
 // @description Add a space between pages
 // @downloadURL https://raw.githubusercontent.com/nick-ng/dev-settings/master/violentmonkey/bato-to.js
@@ -12,7 +12,6 @@
 
 (() => {
 	const ID = "974ff67b-ec7e-4d51-a876-55999370463b"
-	const className = `a${ID}`
 
 	const elements = ["style"]
 
@@ -21,14 +20,6 @@
 	  if (tempOldElement) {
 		 tempOldElement.remove();
 	  }
-	}
-
-	const elementsWithClass = [...document.querySelectorAll(`.${className}`)]
-
-	for (let i = 0; i < elementsWithClass.length; i++) {
-		if (elementsWithClass[i]) {
-			elementsWithClass[i].remove()
-		}
 	}
 
 	const makeElement = (tag, parent, text, attributes) => {
@@ -58,14 +49,25 @@
 	div#viewer div.item span.page-num {
 		left: 0;
 		top: 100%;
-		white-space: nowrap;
-		font-size: 1rem;
-		color: white;
 		background-color: #888888;
-		height: 1.7rem;
 		border-right: 1px solid white;
 	}
 
+	@media (max-width: 1500px) {
+		div#viewer div.item span.page-num {
+			color: #00000000;
+			height: 2px;
+		}
+	}
+
+	@media (min-width: 1501px) {
+		div#viewer div.item span.page-num {
+			white-space: nowrap;
+			font-size: 1rem;
+			color: white;
+			height: 1.7rem;
+		}
+	}
 	`, {
 	  id: styleId
 	})
@@ -79,6 +81,15 @@
 			const percentage = parseInt(currentPageString, 10) / parseInt(totalPagesString, 10) * 100;
 
 			pageNumberEls[i].setAttribute('style', `width: ${percentage}%`)
+		}
+
+		const pageImgEls = [...document.querySelectorAll('.page-img')]
+
+		for (let i = 0; i < pageImgEls.length; i++) {
+			if (pageImgEls[i]) {
+				pageImgEls[i].parentNode.replaceChild(pageImgEls[i].cloneNode(), pageImgEls[i])
+				pageImgEls[i].remove()
+			}
 		}
 	}, 100)
  })();

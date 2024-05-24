@@ -72,4 +72,3 @@ If that doesn't work:
 - [Jira Unicorn](https://raw.githubusercontent.com/nick-ng/dev-settings/master/violentmonkey/jira-unicorn.js)
 - [JPerm.net Upside Down Algorithm Trainer](https://raw.githubusercontent.com/nick-ng/dev-settings/master/violentmonkey/jperm-net.js)
 - [Bato.to Space Between Pages](https://raw.githubusercontent.com/nick-ng/dev-settings/master/violentmonkey/bato-to.js)
-- [Bato.to Space Between Pages (mobile)](https://raw.githubusercontent.com/nick-ng/dev-settings/master/violentmonkey/bato-to-mobile.js)
