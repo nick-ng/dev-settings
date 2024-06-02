@@ -3,7 +3,7 @@
 // @namespace   https://github.com/nick-ng/dev-settings/violentmonkey
 // @match       https://bato.to/chapter/*
 // @grant       none
-// @version     1.3
+// @version     1.4
 // @author      https://github.com/nick-ng
 // @description Add a space between pages
 // @downloadURL https://raw.githubusercontent.com/nick-ng/dev-settings/master/violentmonkey/bato-to.js
@@ -49,28 +49,20 @@
 		border-right: 1px solid white;
 	}
 
-	@media (max-width: 1500px) {
-		div#viewer div.item span.page-num {
-			color: #00000000;
-			height: 2px;
-		}
-
-		div#viewer div.item {
-			margin: 0 0 2px;
-		}
+	div#viewer div.item span.page-num {
+		white-space: nowrap;
+		font-size: 1rem;
+		color: white;
+		height: 1.7rem;
+		padding-left: 5px;
 	}
 
-	@media (min-width: 1501px) {
-		div#viewer div.item span.page-num {
-			white-space: nowrap;
-			font-size: 1rem;
-			color: white;
-			height: 1.7rem;
-		}
+	div#viewer div.item {
+		margin: 0 0 1.7rem;
+	}
 
-		div#viewer div.item {
-			margin: 0 0 1.7rem;
-		}
+	#iframe_PostList {
+		display: none;
 	}
 	`, {
 	  id: styleId
