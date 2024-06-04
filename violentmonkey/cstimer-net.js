@@ -3,7 +3,7 @@
 // @namespace   Violentmonkey Scripts
 // @match       https://cstimer.net/
 // @grant       none
-// @version     1.6
+// @version     1.8
 // @author      https://github.com/nick-ng
 // @description 9/01/2022, 8:44:06 am
 // @downloadURL https://raw.githubusercontent.com/nick-ng/dev-settings/master/violentmonkey/cstimer-net.js
@@ -20,17 +20,31 @@ const getCurrentNumber = () => {
 };
 
 const checkPlusFifteen = () => {
+	const ID = "32bc11b3-3759-4192-8ae1-cae4a4043685"
+	const BUTTON_ID = `${ID}-button`
 	let md = getCurrentNumber();
 
-	const ed = document.querySelector(`div#stats tbody tr`);
+	const targetEl = document.getElementById("stats")
+	const myButton = document.createElement("button")
+	targetEl.appendChild(myButton)
+	myButton.setAttribute("id", BUTTON_ID)
+	myButton.setAttribute("style", `
+	position: absolute;
+	left: 5px;
+	top: 38px;
+	width: 70px;
+	border: solid 1px black;
+	padding: 2px 0;
+	font-size: 14pt;
+	`)
 
-	ed.addEventListener("click", (event) => {
+	myButton.addEventListener("click", (event) => {
 		if (event.shiftKey) {
 			const newValue = prompt("Enter new value");
 
 			md = getCurrentNumber() - newValue;
 		} else {
-			md = 0
+			md = getCurrentNumber()
 		}
 	});
 
@@ -43,9 +57,7 @@ const checkPlusFifteen = () => {
 	setInterval(() => {
 		const f = getCurrentNumber() - md;
 
-		const ee = document.querySelector(`div#stats tbody th`);
-
-		ee.textContent = `${f}`;
+		myButton.textContent = `${f}`;
 	}, 500);
 };
 
