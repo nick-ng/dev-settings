@@ -3,7 +3,7 @@
 // @namespace   Violentmonkey Scripts
 // @match       https://cstimer.net/
 // @grant       none
-// @version     1.5
+// @version     1.6
 // @author      https://github.com/nick-ng
 // @description 9/01/2022, 8:44:06 am
 // @downloadURL https://raw.githubusercontent.com/nick-ng/dev-settings/master/violentmonkey/cstimer-net.js
@@ -24,10 +24,14 @@ const checkPlusFifteen = () => {
 
 	const ed = document.querySelector(`div#stats tbody tr`);
 
-	ed.addEventListener("click", () => {
-		const newValue = prompt("Enter new value");
+	ed.addEventListener("click", (event) => {
+		if (event.shiftKey) {
+			const newValue = prompt("Enter new value");
 
-		md = getCurrentNumber() - newValue;
+			md = getCurrentNumber() - newValue;
+		} else {
+			md = 0
+		}
 	});
 
 	window.setCount = (newValue = -12) => {
