@@ -11,37 +11,40 @@
 // ==/UserScript==
 
 (() => {
-	const ID = "974ff67b-ec7e-4d51-a876-55999370463b"
+	const ID = "974ff67b-ec7e-4d51-a876-55999370463b";
 
-	const elements = ["style"]
+	const elements = ["style"];
 
 	for (let i = 0; i < elements.length; i++) {
-	  const tempOldElement = document.getElementById(`${ID}-${elements[i]}`);
-	  if (tempOldElement) {
-		 tempOldElement.remove();
-	  }
+		const tempOldElement = document.getElementById(`${ID}-${elements[i]}`);
+		if (tempOldElement) {
+			tempOldElement.remove();
+		}
 	}
 
 	const makeElement = (tag, parent, text, attributes) => {
-	  const tempElement = document.createElement(tag);
-	  if (text) {
-		 tempElement.textContent = text;
-	  }
-	  if (parent) {
-		 parent.appendChild(tempElement);
-	  }
-	  if (attributes) {
-		 Object.entries(attributes).forEach(([key, value]) => {
-			tempElement.setAttribute(key, value);
-		 });
-	  }
-	  return tempElement;
+		const tempElement = document.createElement(tag);
+		if (text) {
+			tempElement.textContent = text;
+		}
+		if (parent) {
+			parent.appendChild(tempElement);
+		}
+		if (attributes) {
+			Object.entries(attributes).forEach(([key, value]) => {
+				tempElement.setAttribute(key, value);
+			});
+		}
+		return tempElement;
 	};
 
-	const styleId = `${ID}-style`
+	const styleId = `${ID}-style`;
 	const headEl = document.getElementsByTagName("head")[0];
 
-	makeElement("style", headEl, `
+	makeElement(
+		"style",
+		headEl,
+		`
 	div#viewer div.item span.page-num {
 		left: 0;
 		top: 100%;
@@ -64,28 +67,36 @@
 	#iframe_PostList {
 		display: none;
 	}
-	`, {
-	  id: styleId
-	})
+	`,
+		{
+			id: styleId,
+		}
+	);
 
 	setTimeout(() => {
-		const pageNumberEls = [...document.querySelectorAll('span.page-num')]
+		const pageNumberEls = [...document.querySelectorAll("span.page-num")];
 
 		for (let i = 0; i < pageNumberEls.length; i++) {
-			const [currentPageString, totalPagesString] = pageNumberEls[i].textContent.split("/")
+			const [currentPageString, totalPagesString] =
+				pageNumberEls[i].textContent.split("/");
 
-			const percentage = parseInt(currentPageString, 10) / parseInt(totalPagesString, 10) * 100;
+			const percentage =
+				(parseInt(currentPageString, 10) / parseInt(totalPagesString, 10)) *
+				100;
 
-			pageNumberEls[i].setAttribute('style', `width: ${percentage}%`)
+			pageNumberEls[i].setAttribute("style", `width: ${percentage}%`);
 		}
 
-		const pageImgEls = [...document.querySelectorAll('.page-img')]
+		const pageImgEls = [...document.querySelectorAll(".page-img")];
 
 		for (let i = 0; i < pageImgEls.length; i++) {
 			if (pageImgEls[i]) {
-				pageImgEls[i].parentNode.replaceChild(pageImgEls[i].cloneNode(), pageImgEls[i])
-				pageImgEls[i].remove()
+				pageImgEls[i].parentNode.replaceChild(
+					pageImgEls[i].cloneNode(),
+					pageImgEls[i]
+				);
+				pageImgEls[i].remove();
 			}
 		}
-	}, 100)
- })();
+	}, 100);
+})();

@@ -49,7 +49,7 @@
 
 	const isMonday = new Date().getDay() === 1;
 
-	const delay = isMonday ? "7" : "1"
+	const delay = isMonday ? "7" : "1";
 
 	makeElement(
 		"style",

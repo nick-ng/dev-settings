@@ -11,45 +11,45 @@
 // ==/UserScript==
 
 (() => {
-  const ID = "edaa0b2d-7a33-4765-b7fb-f94c4654db95";
+	const ID = "edaa0b2d-7a33-4765-b7fb-f94c4654db95";
 
-  for (let i = 0; i < 1; i++) {
-    const tempOldElement = document.getElementById(`${ID}-${i}`);
-    if (tempOldElement) {
-      tempOldElement.remove();
-    }
-  }
+	for (let i = 0; i < 1; i++) {
+		const tempOldElement = document.getElementById(`${ID}-${i}`);
+		if (tempOldElement) {
+			tempOldElement.remove();
+		}
+	}
 
-  /**
-   * helper functions
-   */
-  let counter = 0;
-  const getNextElementId = () => `${ID}-${counter++}`;
+	/**
+	 * helper functions
+	 */
+	let counter = 0;
+	const getNextElementId = () => `${ID}-${counter++}`;
 
-  const makeElement = (tag, parent, text, attributes) => {
-    const tempElement = document.createElement(tag);
-    if (text) {
-      tempElement.textContent = text;
-    }
-    if (parent) {
-      parent.appendChild(tempElement);
-    }
-    if (attributes) {
-      Object.entries(attributes).forEach(([key, value]) => {
-        tempElement.setAttribute(key, value);
-      });
-    }
-    return tempElement;
-  };
+	const makeElement = (tag, parent, text, attributes) => {
+		const tempElement = document.createElement(tag);
+		if (text) {
+			tempElement.textContent = text;
+		}
+		if (parent) {
+			parent.appendChild(tempElement);
+		}
+		if (attributes) {
+			Object.entries(attributes).forEach(([key, value]) => {
+				tempElement.setAttribute(key, value);
+			});
+		}
+		return tempElement;
+	};
 
-  /**
-   * DOM Elements
-   */
-  const headEl = document.getElementsByTagName("head")[0];
-  makeElement(
-    "style",
-    headEl,
-    `
+	/**
+	 * DOM Elements
+	 */
+	const headEl = document.getElementsByTagName("head")[0];
+	makeElement(
+		"style",
+		headEl,
+		`
     #comments #contents {
       transition-property: opacity;
       transition-duration: 1s;
@@ -75,6 +75,6 @@
       font-size: 20px;
     }
   `,
-    { id: getNextElementId() }
-  );
+		{ id: getNextElementId() }
+	);
 })();

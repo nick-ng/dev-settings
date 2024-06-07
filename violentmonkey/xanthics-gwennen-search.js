@@ -11,45 +11,45 @@
 // ==/UserScript==
 
 (() => {
-  const ID = "a7608067-c608-40f8-a559-fb334fdde7cd";
+	const ID = "a7608067-c608-40f8-a559-fb334fdde7cd";
 
-  for (let i = 0; i < 1; i++) {
-    const tempOldElement = document.getElementById(`${ID}-${i}`);
-    if (tempOldElement) {
-      tempOldElement.remove();
-    }
-  }
+	for (let i = 0; i < 1; i++) {
+		const tempOldElement = document.getElementById(`${ID}-${i}`);
+		if (tempOldElement) {
+			tempOldElement.remove();
+		}
+	}
 
-  /**
-   * helper functions
-   */
-  let counter = 0;
-  const getNextElementId = () => `${ID}-${counter++}`;
+	/**
+	 * helper functions
+	 */
+	let counter = 0;
+	const getNextElementId = () => `${ID}-${counter++}`;
 
-  const makeElement = (tag, parent, text, attributes) => {
-    const tempElement = document.createElement(tag);
-    if (text) {
-      tempElement.textContent = text;
-    }
-    if (parent) {
-      parent.appendChild(tempElement);
-    }
-    if (attributes) {
-      Object.entries(attributes).forEach(([key, value]) => {
-        tempElement.setAttribute(key, value);
-      });
-    }
-    return tempElement;
-  };
+	const makeElement = (tag, parent, text, attributes) => {
+		const tempElement = document.createElement(tag);
+		if (text) {
+			tempElement.textContent = text;
+		}
+		if (parent) {
+			parent.appendChild(tempElement);
+		}
+		if (attributes) {
+			Object.entries(attributes).forEach(([key, value]) => {
+				tempElement.setAttribute(key, value);
+			});
+		}
+		return tempElement;
+	};
 
-  /**
-   * DOM Elements
-   */
-  const headEl = document.getElementsByTagName("head")[0];
-  makeElement(
-    "style",
-    headEl,
-    `
+	/**
+	 * DOM Elements
+	 */
+	const headEl = document.getElementsByTagName("head")[0];
+	makeElement(
+		"style",
+		headEl,
+		`
     input[type=checkbox]:after {
       width: 100%;
       text-align: center;
@@ -62,6 +62,6 @@
       background-color: black;
     }
   `,
-    { id: getNextElementId() }
-  );
+		{ id: getNextElementId() }
+	);
 })();

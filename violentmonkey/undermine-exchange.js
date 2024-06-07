@@ -10,18 +10,18 @@
 // @run-at      document-start
 // ==/UserScript==
 (() => {
-	const timeEls = document.querySelectorAll(".delta-timestamp")
+	const timeEls = document.querySelectorAll(".delta-timestamp");
 
 	for (const el of timeEls) {
 		if (el.textContent.toLowerCase().includes("away")) {
-			const minutes = parseInt(el.textContent, 10)
+			const minutes = parseInt(el.textContent, 10);
 
 			if (minutes) {
-				setTimeout(
-					() => {el.setAttribute("style", "color:red")}, (1000 * 60 * minutes) + 30000
-				)
-				return
+				setTimeout(() => {
+					el.setAttribute("style", "color:red");
+				}, 1000 * 60 * minutes + 30000);
+				return;
 			}
 		}
 	}
-})()
+})();

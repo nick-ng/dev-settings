@@ -13,13 +13,13 @@
 // @run-at      document-start
 // ==/UserScript==
 setTimeout(() => {
-  const [_, ...route] = location.href.split("/wiki/")
+	const [_, ...route] = location.href.split("/wiki/");
 
-  const newRoute = route.join("/wiki/")
+	const newRoute = route.join("/wiki/");
 
-  const newHref = `https://warcraft.wiki.gg/wiki/${newRoute}`
+	const newHref = `https://warcraft.wiki.gg/wiki/${newRoute}`;
 
-  console.info(`Redirecting to ${newHref}`)
+	console.info(`Redirecting to ${newHref}`);
 
-  window.location = newHref
+	window.location = newHref;
 }, 0);

@@ -11,50 +11,50 @@
 // ==/UserScript==
 
 (() => {
-  // some different dark colours for variety
-  const colours = ["#000000"];
-  const randomColourIndex = Math.floor(Math.random() * colours.length);
-  const STYLE = `
+	// some different dark colours for variety
+	const colours = ["#000000"];
+	const randomColourIndex = Math.floor(Math.random() * colours.length);
+	const STYLE = `
   .axis.dimmable .tick text.awsui-text-small,
   .legend text.legend-metric-name {
     fill: ${colours[randomColourIndex]}bb !important;
   }
   `;
 
-  const ID = "e31899d9-11e9-418e-8228-2889b1426f8b";
+	const ID = "e31899d9-11e9-418e-8228-2889b1426f8b";
 
-  for (let i = 0; i < 1; i++) {
-    const tempOldElement = document.getElementById(`${ID}-${i}`);
-    if (tempOldElement) {
-      tempOldElement.remove();
-    }
-  }
+	for (let i = 0; i < 1; i++) {
+		const tempOldElement = document.getElementById(`${ID}-${i}`);
+		if (tempOldElement) {
+			tempOldElement.remove();
+		}
+	}
 
-  /**
-   * helper functions
-   */
-  let counter = 0;
-  const getNextElementId = () => `${ID}-${counter++}`;
+	/**
+	 * helper functions
+	 */
+	let counter = 0;
+	const getNextElementId = () => `${ID}-${counter++}`;
 
-  const makeElement = (tag, parent, text, attributes) => {
-    const tempElement = document.createElement(tag);
-    if (text) {
-      tempElement.textContent = text;
-    }
-    if (parent) {
-      parent.appendChild(tempElement);
-    }
-    if (attributes) {
-      Object.entries(attributes).forEach(([key, value]) => {
-        tempElement.setAttribute(key, value);
-      });
-    }
-    return tempElement;
-  };
+	const makeElement = (tag, parent, text, attributes) => {
+		const tempElement = document.createElement(tag);
+		if (text) {
+			tempElement.textContent = text;
+		}
+		if (parent) {
+			parent.appendChild(tempElement);
+		}
+		if (attributes) {
+			Object.entries(attributes).forEach(([key, value]) => {
+				tempElement.setAttribute(key, value);
+			});
+		}
+		return tempElement;
+	};
 
-  /**
-   * DOM Elements
-   */
-  const headEl = document.getElementsByTagName("head")[0];
-  makeElement("style", headEl, STYLE, { id: getNextElementId() });
+	/**
+	 * DOM Elements
+	 */
+	const headEl = document.getElementsByTagName("head")[0];
+	makeElement("style", headEl, STYLE, { id: getNextElementId() });
 })();
