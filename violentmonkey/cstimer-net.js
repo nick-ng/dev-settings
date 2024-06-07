@@ -127,14 +127,14 @@
 					continue;
 				}
 
-				counter++;
-				if (counter >= DNF_HISTORY_LIMIT) {
-					break;
-				}
-
 				attempts++;
 				if (time.toUpperCase() === "DNF") {
 					dnf++;
+				}
+
+				counter++;
+				if (counter >= DNF_HISTORY_LIMIT) {
+					break;
 				}
 			}
 		}
