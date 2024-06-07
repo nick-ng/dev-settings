@@ -1,3 +1,8 @@
 {
-	"useTabs": true
+	"tabWidth": 3,
+	"useTabs": true,
+	"semi": true,
+	"trailingComma": "all",
+	"singleQuote": false,
+	"endOfLine": "lf"
 }
