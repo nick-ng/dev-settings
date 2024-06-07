@@ -60,7 +60,10 @@
 			getNewTimestamps().start
 		);
 
-		localStorage.setItem(RESTRICT_END_TIMESTAMP_STORE, getNewTimestamps().end);
+		localStorage.setItem(
+			RESTRICT_END_TIMESTAMP_STORE,
+			getNewTimestamps().end
+		);
 	}
 
 	// After the cooldown
@@ -70,7 +73,10 @@
 			getNewTimestamps().start
 		);
 
-		localStorage.setItem(RESTRICT_END_TIMESTAMP_STORE, getNewTimestamps().end);
+		localStorage.setItem(
+			RESTRICT_END_TIMESTAMP_STORE,
+			getNewTimestamps().end
+		);
 
 		setTimeout(() => {
 			location.assign("https://developer.mozilla.org");
