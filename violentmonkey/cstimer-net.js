@@ -3,7 +3,7 @@
 // @namespace   Violentmonkey Scripts
 // @match       https://cstimer.net/
 // @grant       none
-// @version     1.10
+// @version     1.11
 // @author      https://github.com/nick-ng
 // @description 9/01/2022, 8:44:06 am
 // @downloadURL https://raw.githubusercontent.com/nick-ng/dev-settings/master/violentmonkey/cstimer-net.js
@@ -121,9 +121,7 @@
 
 				const [solveNumberString, time, _ao5, _ao12] = cellsContents;
 
-				const solveNumber = parseInt(solveNumberString, 10);
-
-				if (isNaN(solveNumber)) {
+				if (!solveNumberString.match(/^\*?\d/)) {
 					continue;
 				}
 
