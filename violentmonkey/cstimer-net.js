@@ -3,10 +3,10 @@
 // @namespace   Violentmonkey Scripts
 // @match       https://cstimer.net/
 // @grant       none
-// @version     1.11
+// @version     1.12
 // @author      https://github.com/nick-ng
 // @description 9/01/2022, 8:44:06 am
-// @downloadURL https://raw.githubusercontent.com/nick-ng/dev-settings/master/violentmonkey/cstimer-net.js
+// @downloadURL https://bld.pux.one/cstimer-violentmonkey.js
 // @run-at      document-idle
 // ==/UserScript==
 (() => {
