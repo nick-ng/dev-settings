@@ -3,7 +3,7 @@
 // @namespace   https://github.com/nick-ng/dev-settings/violentmonkey
 // @match       https://bato.to/chapter/*
 // @grant       none
-// @version     1.4
+// @version     1.5
 // @author      https://github.com/nick-ng
 // @description Add a space between pages
 // @downloadURL https://raw.githubusercontent.com/nick-ng/dev-settings/master/violentmonkey/bato-to.js
@@ -54,14 +54,17 @@
 
 	div#viewer div.item span.page-num {
 		white-space: nowrap;
-		font-size: 1rem;
+		font-size: 12px;
 		color: white;
-		height: 1.7rem;
+		height: 20px;
 		padding-left: 5px;
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
 	}
 
 	div#viewer div.item {
-		margin: 0 0 1.7rem;
+		margin: 0 0 20px;
 	}
 
 	#iframe_PostList {
