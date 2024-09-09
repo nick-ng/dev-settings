@@ -3,7 +3,7 @@
 // @namespace   https://github.com/nick-ng/dev-settings/violentmonkey
 // @match       https://www.stuff.co.nz/*
 // @grant       none
-// @version     1.1.0
+// @version     1.2.0
 // @author      https://github.com/nick-ng
 // @description Remove the sign up thing and hides the header unless you hover over it
 // @downloadURL https://raw.githubusercontent.com/nick-ng/dev-settings/master/violentmonkey/stuff-co-nz.js
@@ -78,6 +78,7 @@
 		}
 	};
 
+  let deletedCount = 0;
 	for (let n = 0; n < 100000; n++) {
 		let count = 0;
 
@@ -91,11 +92,17 @@
 
 		if (count < selectorQueries.length) {
 			await new Promise((resolve) => {
-				setTimeout(resolve, 100 + n * 50);
+				setTimeout(resolve, Math.max(100 + n * 50, 3000));
 			});
 		} else {
 			deleteElements();
-			break;
+			deletedCount++
 		}
+
+    if (deletedCount > 0) {
+      await new Promise((resolve) => {
+        setTimeout(resolve, 3000)
+      })
+    }
 	}
 })();
