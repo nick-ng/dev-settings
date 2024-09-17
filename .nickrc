@@ -1,5 +1,5 @@
 ## git ##
-alias gin='gidefault && git remote prune origin && git pull && git checkout -b'
+alias gin='gidefault && git remote prune origin && git pull && git switch -c'
 
 alias giclear='echo "\ngit branch | grep \"^[^*]\" | xargs git branch -d\n"'
 alias gipush='git branch | grep "* " | awk "{print \$2}" | xargs git push --set-upstream origin '
@@ -18,9 +18,11 @@ function giap() {
 }
 
 function gidefault() {
+  echo "Getting default branch name"
   origin_name=$(git remote show)
   default_branch_name=$(git remote show $origin_name | sed -n '/HEAD branch/s/.*: //p')
-  git checkout $default_branch_name
+  echo "Default branch is $default_branch_name"
+  git switch $default_branch_name
 }
 
 function gipurge() {
@@ -28,7 +30,7 @@ function gipurge() {
   origin_name=$(git remote show)
   default_branch_name=$(git remote show $origin_name | sed -n '/HEAD branch/s/.*: //p')
   echo "Default branch is $default_branch_name"
-  git checkout $default_branch_name
+  git switch $default_branch_name
   git remote prune $origin_name
   git pull
   git fetch -p
@@ -41,10 +43,10 @@ function girebase() {
   origin_name=$(git remote show)
   default_branch_name=$(git remote show $origin_name | sed -n '/HEAD branch/s/.*: //p')
   echo "Default branch is $default_branch_name"
-  git checkout $default_branch_name
+  git switch $default_branch_name
   git remote prune $origin_name
   git pull
-  git checkout -
+  git switch -
   git rebase $default_branch_name
 }
 
