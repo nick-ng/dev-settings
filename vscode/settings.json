@@ -167,7 +167,7 @@
 	"zig.initialSetupDone": true,
 	"zig.zls.inlayHintsShowVariableTypeHints": false,
 	"[zig]": {
-		"editor.insertSpaces": false,
+		"editor.insertSpaces": true,
 		"editor.tabSize": 4,
 		"editor.detectIndentation": false
 	}
