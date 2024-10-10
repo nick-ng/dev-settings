@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "prettier --write ./violentmonkey",
+    "f:vscode": "prettier --write ./vscode",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

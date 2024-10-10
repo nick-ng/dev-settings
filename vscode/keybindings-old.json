@@ -1,76 +1,76 @@
 [
-  { "key": "ctrl+alt+f", "command": "editor.action.formatSelection" },
-  { "key": "cmd+alt+f", "command": "editor.action.formatSelection" },
-  {
-    "key": "ctrl+u",
-    "command": "-cursorUndo",
-    "when": "textInputFocus"
-  },
-  {
-    "key": "ctrl+u ctrl+u",
-    "command": "editor.action.transformToUppercase"
-  },
-  {
-    "key": "ctrl+u ctrl+l",
-    "command": "editor.action.transformToLowercase"
-  },
-  {
-    "key": "shift+ctrl+f",
-    "command": "search.action.openNewEditor"
-  },
-  {
-    "key": "ctrl+alt+s",
-    "command": "workbench.action.navigateLeft"
-  },
-  {
-    "key": "ctrl+alt+f",
-    "command": "workbench.action.navigateRight"
-  },
-  {
-    "key": "ctrl+alt+e",
-    "command": "workbench.action.navigateUp"
-  },
-  {
-    "key": "ctrl+alt+d",
-    "command": "workbench.action.navigateDown"
-  },
-  {
-    "key": "ctrl+shift+alt+f",
-    "command": "filesExplorer.findInFolder",
-    "when": "explorerResourceIsFolder && explorerViewletVisible && filesExplorerFocus && !inputFocus"
-  },
-  {
-    "key": "ctrl+meta+f",
-    "command": "editor.action.formatDocument"
-  },
-  {
-    "key": "ctrl+cmd+f",
-    "command": "editor.action.formatDocument"
-  },
-  {
-    "key": "shift+cmd+f",
-    "command": "-workbench.action.findInFiles"
-  },
-  {
-    "key": "shift+cmd+f",
-    "command": "-workbench.view.search",
-    "when": "!searchViewletVisible"
-  },
-  {
-    "key": "shift+cmd+f",
-    "command": "search.action.openNewEditor"
-  },
-  {
-    "key": "shift+ctrl+f",
-    "command": "-workbench.action.findInFiles"
-  },
-  {
-    "key": "shift+ctrl+f",
-    "command": "-workbench.view.search",
-    "when": "!searchViewletVisible"
-  },
-  {
-    "key": "shift+ctrl+f",
-    "command": "search.action.openNewEditor"
-  }
+	{ "key": "ctrl+alt+f", "command": "editor.action.formatSelection" },
+	{ "key": "cmd+alt+f", "command": "editor.action.formatSelection" },
+	{
+		"key": "ctrl+u",
+		"command": "-cursorUndo",
+		"when": "textInputFocus"
+	},
+	{
+		"key": "ctrl+u ctrl+u",
+		"command": "editor.action.transformToUppercase"
+	},
+	{
+		"key": "ctrl+u ctrl+l",
+		"command": "editor.action.transformToLowercase"
+	},
+	{
+		"key": "shift+ctrl+f",
+		"command": "search.action.openNewEditor"
+	},
+	{
+		"key": "ctrl+alt+s",
+		"command": "workbench.action.navigateLeft"
+	},
+	{
+		"key": "ctrl+alt+f",
+		"command": "workbench.action.navigateRight"
+	},
+	{
+		"key": "ctrl+alt+e",
+		"command": "workbench.action.navigateUp"
+	},
+	{
+		"key": "ctrl+alt+d",
+		"command": "workbench.action.navigateDown"
+	},
+	{
+		"key": "ctrl+shift+alt+f",
+		"command": "filesExplorer.findInFolder",
+		"when": "explorerResourceIsFolder && explorerViewletVisible && filesExplorerFocus && !inputFocus"
+	},
+	{
+		"key": "ctrl+meta+f",
+		"command": "editor.action.formatDocument"
+	},
+	{
+		"key": "ctrl+cmd+f",
+		"command": "editor.action.formatDocument"
+	},
+	{
+		"key": "shift+cmd+f",
+		"command": "-workbench.action.findInFiles"
+	},
+	{
+		"key": "shift+cmd+f",
+		"command": "-workbench.view.search",
+		"when": "!searchViewletVisible"
+	},
+	{
+		"key": "shift+cmd+f",
+		"command": "search.action.openNewEditor"
+	},
+	{
+		"key": "shift+ctrl+f",
+		"command": "-workbench.action.findInFiles"
+	},
+	{
+		"key": "shift+ctrl+f",
+		"command": "-workbench.view.search",
+		"when": "!searchViewletVisible"
+	},
+	{
+		"key": "shift+ctrl+f",
+		"command": "search.action.openNewEditor"
+	}
 ]

@@ -21,7 +21,7 @@
 		"files.trimTrailingWhitespace": false,
 		"editor.defaultFormatter": "esbenp.prettier-vscode",
 		"editor.wordWrap": "wordWrapColumn",
-  	"editor.wordWrapColumn": 80
+		"editor.wordWrapColumn": 80
 	},
 	"[php]": {
 		"editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
@@ -40,10 +40,6 @@
 	},
 	"[filter]": {
 		"editor.wordWrap": "on"
-	},
-	"[rust]": {
-		"editor.insertSpaces": true,
-		"editor.tabSize": 4
 	},
 	"css.validate": false,
 	"debug.internalConsoleOptions": "neverOpen",
@@ -144,12 +140,7 @@
 	"workbench.iconTheme": "vs-nick",
 	"search.quickOpen.includeHistory": false,
 	"search.useIgnoreFiles": true,
-	"rust-analyzer.cachePriming.enable": false,
-	"rust-analyzer.inlayHints.parameterHints.enable": false,
-	"rust-analyzer.inlayHints.typeHints.enable": false,
-	"rust-analyzer.lens.run.enable": false,
-	"rust-analyzer.lens.debug.enable": false,
-	"rust-analyzer.lens.enable": false,
+
 	"editor.lightbulb.enabled": false,
 	"svelte.enable-ts-plugin": true,
 	"editor.fontSize": 16,
@@ -158,5 +149,28 @@
 	"javascript.preferences.renameMatchingJsxTags": false,
 	"typescript.preferences.renameMatchingJsxTags": false,
 	"workbench.editor.showTabs": true,
-	"telemetry.telemetryLevel": "off"
+	"telemetry.telemetryLevel": "off",
+
+	// rust
+	"[rust]": {
+		"editor.insertSpaces": true,
+		"editor.tabSize": 4
+	},
+	"rust-analyzer.cachePriming.enable": false,
+	"rust-analyzer.inlayHints.parameterHints.enable": false,
+	"rust-analyzer.inlayHints.typeHints.enable": false,
+	"rust-analyzer.lens.run.enable": false,
+	"rust-analyzer.lens.debug.enable": false,
+	"rust-analyzer.lens.enable": false,
+
+	// zig
+	"zig.path": "/home/nickthree/zig/zig",
+	"zig.zls.path": "/home/nickthree/.config/Code/User/globalStorage/ziglang.vscode-zig/zls_install/zls",
+	"zig.initialSetupDone": true,
+	"zig.zls.inlayHintsShowVariableTypeHints": false,
+	"[zig]": {
+		"editor.insertSpaces": false,
+		"editor.tabSize": 4,
+		"editor.detectIndentation": false
+	}
 }
