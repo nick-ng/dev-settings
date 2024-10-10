@@ -164,8 +164,6 @@
 	"rust-analyzer.lens.enable": false,
 
 	// zig
-	"zig.path": "/home/nickthree/zig/zig",
-	"zig.zls.path": "/home/nickthree/.config/Code/User/globalStorage/ziglang.vscode-zig/zls_install/zls",
 	"zig.initialSetupDone": true,
 	"zig.zls.inlayHintsShowVariableTypeHints": false,
 	"[zig]": {
