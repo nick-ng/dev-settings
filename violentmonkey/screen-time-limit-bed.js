@@ -1,10 +1,10 @@
 // ==UserScript==
 // @name        Screen Time Limit - Bed
 // @namespace   https://github.com/nick-ng/dev-settings/violentmonkey
-// @match       https://imgur.com
-// @match       https://*.imgur.com
+// @match       https://imgur.com/*
+// @match       https://*.imgur.com/*
 // @grant       none
-// @version     1.0
+// @version     1.1
 // @author      https://github.com/nick-ng
 // @description Block some sites at bed time
 // @downloadURL https://raw.githubusercontent.com/nick-ng/dev-settings/master/violentmonkey/screen-time-limit-bed.js
