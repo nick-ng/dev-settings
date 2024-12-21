@@ -13,6 +13,7 @@ SetWorkingDir %A_ScriptDir% ; Ensures a consistent starting directory.
 >!F4::Send {F4}
 
 ~LShift::
+	SetNumLockState, On
 	SetCapsLockState, Off
 	Sleep, 30
 	if GetKeyState("RShift", "P")
@@ -20,6 +21,7 @@ SetWorkingDir %A_ScriptDir% ; Ensures a consistent starting directory.
 return
 
 ~RShift::
+	SetNumLockState, On
 	SetCapsLockState, Off
 	Sleep, 30
 	if GetKeyState("LShift", "P")
