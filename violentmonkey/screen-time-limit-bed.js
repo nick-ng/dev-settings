@@ -4,7 +4,7 @@
 // @match       https://imgur.com/*
 // @match       https://*.imgur.com/*
 // @grant       none
-// @version     1.1
+// @version     1.2
 // @author      https://github.com/nick-ng
 // @description Block some sites at bed time
 // @downloadURL https://raw.githubusercontent.com/nick-ng/dev-settings/master/violentmonkey/screen-time-limit-bed.js
@@ -13,7 +13,7 @@
 
 setTimeout(() => {
 	const now = new Date()
-	const hours = now.getHours
+	const hours = now.getHours()
 
 	// between 9 am and 11 pm
 	if (hours > 9 && hours < 23) {
