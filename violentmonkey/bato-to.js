@@ -2,8 +2,9 @@
 // @name        Bato.to adjustments
 // @namespace   https://github.com/nick-ng/dev-settings/violentmonkey
 // @match       https://bato.to/chapter/*
+// @match       https://readtoto.net/chapter/*
 // @grant       none
-// @version     1.5
+// @version     1.6
 // @author      https://github.com/nick-ng
 // @description Add a space between pages
 // @downloadURL https://raw.githubusercontent.com/nick-ng/dev-settings/master/violentmonkey/bato-to.js
