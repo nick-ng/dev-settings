@@ -30,7 +30,7 @@ return
 
 ^#f::Send ^!f
 
-~^`::
+~+^`::
 	DetectHiddenWindows, On
 	windowHandleId := WinExist("ahk_exe WindowsTerminal.exe")
 
