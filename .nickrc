@@ -56,3 +56,10 @@ alias nr="npm run"
 
 ## neovim ##
 alias cdnvimconf='cd "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim'
+
+# Preferred editor for local and remote sessions
+if [[ -n $SSH_CONNECTION ]]; then
+  export EDITOR='vi'
+else
+  export EDITOR='nvim'
+fi
