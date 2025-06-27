@@ -54,8 +54,15 @@ function girebase() {
 alias npmscripts='cat package.json | jq .scripts'
 alias nr="npm run"
 
-## neovim ##
+## dev environment ##
 alias cdnvimconf='cd "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim'
+function pullalldevsettings() {
+		  cdnvimconf
+		  git pull
+		  # change directory to dev-settings
+		  cd "$(readlink ~/.nickrc | sed s/\.nickrc//)" || return
+		  git pull
+}
 
 ## tmux ##
 # copy tmux buffer to OS buffer
