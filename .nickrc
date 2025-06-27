@@ -20,7 +20,7 @@ function giap() {
 function gidefault() {
   echo "Getting default branch name"
   origin_name=$(git remote show)
-  default_branch_name=$(git remote show $origin_name | sed -n '/HEAD branch/s/.*: //p')
+  default_branch_name=$(git remote show "$origin_name" | sed -n '/HEAD branch/s/.*: //p')
   echo "Default branch is $default_branch_name"
   git switch $default_branch_name
 }
@@ -41,7 +41,7 @@ function gipurge() {
 function girebase() {
   echo "Getting default branch name"
   origin_name=$(git remote show)
-  default_branch_name=$(git remote show $origin_name | sed -n '/HEAD branch/s/.*: //p')
+  default_branch_name=$(git remote show "$origin_name" | sed -n '/HEAD branch/s/.*: //p')
   echo "Default branch is $default_branch_name"
   git switch $default_branch_name
   git remote prune $origin_name
@@ -57,11 +57,13 @@ alias nr="npm run"
 ## dev environment ##
 alias cdnvimconf='cd "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim'
 function pullalldevsettings() {
+		  CURRENT_DIR=$(pwd)
 		  cdnvimconf
 		  git pull
 		  # change directory to dev-settings
 		  cd "$(readlink ~/.nickrc | sed s/\.nickrc//)" || return
 		  git pull
+		  cd "$CURRENT_DIR" || return
 }
 
 ## tmux ##
