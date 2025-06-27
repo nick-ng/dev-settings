@@ -56,7 +56,7 @@ alias nr="npm run"
 
 ## dev environment ##
 alias cdnvimconf='cd "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim'
-function pullalldevsettings() {
+function updatealldevsettings() {
 		  CURRENT_DIR=$(pwd)
 		  cdnvimconf
 		  git pull
