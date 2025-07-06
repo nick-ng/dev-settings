@@ -75,5 +75,5 @@ alias tclip='tmux save-buffer - | xclip -selection clipboard'
 if [[ -n $SSH_CONNECTION ]]; then
   export EDITOR='vi'
 else
-  export EDITOR='nvim'
+  export EDITOR=$(which nvim)
 fi
