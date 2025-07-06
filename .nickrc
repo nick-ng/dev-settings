@@ -65,6 +65,7 @@ function updatealldevsettings() {
 		  git pull
 		  cd "$CURRENT_DIR" || return
 }
+alias upgradealldevsettings=updatealldevsettings
 
 ## tmux ##
 # copy tmux buffer to OS buffer
