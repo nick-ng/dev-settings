@@ -10,9 +10,9 @@
 // @run-at      document-idle
 // ==/UserScript==
 
-;(() => {
-  const headEl = [...document.getElementsByTagName("head")][0];
-  const myStyleTag = document.createElement("style")
-  myStyleTag.textContent = `#memo { border: 1px solid #888; border-radius: 16px; box-sizing: border-box; color: #888; background-color: #888; } #memo:hover { color: inherit; background-color: inherit; }`
-  headEl.appendChild(myStyleTag)
+(() => {
+	const headEl = [...document.getElementsByTagName("head")][0];
+	const myStyleTag = document.createElement("style");
+	myStyleTag.textContent = `#memo { border: 1px solid #888; border-radius: 16px; box-sizing: border-box; color: #888; background-color: #888; } #memo:hover { color: inherit; background-color: inherit; }`;
+	headEl.appendChild(myStyleTag);
 })();

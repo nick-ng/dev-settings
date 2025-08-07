@@ -78,7 +78,7 @@
 		}
 	};
 
-  let deletedCount = 0;
+	let deletedCount = 0;
 	for (let n = 0; n < 100000; n++) {
 		let count = 0;
 
@@ -96,13 +96,13 @@
 			});
 		} else {
 			deleteElements();
-			deletedCount++
+			deletedCount++;
 		}
 
-    if (deletedCount > 0) {
-      await new Promise((resolve) => {
-        setTimeout(resolve, 3000)
-      })
-    }
+		if (deletedCount > 0) {
+			await new Promise((resolve) => {
+				setTimeout(resolve, 3000);
+			});
+		}
 	}
 })();

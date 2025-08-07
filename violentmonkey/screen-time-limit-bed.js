@@ -12,8 +12,8 @@
 // ==/UserScript==
 
 setTimeout(() => {
-	const now = new Date()
-	const hours = now.getHours()
+	const now = new Date();
+	const hours = now.getHours();
 
 	// between 9 am and 11 pm
 	if (hours > 9 && hours < 23) {
@@ -27,14 +27,27 @@ setTimeout(() => {
 		return;
 	}
 
-	const fullScreenHiderEl = document.createElement("div")
-	const styleAttr = `;${["position: absolute", "left: 0", "right: 0", "top: 0", "bottom: 0", "background-color: #000", "color:rgb(0, 185, 77)", "display: flex", "justify-content: center", "align-items: center", "font-size: 72pt", "z-index: 99999"].join(";")};`
-	fullScreenHiderEl.setAttribute("style", styleAttr)
+	const fullScreenHiderEl = document.createElement("div");
+	const styleAttr = `;${[
+		"position: absolute",
+		"left: 0",
+		"right: 0",
+		"top: 0",
+		"bottom: 0",
+		"background-color: #000",
+		"color:rgb(0, 185, 77)",
+		"display: flex",
+		"justify-content: center",
+		"align-items: center",
+		"font-size: 72pt",
+		"z-index: 99999",
+	].join(";")};`;
+	fullScreenHiderEl.setAttribute("style", styleAttr);
 	if (hours >= 5) {
-		fullScreenHiderEl.textContent = "Get out of bed"
+		fullScreenHiderEl.textContent = "Get out of bed";
 	} else {
-		fullScreenHiderEl.textContent = "Go to sleep"
+		fullScreenHiderEl.textContent = "Go to sleep";
 	}
 
 	bodyEl.append(fullScreenHiderEl);
-})
+});

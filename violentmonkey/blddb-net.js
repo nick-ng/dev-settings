@@ -79,7 +79,7 @@
 			window.algSearch();
 			setTimeout(() => {
 				addMoveCount(0);
-			}, 50)
+			}, 50);
 		}
 	}, 100);
 })();
