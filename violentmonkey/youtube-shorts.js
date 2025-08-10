@@ -3,7 +3,7 @@
 // @namespace   https://github.com/nick-ng/dev-settings/violentmonkey
 // @match *://www.youtube.com/*
 // @grant       none
-// @version     1.3
+// @version     1.4
 // @author      https://github.com/nick-ng
 // @description Limit the amount of time you spend watching YouTube Shorts
 // @downloadURL https://raw.githubusercontent.com/nick-ng/dev-settings/master/violentmonkey/youtube-shorts.js
@@ -22,6 +22,7 @@
 
 	const STORE_KEY = "pux_youtube_shorts_limit";
 	const LIMIT_MS = 1000 * 60 * 10; // 10 minutes
+	const REDIRECT_URL = "https://youtu.be/raHVKhS-A94";
 
 	let timeoutIds = [];
 
@@ -48,7 +49,7 @@
 		} else if (elapsedTime >= LIMIT_MS) {
 			console.info("time is up");
 			if (location.pathname.startsWith("/shorts")) {
-				window.location = "https://youtu.be/raHVKhS-A94";
+				window.location = REDIRECT_URL;
 				return;
 			}
 		}
@@ -56,11 +57,27 @@
 		const remainingTime = LIMIT_MS - elapsedTime;
 		console.info(`${remainingTime / 1000} seconds left`);
 		for (let i = 0; i < remainingTime; i += 30000) {
-			const message = `${i / 1000} seconds left`;
+			const j = i;
 			timeoutIds.push(
 				setTimeout(() => {
-					console.info(message);
-				}, remainingTime - i)
+					console.info(`${j / 1000} seconds left`);
+
+					if (j === 0) {
+						const day = new Date().getDay();
+						if (day === 0 || day === 6) {
+							// if Sunday (0) or Saturday (6), redirect in LIMIT_MS
+							timeoutIds.push(
+								setTimeout(() => {
+									console.info("double time up");
+									window.location = REDIRECT_URL;
+								}, LIMIT_MS)
+							);
+						} else {
+							// if weekday, redirect immediately
+							window.location = REDIRECT_URL;
+						}
+					}
+				}, remainingTime - j)
 			);
 		}
 	}
