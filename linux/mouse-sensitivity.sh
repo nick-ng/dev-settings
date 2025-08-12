@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# wait 3 seconds so the mouse has time to connect
+sleep 3
+
 # SATECHI mouse at work
 # Set to 3200 dpi - purple
 XINPUT_LINE="$(xinput --list | grep 'PixArt OpticalMouse  ')"
