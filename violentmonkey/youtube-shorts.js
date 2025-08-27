@@ -3,7 +3,7 @@
 // @namespace   https://github.com/nick-ng/dev-settings/violentmonkey
 // @match *://www.youtube.com/*
 // @grant       none
-// @version     1.5
+// @version     1.6
 // @author      https://github.com/nick-ng
 // @description Limit the amount of time you spend watching YouTube Shorts
 // @downloadURL https://raw.githubusercontent.com/nick-ng/dev-settings/master/violentmonkey/youtube-shorts.js
@@ -21,7 +21,7 @@
 	}
 
 	const STORE_KEY = "pux_youtube_shorts_limit";
-	const LIMIT_MS = 1000 * 60 * 8; // 8 minutes
+	const LIMIT_MS = 1000 * 60 * 7; // 7 minutes
 	const RESET_MS = 1000 * 60 * 30; // 30 minutes
 	const REDIRECT_URL = "https://youtu.be/raHVKhS-A94";
 
