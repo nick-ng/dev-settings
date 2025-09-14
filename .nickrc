@@ -17,6 +17,12 @@ function giap() {
   todo
 }
 
+function gin2() {
+	gidefault
+	git remote prune origin
+	git pull && git switch -c "$(date '+%Y-%m-%d_%H-%M-%S')"
+}
+
 function gidefault() {
   echo "Getting default branch name"
   origin_name=$(git remote show)
