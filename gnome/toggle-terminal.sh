@@ -11,7 +11,7 @@ else
 	for (( i = 0 ; i < 1000 ; i++ )); do
 		if [ -n "$(xdotool search --class ^gnome-terminal$)" ]; then
 			xdotool search --class ^gnome-terminal$ windowactivate --sync
-			xdotool key --clearmodifiers super+F11
+			# xdotool key --clearmodifiers super+F11
 			break;
 		fi
 
