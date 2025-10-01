@@ -67,6 +67,7 @@ function updatealldevsettings() {
 		  cdnvimconf
 		  git pull --rebase
 		  # change directory to dev-settings
+		  cd ~
 		  cd "$(readlink ~/.nickrc | sed s/\.nickrc//)" || return
 		  git pull --rebase
 		  cd "$CURRENT_DIR" || return
