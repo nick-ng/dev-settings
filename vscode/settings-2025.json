@@ -1,0 +1,153 @@
+{
+	"[json]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[jsonc]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[markdown]": {
+		"files.trimTrailingWhitespace": false,
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
+		"editor.wordWrap": "wordWrapColumn",
+		"editor.wordWrapColumn": 80
+	},
+	"[python]": {
+		"editor.detectIndentation": true
+	},
+	"[filter]": {
+		"editor.wordWrap": "on"
+	},
+	"css.validate": false,
+	"debug.internalConsoleOptions": "neverOpen",
+	"debug.toolBarLocation": "docked",
+	"editor.acceptSuggestionOnCommitCharacter": false,
+	"editor.acceptSuggestionOnEnter": "off",
+	"editor.accessibilitySupport": "off",
+	"editor.cursorStyle": "block",
+	"editor.cursorSurroundingLines": 3,
+	"editor.detectIndentation": true,
+	"editor.dragAndDrop": false,
+	"editor.fontFamily": "'BigBlueTermPlus Nerd Font Mono' ,'Fira Code Medium', 'DejaVu Sans Mono', Consolas, Monaco, 'Comic Sans MS', Arial, Helvetica",
+	"editor.fontLigatures": false,
+	"editor.lineHeight": 1,
+	"editor.formatOnSave": true,
+	"editor.insertSpaces": false,
+	"editor.minimap.enabled": false,
+	"editor.minimap.maxColumn": 80,
+	"editor.minimap.renderCharacters": false,
+	"editor.renderWhitespace": "boundary",
+	"editor.roundedSelection": false,
+	"editor.rulers": [
+		80
+	],
+	"editor.wordWrap": "wordWrapColumn",
+	"editor.wordWrapColumn": 80,
+	"emmet.showAbbreviationSuggestions": false,
+	"emmet.showExpandedAbbreviation": "never",
+	"explorer.enableDragAndDrop": false,
+	"explorer.openEditors.visible": 6,
+	"files.autoSave": "off",
+	"files.insertFinalNewline": true,
+	"files.trimFinalNewlines": true,
+	"files.trimTrailingWhitespace": true,
+	"git.enabled": true,
+	"gitlens.advanced.messages": {
+		"suppressCommitHasNoPreviousCommitWarning": false,
+		"suppressCommitNotFoundWarning": false,
+		"suppressFileNotUnderSourceControlWarning": false,
+		"suppressGitVersionWarning": false,
+		"suppressLineUncommittedWarning": false,
+		"suppressNoRepositoryWarning": false,
+		"suppressResultsExplorerNotice": false,
+		"suppressShowKeyBindingsNotice": true,
+		"suppressUpdateNotice": false,
+		"suppressWelcomeNotice": true
+	},
+	"gitlens.keymap": "alternate",
+	"editor.linkedEditing": false,
+	"javascript.updateImportsOnFileMove.enabled": "always",
+	"window.newWindowDimensions": "inherit",
+	"window.openFilesInNewWindow": "on",
+	"window.title": "${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty} ${activeEditorMedium}${separator}${rootName} ${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}${dirty}",
+	"workbench.editor.enablePreview": false,
+	"workbench.editor.openPositioning": "last",
+	"workbench.editor.showIcons": true,
+	"workbench.editor.tabCloseButton": "off",
+	"workbench.startupEditor": "newUntitledFile",
+	"editor.folding": true,
+	"editor.lineNumbers": "on",
+	"[less]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"yaml.schemas": {
+		"file:///Users/nickng/.vscode/extensions/atlassian.atlascode-2.7.0/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+	},
+	"[sql]": {
+		"editor.defaultFormatter": "adpyke.vscode-sql-formatter"
+	},
+	"search.exclude": {
+		"*min.js": true
+	},
+	"search.searchOnType": false,
+	"[yaml]": {
+		"editor.defaultFormatter": "redhat.vscode-yaml"
+	},
+	"files.eol": "\n",
+	"redhat.telemetry.enabled": false,
+	"prettier.prettierPath": "./node_modules/prettier",
+	"prettier.useTabs": true,
+	"editor.guides.indentation": true,
+	"terminal.integrated.defaultProfile.windows": "Git Bash",
+	"typescript.updateImportsOnFileMove.enabled": "always",
+	"workbench.colorTheme": "Default Light+",
+
+	"indentRainbow.colorOnWhiteSpaceOnly": true,
+	"indentRainbow.colors": [
+		"rgba(0,255,255,0.1)",
+		"rgba(255,0,255,0.05)",
+		"rgba(255,255,0,0.1)"
+	],
+	"files.hotExit": "off",
+	"gitlens.views.repositories.showCommits": false,
+	"gitlens.codeLens.authors.enabled": false,
+	"gitlens.codeLens.recentChange.enabled": false,
+	"editor.stickyScroll.enabled": true,
+	"terminal.integrated.fontSize": 16,
+	"extensions.autoCheckUpdates": false,
+	"workbench.iconTheme": "vs-nick",
+	"search.quickOpen.includeHistory": false,
+	"search.useIgnoreFiles": true,
+
+	"editor.lightbulb.enabled": "off",
+	"svelte.enable-ts-plugin": true,
+	"editor.fontSize": 12,
+	"window.zoomLevel": 0,
+	"indentRainbow.ignoreErrorLanguages": ["*", "markdown"],
+	"javascript.preferences.renameMatchingJsxTags": false,
+	"typescript.preferences.renameMatchingJsxTags": false,
+	"workbench.editor.showTabs": "multiple",
+	"telemetry.telemetryLevel": "off",
+
+	// rust
+	"[rust]": {
+		"editor.insertSpaces": true,
+		"editor.tabSize": 4
+	},
+	"rust-analyzer.cachePriming.enable": false,
+	"rust-analyzer.inlayHints.parameterHints.enable": false,
+	"rust-analyzer.inlayHints.typeHints.enable": false,
+	"rust-analyzer.lens.run.enable": false,
+	"rust-analyzer.lens.debug.enable": false,
+	"rust-analyzer.lens.enable": false,
+
+	// zig
+	"zig.initialSetupDone": true,
+	"zig.zls.inlayHintsShowVariableTypeHints": false,
+	"[zig]": {
+		"editor.insertSpaces": true,
+		"editor.tabSize": 4,
+		"editor.detectIndentation": false
+	},
+	"chat.disableAIFeatures": true,
+	"workbench.editor.tabActionCloseVisibility": false
+}
