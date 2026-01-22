@@ -1,5 +1,10 @@
 # Steps
 
+- Symlink `.nickrc` to `~/.nickrc`
+```
+ln /path/to/repo/.nickrc ~/
+```
+
 - Install git and checkout repo
 
 ```
