@@ -1,8 +1,9 @@
 # Steps
 
-- Symlink `.nickrc` to `~/.nickrc`
+- Symlink config files to home directory e.g. `.nickrc` to `~/.nickrc`
 ```
-ln /path/to/repo/.nickrc ~/
+ln -s /path/to/repo/.nickrc ~/
+ln -s /path/to/repo/tmux/.tmux.conf ~/
 ```
 
 - Install git and checkout repo
