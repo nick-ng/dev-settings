@@ -1,0 +1,38 @@
+# Dependency manager for Cocoa projects
+brew "cocoapods"
+# Simple, fast and user-friendly alternative to find
+brew "fd"
+# GNU Privacy Guard (OpenPGP)
+brew "gnupg"
+# Open source programming language to build simple/reliable/efficient software
+brew "go"
+# Language server for the Go language
+brew "gopls"
+# Ambitious Vim-fork focused on extensibility and agility
+brew "neovim"
+# Search tool like grep and The Silver Searcher
+brew "ripgrep"
+# Terminal multiplexer
+brew "tmux"
+# Access X11 clipboards from the command-line
+brew "xclip"
+# App to build and share containerised applications and microservices
+cask "docker-desktop"
+# Web browser
+cask "firefox"
+# Desktop automation application
+cask "hammerspoon"
+# Meet, chat, call, and collaborate in just one place
+cask "microsoft-teams"
+# Collaboration platform for API development
+cask "postman"
+# Team communication and collaboration software
+cask "slack"
+# Mesh VPN based on WireGuard
+cask "tailscale-app"
+# Binary releases of VS Code without MS branding/telemetry/licensing
+cask "vscodium"
+# OpenJDK distribution from Azul
+cask "zulu@17"
+vscode "golang.go"
+vscode "nick-ng.nick-vscode-extension"
