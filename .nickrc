@@ -13,8 +13,6 @@ function giap() {
 
   git add -N .
   git add -p
-
-  todo
 }
 
 function gin2() {
