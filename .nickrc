@@ -63,10 +63,12 @@ alias cdnvimconf='cd "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim'
 function updatealldevsettings() {
 		  CURRENT_DIR=$(pwd)
 		  cdnvimconf
+		  echo "updating nvim settings"
 		  git pull --rebase
 		  # change directory to dev-settings
 		  cd ~
 		  cd "$(readlink ~/.nickrc | sed s/\.nickrc//)" || return
+		  echo "updating dev settings"
 		  git pull --rebase
 		  cd "$CURRENT_DIR" || return
 }
